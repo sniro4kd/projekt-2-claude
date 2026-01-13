@@ -45,7 +45,7 @@ Diese Spezifikation definiert die Unit Tests für die einzelnen Komponenten des 
 - `PlayerRole` = Rabbit
 - `IsPlayerTurn` = true (Hase beginnt)
 - Hase auf Position (0, 4)
-- 4 Kinder auf Positionen (9, 1), (9, 3), (9, 5), (9, 7)
+- 5 Kinder auf Positionen (9, 1), (9, 3), (9, 5), (9, 7), (9, 9)
 - `Status` = Playing
 - `MoveCount` = 0
 

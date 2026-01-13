@@ -12,9 +12,6 @@ public class LeaderboardController : ControllerBase
     private readonly ILeaderboardService _leaderboardService;
     private readonly ILogger<LeaderboardController> _logger;
 
-    // Reference to game storage (shared with GameController)
-    private static readonly Dictionary<Guid, GameState> _games = new();
-
     public LeaderboardController(ILeaderboardService leaderboardService, ILogger<LeaderboardController> logger)
     {
         _leaderboardService = leaderboardService;
@@ -57,10 +54,16 @@ public class LeaderboardController : ControllerBase
         };
 
         // Try to get game state if available
-        if (_games.TryGetValue(request.GameId, out var gameState))
+        if (GameStorage.TryGet(request.GameId, out var gameState) && gameState != null)
         {
             entry.Role = gameState.PlayerRole;
             entry.ThinkingTimeMs = gameState.PlayerThinkingTimeMs;
+            _logger.LogInformation("Found game state: Role={Role}, ThinkingTime={ThinkingTime}ms",
+                gameState.PlayerRole, gameState.PlayerThinkingTimeMs);
+        }
+        else
+        {
+            _logger.LogWarning("Game state not found for GameId {GameId}", request.GameId);
         }
 
         try

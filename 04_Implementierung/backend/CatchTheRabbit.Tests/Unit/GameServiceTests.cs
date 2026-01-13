@@ -157,7 +157,8 @@ public class GameServiceTests
             new Position(3, 3), // This child is at row 3
             new Position(1, 5),
             new Position(1, 7),
-            new Position(1, 9)
+            new Position(1, 9),
+            new Position(3, 5)  // 5th child
         };
         state.CurrentTurn = PlayerRole.Children;
 
@@ -265,7 +266,8 @@ public class GameServiceTests
             new Position(3, 4), // 3+4=7 odd (black)
             new Position(3, 6), // 3+6=9 odd (black)
             new Position(5, 4), // 5+4=9 odd (black)
-            new Position(5, 6)  // 5+6=11 odd (black)
+            new Position(5, 6), // 5+6=11 odd (black)
+            new Position(7, 6)  // 5th child, 7+6=13 odd (black)
         };
 
         // Act
@@ -352,7 +354,8 @@ public class GameServiceTests
                 new Position(0, 1),
                 new Position(0, 3),
                 new Position(0, 5),
-                new Position(0, 7)
+                new Position(0, 7),
+                new Position(0, 9)  // 5th child
             },
             Status = GameStatus.Playing
         };

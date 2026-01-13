@@ -177,7 +177,8 @@ public class GameStateTests
                 new Position(1, 1),
                 new Position(1, 3),
                 new Position(1, 5),
-                new Position(1, 7)
+                new Position(1, 7),
+                new Position(1, 9)  // 5th child
             },
             PlayerRole = PlayerRole.Rabbit,
             CurrentTurn = PlayerRole.Rabbit,

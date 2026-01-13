@@ -14,9 +14,6 @@ public class GameController : ControllerBase
     private readonly IAIService _aiService;
     private readonly ILogger<GameController> _logger;
 
-    // In-memory game storage (for simplicity; could use distributed cache in production)
-    private static readonly Dictionary<Guid, GameState> _games = new();
-
     public GameController(IGameService gameService, IAIService aiService, ILogger<GameController> logger)
     {
         _gameService = gameService;
@@ -37,7 +34,7 @@ public class GameController : ControllerBase
         var gameState = _gameService.CreateGame(playerRole);
 
         // Store the game
-        _games[gameState.GameId] = gameState;
+        GameStorage.Store(gameState);
 
         _logger.LogInformation("Game created with ID: {GameId}", gameState.GameId);
 
@@ -46,7 +43,7 @@ public class GameController : ControllerBase
         {
             var aiMove = _aiService.CalculateBestMove(gameState, PlayerRole.Rabbit, AIConstants.DefaultMaxTimeMs);
             gameState = _gameService.ApplyMove(gameState, aiMove);
-            _games[gameState.GameId] = gameState;
+            GameStorage.Store(gameState);
             _logger.LogInformation("AI made first move as rabbit");
         }
 
@@ -58,7 +55,7 @@ public class GameController : ControllerBase
     {
         _logger.LogInformation("Move request for game {GameId}", gameId);
 
-        if (!_games.TryGetValue(gameId, out var gameState))
+        if (!GameStorage.TryGet(gameId, out var gameState) || gameState == null)
         {
             return NotFound(new MoveResponse { Success = false, Error = "Game not found" });
         }
@@ -109,7 +106,7 @@ public class GameController : ControllerBase
 
         // Apply player move
         gameState = _gameService.ApplyMove(gameState, move);
-        _games[gameId] = gameState;
+        GameStorage.Store(gameState);
 
         _logger.LogInformation("Player move applied: {From} -> {To}", move.From, move.To);
 
@@ -121,7 +118,7 @@ public class GameController : ControllerBase
             var aiRole = gameState.PlayerRole == PlayerRole.Rabbit ? PlayerRole.Children : PlayerRole.Rabbit;
             var aiMove = _aiService.CalculateBestMove(gameState, aiRole, AIConstants.DefaultMaxTimeMs);
             gameState = _gameService.ApplyMove(gameState, aiMove);
-            _games[gameId] = gameState;
+            GameStorage.Store(gameState);
             aiMoveDto = new MoveDto(aiMove);
 
             _logger.LogInformation("AI move applied: {From} -> {To}", aiMove.From, aiMove.To);
@@ -138,7 +135,7 @@ public class GameController : ControllerBase
     [HttpGet("{gameId}")]
     public ActionResult<GameStateResponse> GetGame(Guid gameId)
     {
-        if (!_games.TryGetValue(gameId, out var gameState))
+        if (!GameStorage.TryGet(gameId, out var gameState) || gameState == null)
         {
             return NotFound(new { error = "Game not found" });
         }
@@ -149,7 +146,7 @@ public class GameController : ControllerBase
     [HttpGet("{gameId}/valid-moves")]
     public ActionResult<List<PositionDto>> GetValidMoves(Guid gameId, [FromQuery] string pieceType, [FromQuery] int? pieceIndex)
     {
-        if (!_games.TryGetValue(gameId, out var gameState))
+        if (!GameStorage.TryGet(gameId, out var gameState) || gameState == null)
         {
             return NotFound(new { error = "Game not found" });
         }

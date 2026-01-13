@@ -4,18 +4,18 @@ Ein browserbasiertes Strategiespiel entwickelt für ERP_Champion GmbH.
 
 ## Projektbeschreibung
 
-"Fang den Hasen" ist ein klassisches Strategiespiel auf einem 10x10 Spielfeld. Ein Spieler steuert entweder den Hasen oder vier Kinder, während die KI den Gegenspieler übernimmt.
+"Fang den Hasen" ist ein klassisches Strategiespiel auf einem 10x10 Spielfeld. Ein Spieler steuert entweder den Hasen oder fünf Kinder, während die KI den Gegenspieler übernimmt.
 
 ### Spielregeln
 
 **Der Hase:**
-- Startet in der Mitte der ersten Reihe
+- Startet unten auf dem Spielfeld
 - Bewegt sich diagonal in alle 4 Richtungen
-- Gewinnt, wenn er die untere Spielfeldseite erreicht
+- Gewinnt, wenn er die obere Spielfeldseite erreicht
 
 **Die Kinder:**
-- Starten in der letzten Reihe (4 Figuren)
-- Bewegen sich nur diagonal nach oben
+- Starten oben auf dem Spielfeld (5 Figuren)
+- Bewegen sich nur diagonal nach unten
 - Gewinnen, wenn sie den Hasen einkreisen (keine Zugmöglichkeiten mehr)
 
 ### Features

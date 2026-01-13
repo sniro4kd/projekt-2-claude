@@ -164,7 +164,7 @@ Ein Feld (x, y) ist schwarz, wenn `(x + y) % 2 == 1`
 | Figur | Anzahl | Bewegungsrichtungen | Startbereich |
 |-------|--------|---------------------|--------------|
 | Hase | 1 | Diagonal alle 4 Richtungen (↖ ↗ ↙ ↘) | Reihe 7, 8 oder 9 |
-| Kind | 4 | Diagonal nur nach unten (↙ ↘) | Reihe 0, 1 oder 2 |
+| Kind | 5 | Diagonal nur nach unten (↙ ↘) | Reihe 0, 1 oder 2 |
 
 ### 3.3 Zugvalidierung
 
@@ -498,7 +498,7 @@ GameState {
     playerRole: "rabbit" | "children"
     currentTurn: "rabbit" | "children"
     rabbit: Position { x: int, y: int }
-    children: Position[] (4 Elemente)
+    children: Position[] (5 Elemente)
     playerThinkingTimeMs: long
     gameStatus: "playing" | "rabbit_wins" | "children_win"
     moveHistory: Move[]
@@ -511,7 +511,7 @@ Position {
 
 Move {
     pieceType: "rabbit" | "child"
-    pieceIndex: int? (0-3 für Kinder)
+    pieceIndex: int? (0-4 für Kinder)
     from: Position
     to: Position
     timestamp: datetime
@@ -545,7 +545,8 @@ Startet ein neues Spiel.
         { "x": 1, "y": 0 },
         { "x": 3, "y": 1 },
         { "x": 5, "y": 0 },
-        { "x": 7, "y": 2 }
+        { "x": 7, "y": 2 },
+        { "x": 9, "y": 1 }
     ],
     "gameStatus": "playing"
 }
@@ -866,3 +867,4 @@ Fügt einen Bestenlisten-Eintrag hinzu.
 | Version | Datum | Autor | Änderung |
 |---------|-------|-------|----------|
 | 1.0 | 21.03.2025 | - | Initiale Version |
+| 1.1 | 13.01.2026 | Claude AI | Kinder-Anzahl 4 → 5 (Balancing-Anpassung gemäß Lastenheft v1.1) |

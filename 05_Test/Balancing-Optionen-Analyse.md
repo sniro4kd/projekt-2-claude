@@ -2,39 +2,49 @@
 ## Entscheidungsgrundlage für FA-502 (Gewinnwahrscheinlichkeit)
 
 **Erstellt:** 2026-01-13
-**Zielgruppe:** Projektverantwortliche
-**Zweck:** Entscheidungsgrundlage für Balancing-Maßnahmen
+**Version:** 2.0
+**Status:** Entscheidung ausstehend
 
 ---
 
 ## Executive Summary
 
 ### Ausgangslage
-Die KI-Simulation (500 Spiele) zeigt eine **100% Gewinnrate für die Kinder-Seite**. Die Anforderung FA-502 (ausgeglichene 50% Gewinnrate) ist nicht erfüllt.
 
-### Empfehlung
-**Option C: Anforderungsanpassung** wird empfohlen.
+| Anforderung | Status |
+|-------------|--------|
+| **FA-502:** KI soll ~50% Gewinnrate erreichen | **NICHT ERFÜLLT** |
 
-| Option | Aufwand | Risiko | Effektivität | Empfehlung |
-|--------|---------|--------|--------------|------------|
-| A: KI-Handicap | Mittel | Niedrig | Unsicher | Möglich |
-| B: Spielregel-Änderung | Hoch | Hoch | Gut | Nicht empfohlen |
-| **C: Anforderungsanpassung** | **Niedrig** | **Niedrig** | **Hoch** | **Empfohlen** |
-| D: Hybridlösung | Hoch | Mittel | Gut | Für V2.0 |
+### Aktueller Stand (5 Kinder)
 
-### Begründung
-1. Das Spiel "Fang den Hasen" ist **spieltheoretisch asymmetrisch** - dies ist kein Bug, sondern Spieldesign
-2. Für die Zielgruppe (Kinder) ist eine **leichte "Kinder"-Rolle wünschenswert**
-3. Änderungen an Spielregeln würden das **klassische Spielprinzip verfälschen**
-4. Der Aufwand für KI-Balancing steht in keinem Verhältnis zum Nutzen
+| Mensch spielt als | KI-Gewinnrate | Problem |
+|-------------------|---------------|---------|
+| Kinder | ~10-20% | KI-Hase verliert fast immer |
+| Hase | ~50-70% | Ausgeglichen |
+
+### Das Dilemma
+
+| Konfiguration | Ergebnis |
+|---------------|----------|
+| 4 Kinder | Hase gewinnt ~95% (Lücke in Barriere) |
+| 5 Kinder | Kinder gewinnen ~85% (perfekte Barriere möglich) |
+
+**Kernproblem:** Es gibt keine Kinderanzahl, die automatisch 50/50 ergibt.
+
+### Optionen-Übersicht
+
+| Option | Beschreibung | Aufwand | Empfehlung |
+|--------|--------------|---------|------------|
+| **A** | KI-Handicap (rollenbasierte Stärke) | Mittel | Technisch möglich |
+| **B** | Spielregel-Änderung | Hoch | Bereits teilweise umgesetzt |
+| **C** | Anforderung anpassen/akzeptieren | Niedrig | Pragmatisch |
+| **D** | Schwierigkeitsgrade einführen | Mittel-Hoch | Für V2.0 |
 
 ---
 
 ## 1. Problemanalyse
 
-### 1.1 Spieltheoretischer Hintergrund
-
-"Fang den Hasen" gehört zur Kategorie der **asymmetrischen Verfolgungsspiele** (Fox and Hounds, Halma-Varianten). Diese Spiele haben inhärente Eigenschaften:
+### 1.1 Warum ist das Spiel unausgeglichen?
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -43,40 +53,34 @@ Die KI-Simulation (500 Spiele) zeigt eine **100% Gewinnrate für die Kinder-Seit
 │                                                         │
 │   HASE (Flüchtender)          KINDER (Verfolger)       │
 │   ─────────────────          ──────────────────        │
-│   • 1 Figur                   • 4 Figuren              │
+│   • 1 Figur                   • 5 Figuren              │
 │   • 4 Bewegungsrichtungen     • 2 Bewegungsrichtungen  │
 │   • Muss Ziel erreichen       • Muss nur blockieren    │
-│   • Aktives Spielziel         • Reaktives Spielziel    │
-│   • Fehler = Verlust          • Fehler = korrigierbar  │
+│   • Jeder Fehler = Verlust    • Fehler korrigierbar    │
 │                                                         │
-│   VORTEIL: Mobilität          VORTEIL: Redundanz       │
+│   Schwarze Felder pro Reihe: 5                         │
+│   → 5 Kinder = perfekte Blockade möglich               │
 │                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
 
-### 1.2 Mathematische Betrachtung
+### 1.2 Mensch vs KI Unterschied
 
-**Zustandsraum-Analyse:**
+| Spieler-Typ | Kinder-Strategie | Ergebnis |
+|-------------|------------------|----------|
+| **KI** | Suboptimale Barriere (begrenzte Suchtiefe) | Hase findet Lücken |
+| **Mensch** | Intuitive perfekte Barriere | Hase hat keine Chance |
+
+**Schlussfolgerung:** Die KI-Kinder sind "dümmer" als menschliche Kinder-Spieler. Daher ist KI vs KI ausgeglichen (45/55), aber Mensch vs KI nicht.
+
+### 1.3 Mathematische Betrachtung
+
 - Spielfeld: 10×10, davon 50 schwarze Felder
-- Hase-Positionen: 50 mögliche Felder
-- Kinder-Positionen: C(50,4) = 230.300 Kombinationen
-- Gesamtzustände: ~11,5 Millionen
+- Schwarze Felder pro Reihe: **5**
+- Kinder: **5**
+- → Kinder können **jede Reihe vollständig blockieren**
 
-**Gewinnbedingungen:**
-- Hase: Erreiche 1 von 5 Zielfeldern (Y=0)
-- Kinder: Blockiere alle 4 Diagonalen des Hasen
-
-Die Kinder haben einen **kombinatorischen Vorteil**: Mit 4 Figuren können sie systematisch den Bewegungsraum des Hasen einschränken.
-
-### 1.3 Warum gewinnen die Kinder immer?
-
-| Phase | Situation | Vorteil |
-|-------|-----------|---------|
-| Eröffnung | Kinder kontrollieren obere Hälfte | Kinder |
-| Mittelspiel | Kinder bilden Barriere, Hase sucht Lücke | Kinder |
-| Endspiel | Hase eingekesselt oder durchgebrochen | Meist Kinder |
-
-**Schlüsselerkenntnis:** Bei **perfektem Spiel beider Seiten** gewinnen die Kinder immer. Dies ist eine Eigenschaft des Spieldesigns, nicht der KI.
+Bei optimaler Kinder-Strategie ist der Hase **mathematisch chancenlos**.
 
 ---
 
@@ -84,281 +88,157 @@ Die Kinder haben einen **kombinatorischen Vorteil**: Mit 4 Figuren können sie s
 
 ### 2.1 Beschreibung
 
-Die KI wird je nach Rolle unterschiedlich stark eingestellt:
-- **Hase-KI**: Volle Stärke (Tiefe 6-8)
-- **Kinder-KI**: Reduzierte Stärke (Tiefe 2-4)
+Die KI-Stärke wird je nach Rolle angepasst:
 
-### 2.2 Implementierungsvarianten
+| Wenn Mensch spielt als | KI spielt als | KI-Anpassung |
+|------------------------|---------------|--------------|
+| Kinder | Hase | **Stärker** (Tiefe 8-10) |
+| Hase | Kinder | **Schwächer** (Tiefe 3-4) |
 
-#### Variante A1: Suchtiefe-Anpassung
+### 2.2 Implementierung
+
 ```csharp
-int GetSearchDepth(PlayerRole aiRole) {
-    return aiRole == PlayerRole.Rabbit
-        ? 8   // Hase: starke KI
-        : 3;  // Kinder: schwache KI
+int GetSearchDepth(PlayerRole humanRole)
+{
+    return humanRole switch
+    {
+        PlayerRole.Children => 10,  // KI-Hase stärker
+        PlayerRole.Rabbit => 4,     // KI-Kinder schwächer
+        _ => 6
+    };
 }
 ```
 
-**Vorteile:**
-- Einfach zu implementieren (~10 Zeilen Code)
-- Keine Änderung der Spielregeln
-- Einstellbar über Konfiguration
+### 2.3 Vor- und Nachteile
 
-**Nachteile:**
-- KI spielt absichtlich schlecht → unnatürlich
-- Spieler könnten "dumme" Züge der KI bemerken
-- Schwer zu kalibrieren (welche Tiefe = 50%?)
+| Vorteile | Nachteile |
+|----------|-----------|
+| Keine Regeländerung | KI spielt "künstlich" |
+| Schnell implementierbar (~2-4 Std) | Schwer zu kalibrieren |
+| Einstellbar | Spieler bemerken evtl. "dumme" KI-Züge |
 
-#### Variante A2: Bewertungsfunktion-Handicap
-```csharp
-int Evaluate(GameState state, PlayerRole aiRole) {
-    int score = CalculateBaseScore(state, aiRole);
+### 2.4 Erwartete Ergebnisse
 
-    if (aiRole == PlayerRole.Children) {
-        score = (int)(score * 0.7); // 30% Handicap
-    }
+| Konfiguration | Erwartete KI-Gewinnrate |
+|---------------|-------------------------|
+| KI-Hase Tiefe 6 (aktuell) | ~10-20% |
+| KI-Hase Tiefe 8 | ~25-35% (geschätzt) |
+| KI-Hase Tiefe 10 | ~35-45% (geschätzt) |
+| KI-Hase Tiefe 12+ | ~45-55% (geschätzt) |
 
-    return score;
-}
-```
+**Hinweis:** Höhere Suchtiefe = längere Denkzeit. Muss getestet werden.
 
-**Vorteile:**
-- Subtiler als Tiefenreduktion
-- KI macht "plausible" Fehler
+### 2.5 Bewertung
 
-**Nachteile:**
-- Schwer vorhersagbar
-- Kann zu seltsamen Zügen führen
-
-#### Variante A3: Zufallsbasiertes Handicap
-```csharp
-Move SelectMove(List<Move> rankedMoves, PlayerRole aiRole) {
-    if (aiRole == PlayerRole.Children && random.NextDouble() < 0.3) {
-        // 30% Chance: Wähle zweit- oder drittbesten Zug
-        return rankedMoves[random.Next(1, Math.Min(3, rankedMoves.Count))];
-    }
-    return rankedMoves[0];
-}
-```
-
-**Vorteile:**
-- Natürlichere "Fehler"
-- Varianz in den Spielen
-
-**Nachteile:**
-- Inkonsistentes Spielerlebnis
-- Frustration wenn KI plötzlich "aufwacht"
-
-### 2.3 Erwartete Ergebnisse
-
-| Tiefe Hase | Tiefe Kinder | Erwartete Hase-Gewinnrate |
-|------------|--------------|---------------------------|
-| 6 | 6 | 0% (aktuell) |
-| 6 | 4 | ~10-20% (geschätzt) |
-| 6 | 3 | ~30-40% (geschätzt) |
-| 6 | 2 | ~50-60% (geschätzt) |
-| 8 | 2 | ~60-70% (geschätzt) |
-
-**Hinweis:** Diese Werte sind Schätzungen und müssten empirisch validiert werden.
-
-### 2.4 Aufwand und Risiken
-
-| Aspekt | Bewertung |
-|--------|-----------|
-| Implementierungsaufwand | 2-4 Stunden |
-| Testaufwand | 4-8 Stunden (Kalibrierung) |
-| Risiko: Unnatürliches Spielgefühl | Mittel |
-| Risiko: Frustration bei "dummen" KI-Zügen | Mittel |
-| Wartbarkeit | Gut |
-
-### 2.5 Fazit Option A
-
-**Geeignet für:** Schnelle Lösung ohne Regeländerungen
-**Nicht geeignet für:** Authentisches Spielerlebnis
+| Kriterium | Bewertung |
+|-----------|-----------|
+| Aufwand | Mittel (2-4 Std + Kalibrierung) |
+| Risiko | Mittel (unnatürliches Spielgefühl) |
+| Effektivität | Unsicher (muss empirisch getestet werden) |
 
 ---
 
 ## 3. Option B: Spielregel-Änderungen
 
-### 3.1 Beschreibung
+### 3.1 Bereits umgesetzt: 5 Kinder
 
-Anpassung der Spielregeln um die Balance zu verbessern.
+| Vorher | Nachher |
+|--------|---------|
+| 4 Kinder | 5 Kinder |
+| Hase gewinnt ~95% | Kinder gewinnen ~85% |
 
-### 3.2 Implementierungsvarianten
+**Ergebnis:** Problem wurde nicht gelöst, nur umgekehrt.
 
-#### Variante B1: Startposition ändern
+### 3.2 Weitere mögliche Regeländerungen
 
-**Aktuell:**
-```
-Y=0  [K] [ ] [K] [ ] [K] [ ] [K] [ ] [ ] [ ]  ← Ziel Hase
-Y=1  [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
-...
-Y=7  [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
-Y=8  [ ] [ ] [ ] [ ] [ ] [H] [ ] [ ] [ ] [ ]  ← Start Hase
-Y=9  [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
-```
+| Änderung | Effekt | Bewertung |
+|----------|--------|-----------|
+| Hase startet weiter oben (Y=5) | Kürzerer Weg zum Ziel | Verändert Spielcharakter |
+| Hase kann auch gerade ziehen | Mehr Mobilität | Komplett anderes Spiel |
+| Kinder können rückwärts | Stärkt Kinder noch mehr | Kontraproduktiv |
+| Zurück auf 4 Kinder | Hase gewinnt wieder ~95% | Löst Problem nicht |
 
-**Vorgeschlagen:**
-```
-Y=0  [K] [ ] [K] [ ] [K] [ ] [K] [ ] [ ] [ ]  ← Ziel Hase
-Y=1  [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
-...
-Y=4  [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
-Y=5  [ ] [ ] [ ] [ ] [H] [ ] [ ] [ ] [ ] [ ]  ← Start Hase (NEU)
-...
-```
+### 3.3 Bewertung
 
-**Analyse:**
-- Reduziert Distanz zum Ziel von 7-9 auf 4-6 Felder
-- Erwartete Verbesserung: +20-30% für Hase
-- **Problem:** Verändert Spielcharakter fundamental
+| Kriterium | Bewertung |
+|-----------|-----------|
+| Aufwand | Hoch (Code + Doku + Tests) |
+| Risiko | Hoch (Spielcharakter verändert) |
+| Effektivität | Ungewiss |
 
-#### Variante B2: Anzahl Kinder reduzieren
-
-**Aktuell:** 4 Kinder
-**Vorgeschlagen:** 3 Kinder
-
-**Analyse:**
-- Weniger Deckung der Barriere
-- Erwartete Verbesserung: +30-40% für Hase
-- **Problem:** Klassisches Spiel hat 4 Kinder
-
-#### Variante B3: Zusätzliche Bewegungsoptionen für Hase
-
-**Aktuell:** Nur diagonale Züge
-**Vorgeschlagen:** Diagonale + gerade Züge ODER Sprünge
-
-**Analyse:**
-- Erhöht Mobilität drastisch
-- **Problem:** Komplett anderes Spiel
-
-#### Variante B4: Kinder können auch rückwärts
-
-**Aktuell:** Kinder nur vorwärts
-**Vorgeschlagen:** Kinder alle Richtungen
-
-**Analyse:**
-- **Verschlechtert** die Hase-Gewinnrate (Kinder werden noch stärker)
-- Nicht zielführend
-
-### 3.3 Auswirkungen auf Spieldesign
-
-| Änderung | Spielcharakter | Klassisch? | Empfehlung |
-|----------|----------------|------------|------------|
-| Startposition | Leicht verändert | Nein | Möglich |
-| 3 Kinder | Stark verändert | Nein | Nicht empfohlen |
-| Zusätzliche Züge | Komplett anders | Nein | Nicht empfohlen |
-
-### 3.4 Aufwand und Risiken
-
-| Aspekt | Bewertung |
-|--------|-----------|
-| Implementierungsaufwand | 4-16 Stunden (je nach Variante) |
-| Testaufwand | 8-16 Stunden |
-| Risiko: Spielcharakter verändert | Hoch |
-| Risiko: Bestehende Dokumentation ungültig | Hoch |
-| Risiko: Neue Bugs | Mittel |
-| Wartbarkeit | Mittel |
-
-### 3.5 Fazit Option B
-
-**Geeignet für:** Grundlegende Neugestaltung des Spiels
-**Nicht geeignet für:** Erhalt des klassischen Spielprinzips
+**Empfehlung:** Keine weiteren Regeländerungen.
 
 ---
 
-## 4. Option C: Anforderungsanpassung
+## 4. Option C: Anforderung anpassen
 
 ### 4.1 Beschreibung
 
-Die Anforderung FA-502 wird angepasst oder als nicht erfüllbar dokumentiert.
+FA-502 wird als "nicht erfüllbar" dokumentiert oder umformuliert.
 
-### 4.2 Begründungsvarianten
+### 4.2 Varianten
 
-#### Variante C1: Anforderung streichen
+#### C1: Anforderung streichen
 ```markdown
-~~FA-502: Die KI soll eine ausgeglichene Gewinnrate von ca. 50% erreichen~~
-ENTFERNT - Spieltheoretisch nicht erreichbar ohne Spielverfälschung
+FA-502: ENTFERNT
+Begründung: Spieltheoretisch nicht erreichbar ohne Spielverfälschung
 ```
 
-#### Variante C2: Anforderung abschwächen
+#### C2: Anforderung abschwächen
 ```markdown
-FA-502 (NEU): Die KI soll ein herausforderndes aber faires Spielerlebnis bieten.
-- Als "Kinder": Spieler gewinnt in >80% der Fälle (Erfolgserlebnis)
-- Als "Hase": Spieler gewinnt in <20% der Fälle (Herausforderung)
+FA-502 (NEU): Die Rollen bieten unterschiedliche Schwierigkeitsgrade:
+- Rolle "Kinder": Leicht (Spieler gewinnt >80%)
+- Rolle "Hase": Schwer (Spieler gewinnt ~40%)
 ```
 
-#### Variante C3: Anforderung differenzieren
+#### C3: Asymmetrie als Feature dokumentieren
 ```markdown
-FA-502a: Rolle "Kinder" - Einsteigerfreundlich (Spieler gewinnt meist)
-FA-502b: Rolle "Hase" - Expertenherausforderung (KI gewinnt meist)
+FA-502 (NEU): Das Spiel bietet zwei Erlebnismodi:
+- "Kinder" für Anfänger und jüngere Spieler (leichter Sieg)
+- "Hase" für Fortgeschrittene (Herausforderung)
 ```
 
 ### 4.3 Pädagogische Argumentation
 
-**Für ein Kinderspiel ist Asymmetrie oft gewünscht:**
+Für ein **Kinderspiel** ist die Asymmetrie möglicherweise **gewünscht**:
 
-| Rolle | Zielgruppe | Erwartung | Erfüllt? |
-|-------|------------|-----------|----------|
-| Kinder | Anfänger, jüngere Kinder | Leichter Sieg | ✓ Ja |
-| Hase | Fortgeschrittene, ältere Kinder | Herausforderung | ✓ Ja |
+| Rolle | Zielgruppe | Spielerlebnis |
+|-------|------------|---------------|
+| Kinder | Anfänger, jüngere Kinder | Erfolgserlebnis, Motivation |
+| Hase | Fortgeschrittene, Erwachsene | Herausforderung |
 
-**Lerneffekt:**
-- Kinder lernen: "Zusammenarbeit (4 Kinder) ist stärker als Einzelkämpfer"
-- Strategisches Denken wird gefördert
-- Erfolgserlebnisse motivieren zum Weiterspielen
+**Lerneffekt:** "Zusammenarbeit (5 Kinder) ist stärker als Einzelkämpfer (Hase)"
 
-### 4.4 Dokumentationsänderungen
+### 4.4 Bewertung
 
-**Lastenheft (01_Anforderungen/Lastenheft.md):**
-```markdown
-| FA-502 | Die Rollen bieten unterschiedliche Schwierigkeitsgrade | Soll |
-|        | - "Kinder": Leicht (Spieler gewinnt >80%)              |      |
-|        | - "Hase": Schwer (Spieler gewinnt <20%)                |      |
-```
-
-**Zusätzliche Dokumentation:**
-- Spielanleitung mit Schwierigkeitshinweis
-- UI-Anzeige der Rollenschwierigkeit
-
-### 4.5 Aufwand und Risiken
-
-| Aspekt | Bewertung |
-|--------|-----------|
-| Dokumentationsaufwand | 1-2 Stunden |
-| Implementierungsaufwand | 0-1 Stunde (UI-Hinweis) |
-| Testaufwand | 0 Stunden |
-| Risiko | Sehr niedrig |
-| Wartbarkeit | Sehr gut |
-
-### 4.6 Fazit Option C
-
-**Geeignet für:** Pragmatische Lösung mit minimalem Aufwand
-**Nicht geeignet für:** Wenn 50% Balance zwingend erforderlich ist
+| Kriterium | Bewertung |
+|-----------|-----------|
+| Aufwand | Niedrig (nur Dokumentation) |
+| Risiko | Niedrig |
+| Effektivität | Hoch (Problem wird akzeptiert statt gelöst) |
 
 ---
 
-## 5. Option D: Hybridlösung (für zukünftige Versionen)
+## 5. Option D: Schwierigkeitsgrade (V2.0)
 
 ### 5.1 Beschreibung
 
-Kombination mehrerer Maßnahmen mit konfigurierbarem Schwierigkeitsgrad.
+Spieler wählt vor Spielbeginn einen Schwierigkeitsgrad.
 
 ### 5.2 Konzept
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                  SCHWIERIGKEITSAUSWAHL                   │
+│              SCHWIERIGKEITSAUSWAHL                       │
 ├─────────────────────────────────────────────────────────┤
 │                                                         │
-│   [Leicht]     [Mittel]      [Schwer]     [Experte]    │
+│   [Leicht]        [Mittel]        [Schwer]             │
 │                                                         │
-│   Rolle:       Rolle:        Rolle:       Rolle:       │
-│   Kinder       Kinder        Hase         Hase         │
-│   KI-Tiefe: 2  KI-Tiefe: 4   KI-Tiefe: 4  KI-Tiefe: 6  │
+│   Rolle: Kinder   Rolle: Kinder   Rolle: Hase          │
+│   KI-Hase: Tiefe 4 KI-Hase: Tiefe 8 KI-Kinder: Tiefe 6 │
 │                                                         │
-│   Gewinnrate:  Gewinnrate:   Gewinnrate:  Gewinnrate:  │
-│   ~90%         ~70%          ~30%         ~5%          │
+│   Gewinnrate:     Gewinnrate:     Gewinnrate:          │
+│   ~90%            ~50%            ~40%                  │
 │                                                         │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -366,38 +246,34 @@ Kombination mehrerer Maßnahmen mit konfigurierbarem Schwierigkeitsgrad.
 ### 5.3 Implementierung
 
 ```csharp
-enum Difficulty { Easy, Medium, Hard, Expert }
+record DifficultyConfig(PlayerRole Role, int AiDepth);
 
-GameConfig GetConfig(Difficulty diff) {
-    return diff switch {
-        Difficulty.Easy   => new(PlayerRole.Children, aiDepth: 2),
-        Difficulty.Medium => new(PlayerRole.Children, aiDepth: 4),
-        Difficulty.Hard   => new(PlayerRole.Rabbit, aiDepth: 4),
-        Difficulty.Expert => new(PlayerRole.Rabbit, aiDepth: 6),
-    };
-}
+DifficultyConfig GetConfig(Difficulty diff) => diff switch
+{
+    Difficulty.Easy   => new(PlayerRole.Children, aiDepth: 4),
+    Difficulty.Medium => new(PlayerRole.Children, aiDepth: 8),
+    Difficulty.Hard   => new(PlayerRole.Rabbit, aiDepth: 6),
+    _ => throw new ArgumentException()
+};
 ```
 
-### 5.4 Vorteile
+### 5.4 Vor- und Nachteile
 
-- Alle Spielertypen werden bedient
-- Transparente Schwierigkeitsauswahl
-- Progression möglich (von Leicht zu Experte)
+| Vorteile | Nachteile |
+|----------|-----------|
+| Alle Spielertypen bedient | Höherer Implementierungsaufwand |
+| Transparente Schwierigkeitsauswahl | UI-Anpassungen nötig |
+| Progression möglich | Für V1.0 zu aufwändig |
 
-### 5.5 Aufwand
+### 5.5 Bewertung
 
-| Aspekt | Bewertung |
-|--------|-----------|
-| Implementierungsaufwand | 8-16 Stunden |
-| UI-Anpassungen | 4-8 Stunden |
-| Testaufwand | 8-16 Stunden |
-| Dokumentation | 2-4 Stunden |
-| **Gesamt** | **22-44 Stunden** |
+| Kriterium | Bewertung |
+|-----------|-----------|
+| Aufwand | Mittel-Hoch (8-16 Std) |
+| Risiko | Niedrig |
+| Effektivität | Hoch |
 
-### 5.6 Fazit Option D
-
-**Geeignet für:** Version 2.0 mit erweitertem Funktionsumfang
-**Nicht geeignet für:** Aktuelle Projektphase (zu aufwändig)
+**Empfehlung:** Für Version 2.0 vormerken.
 
 ---
 
@@ -405,88 +281,115 @@ GameConfig GetConfig(Difficulty diff) {
 
 ### 6.1 Bewertungskriterien
 
-| Kriterium | Gewichtung | Beschreibung |
-|-----------|------------|--------------|
-| Aufwand | 25% | Implementierungs- und Testzeit |
-| Risiko | 25% | Wahrscheinlichkeit von Problemen |
-| Effektivität | 25% | Löst das Problem tatsächlich? |
-| Spielqualität | 25% | Auswirkung auf Spielerlebnis |
+| Kriterium | Gewichtung |
+|-----------|------------|
+| Aufwand | 25% |
+| Risiko | 25% |
+| Effektivität | 25% |
+| Spielqualität | 25% |
 
 ### 6.2 Bewertung (1-5, höher = besser)
 
 | Option | Aufwand | Risiko | Effektivität | Spielqualität | **Gesamt** |
 |--------|---------|--------|--------------|---------------|------------|
-| A: KI-Handicap | 4 | 3 | 3 | 2 | **3.00** |
-| B: Spielregeln | 2 | 2 | 4 | 2 | **2.50** |
+| A: KI-Handicap | 3 | 3 | 3 | 3 | **3.00** |
+| B: Spielregeln | 2 | 2 | 2 | 2 | **2.00** |
 | **C: Anforderung** | **5** | **5** | **4** | **4** | **4.50** |
-| D: Hybrid | 2 | 3 | 5 | 5 | **3.75** |
+| D: Schwierigkeitsgrade | 2 | 4 | 5 | 5 | **4.00** |
 
 ### 6.3 Visualisierung
 
 ```
-Aufwand vs. Effektivität
-                    │
-     Hoch           │
-   Effektivität     │    [D]●────────●[C] ← EMPFOHLEN
-                    │
-                    │  [B]●      ●[A]
-     Niedrig        │
-                    └──────────────────────
-                    Hoch    Aufwand    Niedrig
+                    Effektivität
+                         ▲
+                    Hoch │    [D]        [C] ← Höchste Bewertung
+                         │
+                         │         [A]
+                         │
+                  Niedrig│    [B]
+                         └──────────────────► Aufwand
+                              Hoch    Niedrig
 ```
 
 ---
 
-## 7. Empfehlung
+## 7. Empfehlungen
 
-### 7.1 Primärempfehlung: Option C
-
-**Die Anforderung FA-502 sollte angepasst werden.**
+### 7.1 Für V1.0: Option C (Anforderung anpassen)
 
 **Begründung:**
-1. **Spieltheoretisch korrekt:** Das Spiel IST asymmetrisch - das ist Designabsicht
-2. **Zielgruppengerecht:** Für Kinder ist ein leichter Einstieg wichtig
-3. **Minimal invasiv:** Keine Code-Änderungen, nur Dokumentation
-4. **Schnell umsetzbar:** 1-2 Stunden Aufwand
-5. **Kein Risiko:** Bestehende Funktionalität bleibt unverändert
+1. Geringster Aufwand
+2. Kein Risiko für bestehende Funktionalität
+3. Asymmetrie ist für Kinderspiel akzeptabel/wünschenswert
+4. Ehrliche Dokumentation der Spieleigenschaften
 
-### 7.2 Sekundärempfehlung: Option D für V2.0
+**Umsetzung:**
+- FA-502 im Lastenheft umformulieren
+- Rollenauswahl mit Schwierigkeitshinweis versehen
+- Spielanleitung entsprechend anpassen
 
-Für eine zukünftige Version könnte ein Schwierigkeitsgrad-System implementiert werden, das verschiedene Spielertypen bedient.
+### 7.2 Für V2.0: Option D (Schwierigkeitsgrade)
 
-### 7.3 Nicht empfohlen: Option B
+**Begründung:**
+1. Beste langfristige Lösung
+2. Bedient alle Spielertypen
+3. Kann schrittweise implementiert werden
 
-Änderungen an den Spielregeln würden:
-- Das klassische Spielprinzip verfälschen
-- Hohen Testaufwand erfordern
-- Bestehende Dokumentation ungültig machen
+### 7.3 Optional: Option A (KI-Handicap)
+
+Falls 50/50 zwingend erforderlich ist:
+- KI-Hase Suchtiefe erhöhen (10-12)
+- Empirisch testen und kalibrieren
+- Denkzeit-Limit beachten (max 1 Sekunde)
 
 ---
 
-## 8. Nächste Schritte (bei Annahme Option C)
+## 8. Nächste Schritte
+
+### Bei Entscheidung für Option C:
 
 1. **Lastenheft anpassen** (30 Min)
-   - FA-502 umformulieren
+   - FA-502 umformulieren zu: "Rollen bieten unterschiedliche Schwierigkeitsgrade"
 
-2. **Spielanleitung erweitern** (30 Min)
-   - Schwierigkeitshinweis für Rollen
+2. **UI-Hinweis hinzufügen** (optional, 1-2 Std)
+   - Bei Rollenauswahl: "Leicht" / "Herausfordernd" anzeigen
 
-3. **UI-Anpassung** (optional, 1-2 Std)
-   - Tooltip bei Rollenauswahl: "Leicht" / "Schwer"
+3. **Dokumentation aktualisieren** (30 Min)
+   - Diese Analyse als Entscheidungsgrundlage referenzieren
 
-4. **Dokumentation aktualisieren** (30 Min)
-   - Gewinnwahrscheinlichkeit-Analyse finalisieren
+### Bei Entscheidung für Option A:
+
+1. **AIService anpassen** (2 Std)
+   - Rollenbasierte Suchtiefe implementieren
+
+2. **Kalibrierung** (4-8 Std)
+   - Verschiedene Tiefen testen
+   - Optimale Werte ermitteln
+
+3. **Tests anpassen** (2 Std)
+   - Unit Tests für neue Logik
 
 ---
 
-## Anhang: Referenzen
+## Anhang
 
-- `05_Test/Gewinnwahrscheinlichkeit-Analyse.md` - Simulationsergebnisse
+### A.1 Historische Entwicklung
+
+| Datum | Änderung | Ergebnis |
+|-------|----------|----------|
+| Initial | 4 Kinder | Hase gewinnt ~95% |
+| 13.01.2026 | 5 Kinder | Kinder gewinnen ~85% |
+| Aktuell | - | FA-502 nicht erfüllt |
+
+### A.2 Referenzen
+
+- `05_Test/Gewinnwahrscheinlichkeit-Analyse.md` - Detaillierte Testergebnisse
 - `01_Anforderungen/Lastenheft.md` - Aktuelle Anforderungen
 - `04_Implementierung/backend/CatchTheRabbit.Core/Services/AIService.cs` - KI-Implementierung
 
 ---
 
-**Dokument erstellt:** 2026-01-13
-**Autor:** Claude AI
-**Version:** 1.0
+**Dokument:** Balancing-Optionen-Analyse
+**Version:** 2.0
+**Status:** Entscheidung ausstehend
+**Erstellt:** 2026-01-13

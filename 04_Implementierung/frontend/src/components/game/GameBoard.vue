@@ -112,9 +112,10 @@ function handleCellClick(row: number, col: number) {
 
 .board-grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 48px);
+  grid-template-rows: repeat(10, 48px);
   gap: 2px;
-  width: 500px;
-  height: 500px;
+  width: fit-content;
+  height: fit-content;
 }
 </style>

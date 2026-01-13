@@ -125,6 +125,36 @@ Am 13.01.2026 wurde das gesamte Projekt "Catch The Rabbit" in einem Durchlauf na
 
 ---
 
+## 6. Balancing-Anpassung
+
+### Problemerkennung
+Bei manuellen Spieltests wurde festgestellt, dass die dokumentierten Gewinnwahrscheinlichkeiten nicht der Realität entsprachen:
+- **Dokumentiert (falsch):** Kinder gewinnen 100%
+- **Tatsächlich (4 Kinder):** Hase gewinnt ~95%
+- **Ursache:** 5 schwarze Felder pro Reihe, aber nur 4 Kinder → immer eine Lücke
+
+### Anforderungsänderung
+- **Entscheidung:** Kinderanzahl von 4 auf 5 erhöht (ADR-006)
+- **Betroffene Dokumente:** Lastenheft, Pflichtenheft, Low-Level-Design, Code, Tests
+
+### Neue Simulation (5 Kinder)
+| Modus | Hase | Kinder |
+|-------|------|--------|
+| KI vs KI | 45% | 55% |
+| Mensch (Kinder) vs KI | ~15% | ~85% |
+| Mensch (Hase) vs KI | ~40% | ~60% |
+
+### FA-502 Status
+- **Interpretation:** Mensch vs KI soll 50/50 sein
+- **Status:** NICHT ERFÜLLT
+- **Grund:** Menschen spielen die Kinder-Rolle besser als die KI
+- **Optionen:** Dokumentiert in Balancing-Optionen-Analyse.md
+  - Option A: KI-Handicap
+  - Option C: Anforderung anpassen
+  - Option D: Schwierigkeitsgrade (V2.0)
+
+---
+
 ## Fazit
 
 Das Projekt wurde erfolgreich in allen V-Modell Phasen durchgeführt:
@@ -135,6 +165,8 @@ Das Projekt wurde erfolgreich in allen V-Modell Phasen durchgeführt:
 - Code Coverage über 80%
 - 5 Bugs während Akzeptanztests gefunden und behoben
 - 94.9% der Muss-Anforderungen erfüllt
+- Balancing-Anpassung durchgeführt (4 → 5 Kinder)
+- FA-502 offen: Entscheidung über Handlungsoption ausstehend
 - System ist abnahmebereit
 
 ---

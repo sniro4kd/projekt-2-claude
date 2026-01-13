@@ -4,6 +4,35 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 
 ---
 
+## 2026-01-13 - Balancing-Anpassung
+
+### Anforderungsänderung: Kinderanzahl
+- **Änderung:** Anzahl der Kinder von 4 auf 5 erhöht
+- **Grund:** Mit 4 Kindern gab es immer eine Lücke in der Barriere (5 schwarze Felder pro Reihe, aber nur 4 Kinder)
+- **Ergebnis mit 4 Kindern:** Hase gewann ~95% der Spiele
+- **Ergebnis mit 5 Kindern:** KI vs KI ist ausgeglichen (~45%/55%)
+
+### Betroffene Dokumente
+- Lastenheft (FA-102, FA-202)
+- Pflichtenheft
+- Low-Level-Design
+- Constants.cs (ChildrenCount = 5)
+- HomeView.vue, GamePiece.vue
+- Diverse Unit Tests
+
+### FA-502 Status
+- **KI vs KI:** Ausgeglichen (45%/55%)
+- **Mensch vs KI:** Weiterhin unausgeglichen
+  - Mensch als Kinder: gewinnt ~80-90%
+  - Mensch als Hase: gewinnt ~30-50%
+- **Status:** FA-502 NICHT ERFÜLLT (Interpretation: Mensch vs KI soll 50/50 sein)
+- **Optionen:** Dokumentiert in `05_Test/Balancing-Optionen-Analyse.md`
+
+### Entscheidungen
+- [ADR-006](00_Projektmanagement/entscheidungen/ADR-006-kinderanzahl.md): Kinderanzahl von 4 auf 5 geändert
+
+---
+
 ## 2026-01-13 - Testphase abgeschlossen
 
 ### Anforderungsverifikation
@@ -37,13 +66,11 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 - **Branch Coverage**: 73.1%
 - **Method Coverage**: 89.6%
 
-### Gewinnwahrscheinlichkeit (FA-502)
-- **Hase gewinnt**: 0% (KI vs KI)
-- **Kinder gewinnen**: 100% (KI vs KI)
-- **Status**: FA-502 NICHT ERFÜLLT - Spiel favorisiert strukturell die Kinder
+### Gewinnwahrscheinlichkeit (FA-502) - Ursprüngliche Analyse
+- **Hinweis:** Diese Daten wurden später korrigiert (siehe Balancing-Anpassung oben)
+- **Ursprüngliche Erkenntnis:** Mit 4 Kindern gewann der Hase ~95%
 - **Analyse**: `05_Test/Gewinnwahrscheinlichkeit-Analyse.md`
 - **Balancing-Optionen**: `05_Test/Balancing-Optionen-Analyse.md`
-- **Empfehlung**: Anforderungsanpassung (Option C)
 
 ### Hinzugefügt
 - **Test-Reports** (`05_Test/`)

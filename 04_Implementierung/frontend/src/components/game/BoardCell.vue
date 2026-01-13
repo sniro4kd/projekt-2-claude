@@ -39,6 +39,7 @@ const isDark = computed(() => (props.row + props.col) % 2 === 1);
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
+  overflow: hidden;
 }
 
 .board-cell.light {

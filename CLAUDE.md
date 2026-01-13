@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Projekt: CatchTheRabbit
 
-Browserbasiertes Strategiespiel für ERP_Champion GmbH. Ein Spieler (Mensch) spielt gegen eine KI - entweder als Hase oder als die vier Kinder auf einem 10x10 Spielfeld.
+Browserbasiertes Strategiespiel für ERP_Champion GmbH. Ein Spieler (Mensch) spielt gegen eine KI - entweder als Hase oder als die fünf Kinder auf einem 10x10 Spielfeld.
 
 ## Vorgehensmodell: V-Modell
 

@@ -37,7 +37,7 @@
 |----|-------------|-----------|--------|----------|
 | FA-100 | Spielfeld ist 10x10 Schachbrett | Muss | ✅ Erfüllt | `GameConstants.BoardSize = 10` |
 | FA-101 | Nur schwarze Felder bespielbar (50 Felder) | Muss | ✅ Erfüllt | `Position.IsBlackField()` prüft (X+Y) % 2 == 1 |
-| FA-102 | Genau 4 Kinder-Spielfiguren | Muss | ✅ Erfüllt | `GameConstants.ChildrenCount = 4` |
+| FA-102 | Genau 5 Kinder-Spielfiguren | Muss | ✅ Erfüllt | `GameConstants.ChildrenCount = 5` |
 | FA-103 | Genau 1 Hasen-Spielfigur | Muss | ✅ Erfüllt | `GameState.Rabbit` (einzelne Position) |
 | FA-104 | Kindgerechte grafische Darstellung | Muss | ✅ Erfüllt | Vue-Komponenten mit CSS-Animationen, Emoji-Figuren |
 

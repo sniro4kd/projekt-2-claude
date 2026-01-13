@@ -28,7 +28,7 @@
 | Test-ID | Testfall | Status | Ergebnis |
 |---------|----------|--------|----------|
 | AT-001 | 10x10 Spielfeld wird korrekt angezeigt | ✅ Bestanden | Schachbrettmuster mit hellen/dunklen Feldern |
-| AT-002 | Figuren starten auf korrekten Positionen | ✅ Bestanden | 1 Hase, 4 Kinder sichtbar |
+| AT-002 | Figuren starten auf korrekten Positionen | ✅ Bestanden | 1 Hase, 5 Kinder sichtbar |
 | AT-005 | Spieler wählt Rolle vor Spielbeginn | ✅ Bestanden | Hase/Kinder Auswahl funktioniert |
 
 ### 2.2 Spielzug und KI Tests

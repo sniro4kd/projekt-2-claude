@@ -32,7 +32,7 @@ Das Dokument umfasst alle funktionalen und nichtfunktionalen Anforderungen an di
 | Begriff | Definition |
 |---------|------------|
 | Hase | Spielfigur, die versucht, die obere Spielfeldreihe zu erreichen |
-| Kinder | Vier Spielfiguren, die versuchen, den Hasen einzukesseln |
+| Kinder | Fünf Spielfiguren, die versuchen, den Hasen einzukesseln |
 | Schwarze Felder | Spielbare Felder auf dem Schachbrett (wie bei Dame) |
 | Bedenkzeit | Kumulierte Zeit, die ein Spieler für alle seine Züge benötigt |
 | KI | Künstliche Intelligenz, die als Computergegner fungiert |
@@ -99,7 +99,7 @@ CatchTheRabbit ist ein browserbasiertes Strategiespiel, das zur Kundenbindung an
 |----|-------------|-----------|
 | FA-100 | Das Spielfeld ist ein 10x10 Schachbrett | Muss |
 | FA-101 | Nur die schwarzen Felder sind bespielbar (50 Felder) | Muss |
-| FA-102 | Es gibt genau 4 Kinder-Spielfiguren | Muss |
+| FA-102 | Es gibt genau 5 Kinder-Spielfiguren | Muss |
 | FA-103 | Es gibt genau 1 Hasen-Spielfigur | Muss |
 | FA-104 | Spielfiguren werden grafisch kindgerecht dargestellt | Muss |
 
@@ -109,7 +109,7 @@ CatchTheRabbit ist ein browserbasiertes Strategiespiel, das zur Kundenbindung an
 |----|-------------|-----------|
 | FA-200 | Vor Spielbeginn wählt der Spieler seine Rolle (Hase oder Kinder) | Muss |
 | FA-201 | Die Startposition des Hasen wird zufällig auf einem schwarzen Feld der unteren 3 Reihen platziert | Muss |
-| FA-202 | Die Startpositionen der 4 Kinder werden zufällig auf schwarzen Feldern der oberen 3 Reihen platziert | Muss |
+| FA-202 | Die Startpositionen der 5 Kinder werden zufällig auf schwarzen Feldern der oberen 3 Reihen platziert | Muss |
 | FA-203 | Jedes Kind belegt genau ein Feld; keine Überlappungen | Muss |
 
 ### 3.3 Spielregeln und Zugmechanik
@@ -306,3 +306,4 @@ CatchTheRabbit ist ein browserbasiertes Strategiespiel, das zur Kundenbindung an
 | Version | Datum | Autor | Änderung |
 |---------|-------|-------|----------|
 | 1.0 | 21.03.2025 | - | Initiale Version basierend auf Project Proposal |
+| 1.1 | 13.01.2026 | Claude AI | FA-102, FA-202: 4 Kinder → 5 Kinder (Balancing-Anpassung basierend auf Gewinnwahrscheinlichkeits-Analyse) |

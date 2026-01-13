@@ -7,7 +7,7 @@ const props = defineProps<{
   isSelected: boolean;
 }>();
 
-const childEmojis = ['👧', '👦', '👧', '👦'];
+const childEmojis = ['👧', '👦', '👧', '👦', '👧'];
 const emoji = computed(() => {
   if (props.type === 'rabbit') {
     return '🐰';
@@ -57,7 +57,8 @@ const emoji = computed(() => {
 }
 
 .emoji {
-  font-size: 28px;
+  font-size: 22px;
   user-select: none;
+  line-height: 1;
 }
 </style>

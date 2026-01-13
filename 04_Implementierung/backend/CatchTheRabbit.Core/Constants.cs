@@ -6,7 +6,7 @@ namespace CatchTheRabbit.Core;
 public static class GameConstants
 {
     public const int BoardSize = 10;
-    public const int ChildrenCount = 4;
+    public const int ChildrenCount = 5;
 
     public const int RabbitStartMinY = 7;
     public const int RabbitStartMaxY = 9;

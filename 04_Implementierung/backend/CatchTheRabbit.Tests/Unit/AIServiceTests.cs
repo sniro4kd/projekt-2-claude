@@ -146,7 +146,8 @@ public class AIServiceTests
                 new Position(2, 5), // 2+5=7
                 new Position(2, 7), // 2+7=9
                 new Position(6, 5), // 6+5=11
-                new Position(6, 7)  // 6+7=13
+                new Position(6, 7), // 6+7=13
+                new Position(8, 5)  // 8+5=13
             },
             Status = GameStatus.Playing
         };
@@ -179,7 +180,8 @@ public class AIServiceTests
                 new Position(2, 3), // 2+3=5
                 new Position(2, 5), // 2+5=7
                 new Position(4, 3), // 4+3=7
-                new Position(6, 5)  // 6+5=11
+                new Position(6, 5), // 6+5=11
+                new Position(8, 3)  // 8+3=11
             },
             Status = GameStatus.Playing
         };

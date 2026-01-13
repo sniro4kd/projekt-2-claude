@@ -41,7 +41,7 @@ Dieses Dokument beschreibt das detaillierte Design der Systemkomponenten. Es ent
 │  │ + Y: int            │       │ + PlayerRole: PlayerRole    │  │
 │  ├─────────────────────┤       │ + CurrentTurn: PlayerRole   │  │
 │  │ + IsValid(): bool   │       │ + Rabbit: Position          │  │
-│  │ + IsBlackField():   │       │ + Children: Position[4]     │  │
+│  │ + IsBlackField():   │       │ + Children: Position[5]     │  │
 │  │     bool            │       │ + Status: GameStatus        │  │
 │  │ + Equals(): bool    │       │ + PlayerThinkingTimeMs: long│  │
 │  └─────────────────────┘       │ + MoveHistory: List<Move>   │  │
@@ -1026,7 +1026,7 @@ frontend/
 public static class GameConstants
 {
     public const int BoardSize = 10;
-    public const int ChildrenCount = 4;
+    public const int ChildrenCount = 5;
 
     public const int RabbitStartMinY = 7;
     public const int RabbitStartMaxY = 9;

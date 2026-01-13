@@ -39,15 +39,15 @@ async function startGame() {
             <h3>Der Hase</h3>
             <ul>
               <li>Bewegt sich diagonal in alle 4 Richtungen</li>
-              <li>Ziel: Die untere Spielfeldseite erreichen</li>
+              <li>Ziel: Die obere Spielfeldseite erreichen</li>
               <li>Gewinnt, wenn kein Kind ihn mehr erreichen kann</li>
             </ul>
           </div>
           <div class="rule-card children">
             <h3>Die Kinder</h3>
             <ul>
-              <li>Bewegen sich diagonal nach oben</li>
-              <li>4 Kinder arbeiten zusammen</li>
+              <li>Bewegen sich diagonal nach unten</li>
+              <li>5 Kinder arbeiten zusammen</li>
               <li>Ziel: Den Hasen einkreisen</li>
             </ul>
           </div>
