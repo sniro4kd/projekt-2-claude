@@ -59,3 +59,6 @@ app.MapHub<GameHub>("/gamehub");
 app.MapGet("/health", () => Results.Ok(new { status = "healthy" }));
 
 app.Run();
+
+// Marker class for WebApplicationFactory in tests
+public partial class Program { }

@@ -1,0 +1,882 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="05df4130-e89a-4d23-95b0-643916e97342" name="snir@LAPTOP-C19PGU08 2026-01-13 10:52:58" runUser="LAPTOP-C19PGU08\snir" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-01-13T10:52:58.4703140+01:00" queuing="2026-01-13T10:52:58.4703145+01:00" start="2026-01-13T10:52:55.5904705+01:00" finish="2026-01-13T10:53:00.1535310+01:00" />
+  <TestSettings name="default" id="72199795-6899-42c4-8dcf-fe9967de8d8b">
+    <Deployment runDeploymentRoot="snir_LAPTOP-C19PGU08_2026-01-13_10_52_58" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="a22ec844-6736-402a-a30f-94d425dcc0bf" testId="27c23ae7-150b-7cab-cb75-e5513948bcea" testName="CatchTheRabbit.Tests.Unit.GameStateTests.IsOccupied_EmptyPosition_ReturnsFalse" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001693" startTime="2026-01-13T10:52:58.4433809+01:00" endTime="2026-01-13T10:52:58.4433810+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a22ec844-6736-402a-a30f-94d425dcc0bf" />
+    <UnitTestResult executionId="d6fffd46-bb24-4cd3-b3e7-23a0932738a7" testId="34c0e7de-e6f7-e558-20c4-8396e7be3b4c" testName="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_CompletesWithinTimeLimit" computerName="LAPTOP-C19PGU08" duration="00:00:00.4515345" startTime="2026-01-13T10:52:58.4212822+01:00" endTime="2026-01-13T10:52:58.4213185+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6fffd46-bb24-4cd3-b3e7-23a0932738a7" />
+    <UnitTestResult executionId="061f7a38-078a-4bdc-8c53-b6caeae5c9e7" testId="4665b4d0-553d-738e-0afc-0947b1783d92" testName="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.CountBetterEntriesAsync_BestTime_ReturnsZero" computerName="LAPTOP-C19PGU08" duration="00:00:00.0833550" startTime="2026-01-13T10:52:59.2306769+01:00" endTime="2026-01-13T10:52:59.2306772+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="061f7a38-078a-4bdc-8c53-b6caeae5c9e7" />
+    <UnitTestResult executionId="944a696c-0870-4eb0-a783-53b730e2aa2b" testId="e6019c8b-b286-6365-ea39-b80dcd249958" testName="CatchTheRabbit.Tests.Unit.PositionTests.Position_InHashSet_WorksCorrectly" computerName="LAPTOP-C19PGU08" duration="00:00:00.0026344" startTime="2026-01-13T10:52:58.4447964+01:00" endTime="2026-01-13T10:52:58.4447964+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="944a696c-0870-4eb0-a783-53b730e2aa2b" />
+    <UnitTestResult executionId="ec00af7b-69a1-4927-872e-67649f51bce6" testId="e0b32ca5-e2e9-7c40-560a-c20097c8bac5" testName="CatchTheRabbit.Tests.Integration.LeaderboardControllerTests.AddEntry_EmptyNickname_ReturnsBadRequest" computerName="LAPTOP-C19PGU08" duration="00:00:00.0040298" startTime="2026-01-13T10:53:00.0840699+01:00" endTime="2026-01-13T10:53:00.0840702+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ec00af7b-69a1-4927-872e-67649f51bce6" />
+    <UnitTestResult executionId="2fb26315-35e8-4d1b-a1d6-2508716f02c3" testId="2f54b873-a356-a470-f640-0633554a2473" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_ValidPositions_ReturnsTrue(x: 5, y: 5, expected: True)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0004081" startTime="2026-01-13T10:52:58.4425460+01:00" endTime="2026-01-13T10:52:58.4425461+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2fb26315-35e8-4d1b-a1d6-2508716f02c3" />
+    <UnitTestResult executionId="2f221031-dec7-4725-97d1-48598c723143" testId="41a537bf-b116-dca4-fd11-f483d1c6fab9" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: -1, y: 0)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000088" startTime="2026-01-13T10:52:58.4423601+01:00" endTime="2026-01-13T10:52:58.4423602+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f221031-dec7-4725-97d1-48598c723143" />
+    <UnitTestResult executionId="e5e7b10f-c700-4b71-80d4-1bfe9f1c8a69" testId="91924283-3fe9-9c67-6cfd-6bb37bd9e89b" testName="CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_ReturnsSuccess" computerName="LAPTOP-C19PGU08" duration="00:00:00.0041882" startTime="2026-01-13T10:53:00.0644605+01:00" endTime="2026-01-13T10:53:00.0644606+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e5e7b10f-c700-4b71-80d4-1bfe9f1c8a69">
+      <Output>
+        <ErrorInfo>
+          <Message>Expected response.StatusCode to be HttpStatusCode.OK {value: 200}, but found HttpStatusCode.NotFound {value: 404}.</Message>
+          <StackTrace>   at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+   at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
+   at CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_ReturnsSuccess() in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs:line 34&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="948d6e09-7ba9-4ea5-90cd-61f1fe46beb5" testId="603e240a-cc45-efc2-2099-39a73edd5801" testName="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_AsChildren_MovesDownward" computerName="LAPTOP-C19PGU08" duration="00:00:00.0011775" startTime="2026-01-13T10:52:58.4449370+01:00" endTime="2026-01-13T10:52:58.4449371+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="948d6e09-7ba9-4ea5-90cd-61f1fe46beb5" />
+    <UnitTestResult executionId="06f9c4be-3d85-4304-ae4f-5a208882e80d" testId="6c160307-efe2-e8ba-68d2-b7072c996d2e" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_OutOfBounds_IsInvalid(x: 5, y: 10)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0002123" startTime="2026-01-13T10:52:59.1042336+01:00" endTime="2026-01-13T10:52:59.1042336+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06f9c4be-3d85-4304-ae4f-5a208882e80d" />
+    <UnitTestResult executionId="87be25ce-2153-4b6e-97d0-a7565670c5af" testId="32b6112d-bf0f-009c-27e5-a09f3b876776" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.ApplyMove_ValidMove_AddsMoveToHistory" computerName="LAPTOP-C19PGU08" duration="00:00:00.0002009" startTime="2026-01-13T10:52:59.1050332+01:00" endTime="2026-01-13T10:52:59.1050333+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87be25ce-2153-4b6e-97d0-a7565670c5af" />
+    <UnitTestResult executionId="987cd4f8-ea0b-4c6a-8b8c-a4d8bff53617" testId="3480bd35-0779-136f-db05-d9378a5b5102" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.CreateGame_AsRabbit_RabbitOnValidPosition" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001145" startTime="2026-01-13T10:52:59.1044297+01:00" endTime="2026-01-13T10:52:59.1044298+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="987cd4f8-ea0b-4c6a-8b8c-a4d8bff53617" />
+    <UnitTestResult executionId="f0fe3860-eb58-47c4-84f3-51717501a213" testId="fe348993-5923-4c42-8a2b-0d3461580936" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: 10, y: 10)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000157" startTime="2026-01-13T10:52:58.4403346+01:00" endTime="2026-01-13T10:52:58.4403347+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f0fe3860-eb58-47c4-84f3-51717501a213" />
+    <UnitTestResult executionId="9c807136-4301-490f-b6ae-f9df0a82fc72" testId="b2966f41-1de9-d51c-610a-d8061ee431fe" testName="CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_FourChildrenPresent" computerName="LAPTOP-C19PGU08" duration="00:00:00.0031712" startTime="2026-01-13T10:53:00.0549165+01:00" endTime="2026-01-13T10:53:00.0549168+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c807136-4301-490f-b6ae-f9df0a82fc72">
+      <Output>
+        <ErrorInfo>
+          <Message>System.Text.Json.JsonException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.&#xD;
+---- System.Text.Json.JsonReaderException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.</Message>
+          <StackTrace>   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack&amp; state, JsonReaderException ex)&#xD;
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState&amp; bufferState, JsonReaderState&amp; jsonReaderState, ReadStack&amp; readStack, T&amp; value)&#xD;
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)&#xD;
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)&#xD;
+   at CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_FourChildrenPresent() in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs:line 68&#xD;
+--- End of stack trace from previous location ---&#xD;
+----- Inner Stack Trace -----&#xD;
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader&amp; json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)&#xD;
+   at System.Text.Json.Utf8JsonReader.Read()&#xD;
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ce711153-bc1e-4824-b369-e0e79ca07361" testId="dd00db78-d3af-39fc-cdb4-376228067726" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.CreateGame_AsChildren_ReturnsCorrectInitialState" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001475" startTime="2026-01-13T10:52:59.1045348+01:00" endTime="2026-01-13T10:52:59.1045348+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce711153-bc1e-4824-b369-e0e79ca07361" />
+    <UnitTestResult executionId="570db1d6-6164-45fe-82dc-bd4717ec1623" testId="a0a93b60-80b0-fd2e-7415-36e8fb9b919a" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: 0, y: -1)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000128" startTime="2026-01-13T10:52:58.4422976+01:00" endTime="2026-01-13T10:52:58.4422977+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="570db1d6-6164-45fe-82dc-bd4717ec1623" />
+    <UnitTestResult executionId="81a011e5-924d-45cd-8e97-2c171c5c476d" testId="1a917cec-3b47-2007-05a9-eb24b57d6e26" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.CreateGame_AsRabbit_ChildrenOnValidPositions" computerName="LAPTOP-C19PGU08" duration="00:00:00.0002317" startTime="2026-01-13T10:52:59.1043747+01:00" endTime="2026-01-13T10:52:59.1043747+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81a011e5-924d-45cd-8e97-2c171c5c476d" />
+    <UnitTestResult executionId="783a3035-0cfd-4aba-a5fc-96e07ab865ec" testId="023a0c79-c45c-6ed0-4e50-9527b18ac8d4" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsBlackField_ReturnsCorrectValue(x: 0, y: 0, expected: False)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000035" startTime="2026-01-13T10:52:58.4401530+01:00" endTime="2026-01-13T10:52:58.4401530+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="783a3035-0cfd-4aba-a5fc-96e07ab865ec" />
+    <UnitTestResult executionId="42c26ae8-9bd5-4580-9b3d-ae4442cbb68b" testId="1dbd177c-240b-720b-d56f-28968a1385f2" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: 11, y: 5)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001756" startTime="2026-01-13T10:52:58.4402125+01:00" endTime="2026-01-13T10:52:58.4402125+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42c26ae8-9bd5-4580-9b3d-ae4442cbb68b" />
+    <UnitTestResult executionId="58902169-8953-493f-93ef-9ee78f07d1c2" testId="3709d791-3963-bcd7-81cc-1dff93912e80" testName="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.AddEntryAsync_MultipleEntries_AllSaved" computerName="LAPTOP-C19PGU08" duration="00:00:00.0206600" startTime="2026-01-13T10:52:59.6744779+01:00" endTime="2026-01-13T10:52:59.6744784+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="58902169-8953-493f-93ef-9ee78f07d1c2" />
+    <UnitTestResult executionId="c4c82afb-fbb0-4521-ae99-3c37eb26c126" testId="688db260-24a7-138e-90c0-ab4988d98622" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_OutOfBounds_IsInvalid(x: 0, y: -1)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000050" startTime="2026-01-13T10:52:59.1043180+01:00" endTime="2026-01-13T10:52:59.1043180+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c4c82afb-fbb0-4521-ae99-3c37eb26c126" />
+    <UnitTestResult executionId="39516d4b-ebf2-4dc8-8e39-91510c8b1286" testId="f3c6ddc0-ad4f-3c7b-2f52-204103673ba4" testName="CatchTheRabbit.Tests.Unit.GameStateTests.GameState_InitialValues_AreCorrect" computerName="LAPTOP-C19PGU08" duration="00:00:00.0039528" startTime="2026-01-13T10:52:58.4458985+01:00" endTime="2026-01-13T10:52:58.4458985+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39516d4b-ebf2-4dc8-8e39-91510c8b1286" />
+    <UnitTestResult executionId="18b465d8-4911-476a-ab4d-4840a936bbab" testId="d3a478d4-9683-056c-e232-38d2a0f43a75" testName="CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_InvalidRole_ReturnsBadRequest" computerName="LAPTOP-C19PGU08" duration="00:00:00.0046839" startTime="2026-01-13T10:53:00.0072990+01:00" endTime="2026-01-13T10:53:00.0072994+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18b465d8-4911-476a-ab4d-4840a936bbab">
+      <Output>
+        <ErrorInfo>
+          <Message>Expected response.StatusCode to be HttpStatusCode.BadRequest {value: 400}, but found HttpStatusCode.NotFound {value: 404}.</Message>
+          <StackTrace>   at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+   at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
+   at CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_InvalidRole_ReturnsBadRequest() in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs:line 109&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ba35d274-f877-4dc9-9b9e-d6a4eac84430" testId="0da7c798-cee5-42a5-cc28-b87c51cc2889" testName="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.CountBetterEntriesAsync_ReturnsCorrectCount" computerName="LAPTOP-C19PGU08" duration="00:00:00.0567673" startTime="2026-01-13T10:52:59.5620387+01:00" endTime="2026-01-13T10:52:59.5620390+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba35d274-f877-4dc9-9b9e-d6a4eac84430" />
+    <UnitTestResult executionId="91dbf7d2-bcb7-43a0-8cac-12ec3d484f18" testId="502e22f8-e6f4-8b89-f38b-ef884c3ca1c0" testName="CatchTheRabbit.Tests.Integration.GameControllerTests.GetState_InvalidId_ReturnsNotFound" computerName="LAPTOP-C19PGU08" duration="00:00:00.0313083" startTime="2026-01-13T10:53:00.0377434+01:00" endTime="2026-01-13T10:53:00.0377437+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91dbf7d2-bcb7-43a0-8cac-12ec3d484f18" />
+    <UnitTestResult executionId="4912d18d-9e0d-4215-bf4b-365902ca4d56" testId="3b8209fa-100e-cd2c-0867-d5da6dfa5f8b" testName="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.GetTopEntriesAsync_EmptyDatabase_ReturnsEmptyList" computerName="LAPTOP-C19PGU08" duration="00:00:00.0041574" startTime="2026-01-13T10:52:59.6001432+01:00" endTime="2026-01-13T10:52:59.6001437+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4912d18d-9e0d-4215-bf4b-365902ca4d56" />
+    <UnitTestResult executionId="d65e5629-b5e8-40ef-ad6e-16389ddf92a3" testId="55b31d23-6bf9-1977-ccad-ad0657f6c449" testName="CatchTheRabbit.Tests.Unit.GameStateTests.IsOccupied_PositionWithChild_ReturnsTrue" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001636" startTime="2026-01-13T10:52:58.4447320+01:00" endTime="2026-01-13T10:52:58.4447321+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d65e5629-b5e8-40ef-ad6e-16389ddf92a3" />
+    <UnitTestResult executionId="9f35a282-c07b-4a1f-8122-7fff0584ef94" testId="6441b310-1e73-f1e3-a463-4f774a55d5e4" testName="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.GetTopEntriesAsync_With25Entries_Returns20" computerName="LAPTOP-C19PGU08" duration="00:00:00.1964280" startTime="2026-01-13T10:52:59.4920431+01:00" endTime="2026-01-13T10:52:59.4920433+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f35a282-c07b-4a1f-8122-7fff0584ef94" />
+    <UnitTestResult executionId="9ae134a0-a299-4bd2-a5f4-c54fda5c2cab" testId="5e435ceb-f22a-5811-b3d5-d4e64c93adf9" testName="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_ComplexState_CompletesQuickly" computerName="LAPTOP-C19PGU08" duration="00:00:00.0005772" startTime="2026-01-13T10:52:58.4662961+01:00" endTime="2026-01-13T10:52:58.4662963+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9ae134a0-a299-4bd2-a5f4-c54fda5c2cab">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : No valid moves available</Message>
+          <StackTrace>   at CatchTheRabbit.Core.Services.AIService.CalculateBestMove(GameState state, PlayerRole aiRole, Int32 timeLimitMs) in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Core\Services\AIService.cs:line 48&#xD;
+   at CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_ComplexState_CompletesQuickly() in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Unit\AIServiceTests.cs:line 185&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2638ee6c-4ba6-4e70-8d80-905fd168de93" testId="43b87d37-89a1-8a4b-419d-39a3c1fdf69d" testName="CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsChildren_ReturnsSuccess" computerName="LAPTOP-C19PGU08" duration="00:00:02.0323421" startTime="2026-01-13T10:52:59.9995122+01:00" endTime="2026-01-13T10:52:59.9995124+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2638ee6c-4ba6-4e70-8d80-905fd168de93">
+      <Output>
+        <ErrorInfo>
+          <Message>Expected response.StatusCode to be HttpStatusCode.OK {value: 200}, but found HttpStatusCode.NotFound {value: 404}.</Message>
+          <StackTrace>   at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+   at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
+   at CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsChildren_ReturnsSuccess() in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs:line 88&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="46eae052-df2d-497e-92ec-ee1670410a97" testId="90b4d1cf-fa57-8a7b-39ee-6b8c723c0aad" testName="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.GetTopEntriesAsync_FiltersByRole" computerName="LAPTOP-C19PGU08" duration="00:00:00.0372001" startTime="2026-01-13T10:52:59.2819089+01:00" endTime="2026-01-13T10:52:59.2819092+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="46eae052-df2d-497e-92ec-ee1670410a97" />
+    <UnitTestResult executionId="f0dfee6a-c65e-45ef-aa55-fc15634f4ac2" testId="5b49273f-e519-9598-f5b2-70e27de80a32" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_ChildMoveUpward_IsInvalid" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001794" startTime="2026-01-13T10:52:59.1049745+01:00" endTime="2026-01-13T10:52:59.1049746+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f0dfee6a-c65e-45ef-aa55-fc15634f4ac2" />
+    <UnitTestResult executionId="9e3cb62b-df27-4b67-80e7-b50d37195bbd" testId="cef3b47e-4a77-c75b-2ea1-42b0eaf04ef3" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_OutOfBounds_IsInvalid(x: 10, y: 5)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001254" startTime="2026-01-13T10:52:59.1041898+01:00" endTime="2026-01-13T10:52:59.1041899+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e3cb62b-df27-4b67-80e7-b50d37195bbd" />
+    <UnitTestResult executionId="cf3e331c-292e-41c3-8856-9342ec9c776d" testId="832ae09b-2e10-c7c3-035b-a9914a9c9b89" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: 0, y: 10)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000115" startTime="2026-01-13T10:52:58.4404198+01:00" endTime="2026-01-13T10:52:58.4404198+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf3e331c-292e-41c3-8856-9342ec9c776d" />
+    <UnitTestResult executionId="30744bd3-7077-4316-a569-f3edb04a1238" testId="c647c180-83ea-dd2f-cd1d-50ba1195e12f" testName="CatchTheRabbit.Tests.Unit.PositionTests.Equals_SamePosition_ReturnsTrue" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001893" startTime="2026-01-13T10:52:58.4448651+01:00" endTime="2026-01-13T10:52:58.4448651+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="30744bd3-7077-4316-a569-f3edb04a1238" />
+    <UnitTestResult executionId="b095ea96-cfcb-4016-a063-b551aa0cfc70" testId="23fe39fe-33d0-ce9f-e552-06ef72016b4d" testName="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_MultipleStates_AllComplete" computerName="LAPTOP-C19PGU08" duration="00:00:00.0004813" startTime="2026-01-13T10:52:58.4458286+01:00" endTime="2026-01-13T10:52:58.4458287+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b095ea96-cfcb-4016-a063-b551aa0cfc70" />
+    <UnitTestResult executionId="5fd7bf9e-e2ce-4f32-97da-d74445a7f511" testId="fd273042-c1c2-66cb-8fad-afdec24a17a2" testName="CatchTheRabbit.Tests.Unit.GameStateTests.Clone_ChildrenArray_IsIndependent" computerName="LAPTOP-C19PGU08" duration="00:00:00.4508965" startTime="2026-01-13T10:52:58.4258669+01:00" endTime="2026-01-13T10:52:58.4258670+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5fd7bf9e-e2ce-4f32-97da-d74445a7f511" />
+    <UnitTestResult executionId="839a0b5c-fb69-4cff-8307-b035c4b865fc" testId="fb43d733-5154-f28c-ae01-5f6c17db1f41" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_RabbitCanMoveAllDiagonalDirections" computerName="LAPTOP-C19PGU08" duration="00:00:00.0002032" startTime="2026-01-13T10:52:59.1050808+01:00" endTime="2026-01-13T10:52:59.1050808+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="839a0b5c-fb69-4cff-8307-b035c4b865fc" />
+    <UnitTestResult executionId="f8eec77d-1a24-441d-a669-f9527d26b8e9" testId="8ea45976-9141-04f6-73b9-0fc6b178cd02" testName="CatchTheRabbit.Tests.Unit.GameStateTests.IsOccupied_PositionWithRabbit_ReturnsTrue" computerName="LAPTOP-C19PGU08" duration="00:00:00.0003181" startTime="2026-01-13T10:52:58.4436532+01:00" endTime="2026-01-13T10:52:58.4436533+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f8eec77d-1a24-441d-a669-f9527d26b8e9" />
+    <UnitTestResult executionId="fe3217c2-b1f5-4d87-bad7-16c170d35fed" testId="7487dcd8-35a9-1b46-e6c0-617e2cb34032" testName="CatchTheRabbit.Tests.Unit.PositionTests.ToString_ReturnsReadableFormat" computerName="LAPTOP-C19PGU08" duration="00:00:00.4508602" startTime="2026-01-13T10:52:58.4253792+01:00" endTime="2026-01-13T10:52:58.4253793+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe3217c2-b1f5-4d87-bad7-16c170d35fed" />
+    <UnitTestResult executionId="1ca46ea9-ee15-449e-bb0f-a3731d0d122d" testId="9416edd4-f79f-0950-9225-f86d425a478e" testName="CatchTheRabbit.Tests.Unit.GameStateTests.Clone_ReturnsDeepCopy" computerName="LAPTOP-C19PGU08" duration="00:00:00.0013828" startTime="2026-01-13T10:52:58.4446344+01:00" endTime="2026-01-13T10:52:58.4446345+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ca46ea9-ee15-449e-bb0f-a3731d0d122d" />
+    <UnitTestResult executionId="261123b4-4771-4f8e-83c3-2b7afb0fb49e" testId="2867b4f9-b96e-e727-4a2b-387f183cda21" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_ValidPositions_ReturnsTrue(x: 0, y: 0, expected: True)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001697" startTime="2026-01-13T10:52:58.4424624+01:00" endTime="2026-01-13T10:52:58.4424625+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="261123b4-4771-4f8e-83c3-2b7afb0fb49e" />
+    <UnitTestResult executionId="17d03c44-59f5-420a-8f10-9ca85c159020" testId="49161fe1-bcfb-3386-db17-f5c83c71bb8e" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.CreateGame_AsRabbit_ReturnsCorrectInitialState" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001475" startTime="2026-01-13T10:52:59.1051356+01:00" endTime="2026-01-13T10:52:59.1051356+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17d03c44-59f5-420a-8f10-9ca85c159020" />
+    <UnitTestResult executionId="9df4c305-6613-44e8-83d8-cc01782c9342" testId="1e7034ac-091c-bb94-5cd5-9732664183a4" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: 10, y: 0)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0003824" startTime="2026-01-13T10:52:58.4402865+01:00" endTime="2026-01-13T10:52:58.4402865+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9df4c305-6613-44e8-83d8-cc01782c9342" />
+    <UnitTestResult executionId="5c6e6f65-e81f-4620-bf67-6cce4e7eaba9" testId="0128662f-8dd1-a17e-0c50-f011b404a2c2" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsBlackField_ReturnsCorrectValue(x: 4, y: 4, expected: False)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0004034" startTime="2026-01-13T10:52:58.4270793+01:00" endTime="2026-01-13T10:52:58.4270793+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c6e6f65-e81f-4620-bf67-6cce4e7eaba9" />
+    <UnitTestResult executionId="c5c447c6-5aa7-47dd-aa8c-9f5e8960e300" testId="877ae6e5-c488-c197-9c9b-e33f5da50713" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: 5, y: 11)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000088" startTime="2026-01-13T10:52:58.4404926+01:00" endTime="2026-01-13T10:52:58.4404927+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c5c447c6-5aa7-47dd-aa8c-9f5e8960e300" />
+    <UnitTestResult executionId="d524cb65-149e-4e52-97b4-aece904bf738" testId="72e13689-3d95-daa2-d9ec-6107ed9b378d" testName="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_AsRabbit_MovesDiagonally" computerName="LAPTOP-C19PGU08" duration="00:00:00.0004166" startTime="2026-01-13T10:52:58.4664170+01:00" endTime="2026-01-13T10:52:58.4664171+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d524cb65-149e-4e52-97b4-aece904bf738" />
+    <UnitTestResult executionId="f00825ec-7115-4f33-9adc-d5abf1d49381" testId="c1be48c8-7b38-6399-548d-bbea31b312d4" testName="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_RabbitNearWin_MovesTowardGoal" computerName="LAPTOP-C19PGU08" duration="00:00:00.0009924" startTime="2026-01-13T10:52:58.4650864+01:00" endTime="2026-01-13T10:52:58.4650867+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f00825ec-7115-4f33-9adc-d5abf1d49381">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : No valid moves available</Message>
+          <StackTrace>   at CatchTheRabbit.Core.Services.AIService.CalculateBestMove(GameState state, PlayerRole aiRole, Int32 timeLimitMs) in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Core\Services\AIService.cs:line 48&#xD;
+   at CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_RabbitNearWin_MovesTowardGoal() in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Unit\AIServiceTests.cs:line 153&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="27acd385-8095-4dcd-bb77-c4bcbe40ff96" testId="9fbb01e5-4b60-f0f0-7cc4-d4d584510b3f" testName="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.AddEntryAsync_ValidEntry_SavesSuccessfully" computerName="LAPTOP-C19PGU08" duration="00:00:00.0064082" startTime="2026-01-13T10:52:59.5815602+01:00" endTime="2026-01-13T10:52:59.5815605+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27acd385-8095-4dcd-bb77-c4bcbe40ff96" />
+    <UnitTestResult executionId="e645ad48-b410-49c5-8a2e-f1b74fca4b26" testId="2df3d38d-7dc5-5172-230b-1e5f4607b3b3" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsBlackField_ReturnsCorrectValue(x: 2, y: 2, expected: False)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000069" startTime="2026-01-13T10:52:58.4276301+01:00" endTime="2026-01-13T10:52:58.4276303+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e645ad48-b410-49c5-8a2e-f1b74fca4b26" />
+    <UnitTestResult executionId="6914c6f1-2a9c-4be3-8b65-06bff6df247c" testId="5f6a8f69-9de5-c4da-f6cc-b3d1db5f1022" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_ToOccupiedField_IsInvalid" computerName="LAPTOP-C19PGU08" duration="00:00:01.1336554" startTime="2026-01-13T10:52:59.1008677+01:00" endTime="2026-01-13T10:52:59.1008679+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6914c6f1-2a9c-4be3-8b65-06bff6df247c">
+      <Output>
+        <ErrorInfo>
+          <Message>Expected result.ErrorMessage "Target position is not a black field" to contain "occupied".</Message>
+          <StackTrace>   at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+   at FluentAssertions.Primitives.StringAssertions`1.Contain(String expected, String because, Object[] becauseArgs)&#xD;
+   at CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_ToOccupiedField_IsInvalid() in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Unit\GameServiceTests.cs:line 230&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e2af023a-4b43-4e1e-b2c8-8e4d1290a3c6" testId="9b6574e6-05b5-dc9f-aa53-f415b68a02ed" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.CheckGameEnd_RabbitBlocked_ChildrenWin" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001425" startTime="2026-01-13T10:52:59.1053658+01:00" endTime="2026-01-13T10:52:59.1053659+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e2af023a-4b43-4e1e-b2c8-8e4d1290a3c6" />
+    <UnitTestResult executionId="38ac0bf7-8c80-44a5-a838-7b73e8a17a8a" testId="02a9586d-0010-016b-f2e7-d3253bc33823" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: -1, y: -1)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000149" startTime="2026-01-13T10:52:58.4421588+01:00" endTime="2026-01-13T10:52:58.4421589+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="38ac0bf7-8c80-44a5-a838-7b73e8a17a8a" />
+    <UnitTestResult executionId="f7e78e56-9c8a-4bde-8efa-7780e6cd391b" testId="ec1586df-f3ef-145f-b316-f4b1d29a49f7" testName="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_AsRabbit_ReturnsValidMove" computerName="LAPTOP-C19PGU08" duration="00:00:00.0003121" startTime="2026-01-13T10:52:58.4450707+01:00" endTime="2026-01-13T10:52:58.4450708+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7e78e56-9c8a-4bde-8efa-7780e6cd391b" />
+    <UnitTestResult executionId="b6a29400-1dc8-460c-b524-3f43170f4154" testId="3e81cf2d-e038-6a5a-bee7-cbe2cee1b8c9" testName="CatchTheRabbit.Tests.Unit.PositionTests.Equals_DifferentX_ReturnsFalse" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001784" startTime="2026-01-13T10:52:58.4457390+01:00" endTime="2026-01-13T10:52:58.4457392+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b6a29400-1dc8-460c-b524-3f43170f4154" />
+    <UnitTestResult executionId="f40c6a61-046f-4698-a344-167be85639ff" testId="b5d826ac-83aa-a36a-f150-2d5f697e58b1" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.ApplyMove_ValidMove_SwitchesTurn" computerName="LAPTOP-C19PGU08" duration="00:00:00.0003451" startTime="2026-01-13T10:52:59.1057864+01:00" endTime="2026-01-13T10:52:59.1057865+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f40c6a61-046f-4698-a344-167be85639ff" />
+    <UnitTestResult executionId="0787e2b1-acff-477a-9b2f-5d0f7da2b670" testId="be1f3bc9-7bcd-4822-7a03-f6a8eb72564b" testName="CatchTheRabbit.Tests.Integration.LeaderboardControllerTests.GetLeaderboard_ReturnsSuccess" computerName="LAPTOP-C19PGU08" duration="00:00:00.0124759" startTime="2026-01-13T10:53:00.0793240+01:00" endTime="2026-01-13T10:53:00.0793242+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0787e2b1-acff-477a-9b2f-5d0f7da2b670" />
+    <UnitTestResult executionId="05299a93-6511-4868-9b47-d3ec8260c34f" testId="78e5c940-2494-3871-0161-1e686a2a4259" testName="CatchTheRabbit.Tests.Integration.GameControllerTests.GetState_ValidId_ReturnsGameState" computerName="LAPTOP-C19PGU08" duration="00:00:00.0032161" startTime="2026-01-13T10:53:00.0600886+01:00" endTime="2026-01-13T10:53:00.0600888+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="05299a93-6511-4868-9b47-d3ec8260c34f">
+      <Output>
+        <ErrorInfo>
+          <Message>System.Text.Json.JsonException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.&#xD;
+---- System.Text.Json.JsonReaderException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.</Message>
+          <StackTrace>   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack&amp; state, JsonReaderException ex)&#xD;
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState&amp; bufferState, JsonReaderState&amp; jsonReaderState, ReadStack&amp; readStack, T&amp; value)&#xD;
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)&#xD;
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)&#xD;
+   at CatchTheRabbit.Tests.Integration.GameControllerTests.GetState_ValidId_ReturnsGameState() in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs:line 156&#xD;
+--- End of stack trace from previous location ---&#xD;
+----- Inner Stack Trace -----&#xD;
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader&amp; json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)&#xD;
+   at System.Text.Json.Utf8JsonReader.Read()&#xD;
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="38229748-9e25-47c1-bcc3-804ccc39f9e6" testId="71d0dad0-e8e3-1f3a-f9af-385987412896" testName="CatchTheRabbit.Tests.Unit.PositionTests.GetHashCode_SamePosition_SameHashCode" computerName="LAPTOP-C19PGU08" duration="00:00:00.0010600" startTime="2026-01-13T10:52:58.4435180+01:00" endTime="2026-01-13T10:52:58.4435180+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="38229748-9e25-47c1-bcc3-804ccc39f9e6" />
+    <UnitTestResult executionId="0e56dc94-8d85-4866-8a42-2c5d89f8d765" testId="919e6396-9568-e8b7-a273-ea43a0acc690" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsBlackField_ReturnsCorrectValue(x: 1, y: 0, expected: True)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000046" startTime="2026-01-13T10:52:58.4400863+01:00" endTime="2026-01-13T10:52:58.4400864+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e56dc94-8d85-4866-8a42-2c5d89f8d765" />
+    <UnitTestResult executionId="5f82d2f2-517a-4a8e-9ebf-6c9fa9db2882" testId="b709d431-7ca6-8d9d-956b-a8162af8a8a1" testName="CatchTheRabbit.Tests.Unit.GameStateTests.Clone_ModifyingOriginal_DoesNotAffectClone" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001908" startTime="2026-01-13T10:52:58.4434572+01:00" endTime="2026-01-13T10:52:58.4434572+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f82d2f2-517a-4a8e-9ebf-6c9fa9db2882" />
+    <UnitTestResult executionId="0e96218b-e65b-42d1-950a-52724a6532a2" testId="21db7e39-ca51-04a7-5243-019ed65e2a66" testName="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.GetTopEntriesAsync_SortedByThinkingTime" computerName="LAPTOP-C19PGU08" duration="00:00:00.0222537" startTime="2026-01-13T10:52:59.6355942+01:00" endTime="2026-01-13T10:52:59.6355946+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e96218b-e65b-42d1-950a-52724a6532a2" />
+    <UnitTestResult executionId="2a09b902-0d9d-45ee-b1fd-2cf4ffe056dc" testId="80cd1d4f-f97b-f12f-c73a-5e7a0625862a" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.CheckGameEnd_RabbitReachesTopRow_RabbitWins" computerName="LAPTOP-C19PGU08" duration="00:00:00.0001066" startTime="2026-01-13T10:52:59.1044758+01:00" endTime="2026-01-13T10:52:59.1044758+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a09b902-0d9d-45ee-b1fd-2cf4ffe056dc" />
+    <UnitTestResult executionId="604d8e84-d3d3-467b-a3f5-53e7dc60dcd5" testId="b4aaaa59-a96b-e308-219d-b21988d75882" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsBlackField_ReturnsCorrectValue(x: 0, y: 1, expected: True)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000096" startTime="2026-01-13T10:52:58.4274981+01:00" endTime="2026-01-13T10:52:58.4274982+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="604d8e84-d3d3-467b-a3f5-53e7dc60dcd5" />
+    <UnitTestResult executionId="70d40ccc-61a8-4216-bc67-60b6f90ab940" testId="6f57bb8b-e066-a776-e732-770ee6a5fd8e" testName="CatchTheRabbit.Tests.Unit.GameStateTests.GameState_Id_IsUnique" computerName="LAPTOP-C19PGU08" duration="00:00:00.0008175" startTime="2026-01-13T10:52:58.4435752+01:00" endTime="2026-01-13T10:52:58.4435752+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="70d40ccc-61a8-4216-bc67-60b6f90ab940" />
+    <UnitTestResult executionId="eb683073-1dac-418f-84a3-b7df7ebf7f3d" testId="7b2fc1b0-8d9f-945e-d60e-367928539b3b" testName="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_AsChildren_ReturnsValidMove" computerName="LAPTOP-C19PGU08" duration="00:00:00.0063668" startTime="2026-01-13T10:52:58.4437442+01:00" endTime="2026-01-13T10:52:58.4437442+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eb683073-1dac-418f-84a3-b7df7ebf7f3d" />
+    <UnitTestResult executionId="a12f2c2c-5745-483f-84e1-9da136c16663" testId="74f0f32d-ab95-9ccb-4bb4-f63bec9921ef" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_ValidPositions_ReturnsTrue(x: 9, y: 0, expected: True)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000133" startTime="2026-01-13T10:52:58.4426027+01:00" endTime="2026-01-13T10:52:58.4426028+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a12f2c2c-5745-483f-84e1-9da136c16663" />
+    <UnitTestResult executionId="c8267b10-d71c-4f25-89ed-63252c43d9c4" testId="0c856e57-b4ca-b799-36dc-e62337723ad0" testName="CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_RabbitOnValidPosition" computerName="LAPTOP-C19PGU08" duration="00:00:00.0025398" startTime="2026-01-13T10:53:00.0825912+01:00" endTime="2026-01-13T10:53:00.0825914+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8267b10-d71c-4f25-89ed-63252c43d9c4">
+      <Output>
+        <ErrorInfo>
+          <Message>System.Text.Json.JsonException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.&#xD;
+---- System.Text.Json.JsonReaderException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.</Message>
+          <StackTrace>   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack&amp; state, JsonReaderException ex)&#xD;
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState&amp; bufferState, JsonReaderState&amp; jsonReaderState, ReadStack&amp; readStack, T&amp; value)&#xD;
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)&#xD;
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)&#xD;
+   at CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_RabbitOnValidPosition() in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs:line 52&#xD;
+--- End of stack trace from previous location ---&#xD;
+----- Inner Stack Trace -----&#xD;
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader&amp; json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)&#xD;
+   at System.Text.Json.Utf8JsonReader.Read()&#xD;
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ea68e391-fae9-4cb6-a527-2fcf4d5807c5" testId="8ab94e2b-9d3c-1ee2-18df-0c212bd14bf4" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_ChildMoveDownward_IsValid" computerName="LAPTOP-C19PGU08" duration="00:00:00.0002703" startTime="2026-01-13T10:52:59.1041300+01:00" endTime="2026-01-13T10:52:59.1041301+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea68e391-fae9-4cb6-a527-2fcf4d5807c5" />
+    <UnitTestResult executionId="4f01110e-7a96-4bd9-820a-7fe39f108b93" testId="657a396c-f0b0-a3c2-610a-55f466a423f2" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsBlackField_ReturnsCorrectValue(x: 2, y: 3, expected: True)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0003886" startTime="2026-01-13T10:52:58.4273488+01:00" endTime="2026-01-13T10:52:58.4273489+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f01110e-7a96-4bd9-820a-7fe39f108b93" />
+    <UnitTestResult executionId="2aea300c-f2a1-44b3-984f-fc01c2ff19da" testId="d26c0eeb-8b91-9004-f641-bbe81c30bd64" testName="CatchTheRabbit.Tests.Integration.GameControllerTests.HealthCheck_ReturnsHealthy" computerName="LAPTOP-C19PGU08" duration="00:00:00.0137826" startTime="2026-01-13T10:53:00.0776262+01:00" endTime="2026-01-13T10:53:00.0776263+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2aea300c-f2a1-44b3-984f-fc01c2ff19da" />
+    <UnitTestResult executionId="19fb7c73-f7a4-491e-bb16-4a78ca0e0d5f" testId="7b805069-5af9-88f3-0742-d2335b27d7de" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_OutOfBounds_IsInvalid(x: -1, y: 0)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000089" startTime="2026-01-13T10:52:59.1042732+01:00" endTime="2026-01-13T10:52:59.1042732+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19fb7c73-f7a4-491e-bb16-4a78ca0e0d5f" />
+    <UnitTestResult executionId="ac46b6de-848f-4354-bd25-a2e2f90af141" testId="149b6e6c-cf68-0419-fd2a-148dd0925005" testName="CatchTheRabbit.Tests.Integration.GameControllerTests.MakeMove_ValidMove_ReturnsSuccess" computerName="LAPTOP-C19PGU08" duration="00:00:00.0102270" startTime="2026-01-13T10:53:00.0508566+01:00" endTime="2026-01-13T10:53:00.0508569+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ac46b6de-848f-4354-bd25-a2e2f90af141">
+      <Output>
+        <ErrorInfo>
+          <Message>System.Text.Json.JsonException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.&#xD;
+---- System.Text.Json.JsonReaderException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.</Message>
+          <StackTrace>   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack&amp; state, JsonReaderException ex)&#xD;
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState&amp; bufferState, JsonReaderState&amp; jsonReaderState, ReadStack&amp; readStack, T&amp; value)&#xD;
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)&#xD;
+   at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)&#xD;
+   at CatchTheRabbit.Tests.Integration.GameControllerTests.MakeMove_ValidMove_ReturnsSuccess() in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs:line 122&#xD;
+--- End of stack trace from previous location ---&#xD;
+----- Inner Stack Trace -----&#xD;
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader&amp; json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)&#xD;
+   at System.Text.Json.Utf8JsonReader.Read()&#xD;
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="12e297c1-b5d7-4421-b586-8e8d9c708d3b" testId="d42619d0-e571-bac8-ce1f-67db40f8d27b" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_ValidPositions_ReturnsTrue(x: 0, y: 9, expected: True)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000087" startTime="2026-01-13T10:52:58.4427017+01:00" endTime="2026-01-13T10:52:58.4427018+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12e297c1-b5d7-4421-b586-8e8d9c708d3b" />
+    <UnitTestResult executionId="ff6be913-c60c-49ec-a252-0487de376f11" testId="24c12755-43c9-ed39-edb2-84c8fd359192" testName="CatchTheRabbit.Tests.Unit.GameStateTests.Clone_ModifyingClone_DoesNotAffectOriginal" computerName="LAPTOP-C19PGU08" duration="00:00:00.0012461" startTime="2026-01-13T10:52:58.4426374+01:00" endTime="2026-01-13T10:52:58.4426374+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff6be913-c60c-49ec-a252-0487de376f11" />
+    <UnitTestResult executionId="1ffa6265-57e0-4a9a-be75-0ef877022cc7" testId="c1bbef04-bdd8-2e86-fa09-c255636a605a" testName="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_ValidPositions_ReturnsTrue(x: 9, y: 9, expected: True)" computerName="LAPTOP-C19PGU08" duration="00:00:00.0000083" startTime="2026-01-13T10:52:58.4432803+01:00" endTime="2026-01-13T10:52:58.4432809+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ffa6265-57e0-4a9a-be75-0ef877022cc7" />
+    <UnitTestResult executionId="8643ec7b-bf43-4601-8eaf-7f085681af84" testId="537d0727-6ca3-86b1-0a22-cba9e66ac39b" testName="CatchTheRabbit.Tests.Unit.PositionTests.Position_CanBeUsedAsDictionaryKey" computerName="LAPTOP-C19PGU08" duration="00:00:00.0084139" startTime="2026-01-13T10:52:58.4459798+01:00" endTime="2026-01-13T10:52:58.4459799+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8643ec7b-bf43-4601-8eaf-7f085681af84" />
+    <UnitTestResult executionId="99740ee9-b7b1-4641-a945-ba408b605a62" testId="3a54c03c-09e7-8c9c-baef-9c5396d32d4a" testName="CatchTheRabbit.Tests.Unit.PositionTests.Equals_DifferentY_ReturnsFalse" computerName="LAPTOP-C19PGU08" duration="00:00:00.0002671" startTime="2026-01-13T10:52:58.4450051+01:00" endTime="2026-01-13T10:52:58.4450052+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99740ee9-b7b1-4641-a945-ba408b605a62" />
+    <UnitTestResult executionId="d2911ae5-e11f-4591-9acb-e9fd517d0531" testId="298db026-171b-de36-da64-3b47456f323d" testName="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_RabbitDiagonalMove_IsValid" computerName="LAPTOP-C19PGU08" duration="00:00:00.0029516" startTime="2026-01-13T10:52:59.1035423+01:00" endTime="2026-01-13T10:52:59.1035424+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2911ae5-e11f-4591-9acb-e9fd517d0531">
+      <Output>
+        <ErrorInfo>
+          <Message>Expected result.IsValid to be True, but found False.</Message>
+          <StackTrace>   at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+   at FluentAssertions.Primitives.BooleanAssertions`1.BeTrue(String because, Object[] becauseArgs)&#xD;
+   at CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_RabbitDiagonalMove_IsValid() in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Unit\GameServiceTests.cs:line 91&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="41467376-7ed4-460d-8849-1e234983ed79" testId="0546b039-6a45-9df1-4938-ec243a8cbe8f" testName="CatchTheRabbit.Tests.Integration.LeaderboardControllerTests.AddEntry_NonExistentGame_ReturnsError" computerName="LAPTOP-C19PGU08" duration="00:00:02.1022455" startTime="2026-01-13T10:53:00.0673543+01:00" endTime="2026-01-13T10:53:00.0673546+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41467376-7ed4-460d-8849-1e234983ed79">
+      <Output>
+        <ErrorInfo>
+          <Message>Expected response.StatusCode to be one of {HttpStatusCode.NotFound {value: 404}, HttpStatusCode.BadRequest {value: 400}}, but found HttpStatusCode.OK {value: 200}.</Message>
+          <StackTrace>   at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+   at FluentAssertions.Primitives.EnumAssertions`2.BeOneOf(IEnumerable`1 validValues, String because, Object[] becauseArgs)&#xD;
+   at FluentAssertions.Primitives.EnumAssertions`2.BeOneOf(TEnum[] validValues)&#xD;
+   at CatchTheRabbit.Tests.Integration.LeaderboardControllerTests.AddEntry_NonExistentGame_ReturnsError() in C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\LeaderboardControllerTests.cs:line 78&#xD;
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="00e1e623-3152-4641-8483-7dcdbee34a07" testId="7ffb6f22-85af-c9f2-b66f-18dc6a344208" testName="CatchTheRabbit.Tests.Unit.GameStateTests.Clone_PreservesAllChildren" computerName="LAPTOP-C19PGU08" duration="00:00:00.0019567" startTime="2026-01-13T10:52:58.4403762+01:00" endTime="2026-01-13T10:52:58.4403763+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00e1e623-3152-4641-8483-7dcdbee34a07" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameStateTests.IsOccupied_PositionWithRabbit_ReturnsTrue" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="8ea45976-9141-04f6-73b9-0fc6b178cd02">
+      <Execution id="f8eec77d-1a24-441d-a669-f9527d26b8e9" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameStateTests" name="IsOccupied_PositionWithRabbit_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.CreateGame_AsRabbit_ReturnsCorrectInitialState" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="49161fe1-bcfb-3386-db17-f5c83c71bb8e">
+      <Execution id="17d03c44-59f5-420a-8f10-9ca85c159020" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="CreateGame_AsRabbit_ReturnsCorrectInitialState" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameStateTests.Clone_ReturnsDeepCopy" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="9416edd4-f79f-0950-9225-f86d425a478e">
+      <Execution id="1ca46ea9-ee15-449e-bb0f-a3731d0d122d" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameStateTests" name="Clone_ReturnsDeepCopy" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameStateTests.Clone_ChildrenArray_IsIndependent" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="fd273042-c1c2-66cb-8fad-afdec24a17a2">
+      <Execution id="5fd7bf9e-e2ce-4f32-97da-d74445a7f511" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameStateTests" name="Clone_ChildrenArray_IsIndependent" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.CreateGame_AsRabbit_RabbitOnValidPosition" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="3480bd35-0779-136f-db05-d9378a5b5102">
+      <Execution id="987cd4f8-ea0b-4c6a-8b8c-a4d8bff53617" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="CreateGame_AsRabbit_RabbitOnValidPosition" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.Equals_DifferentX_ReturnsFalse" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="3e81cf2d-e038-6a5a-bee7-cbe2cee1b8c9">
+      <Execution id="b6a29400-1dc8-460c-b524-3f43170f4154" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="Equals_DifferentX_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_ReturnsSuccess" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="91924283-3fe9-9c67-6cfd-6bb37bd9e89b">
+      <Execution id="e5e7b10f-c700-4b71-80d4-1bfe9f1c8a69" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Integration.GameControllerTests" name="CreateGame_AsRabbit_ReturnsSuccess" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.CountBetterEntriesAsync_ReturnsCorrectCount" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="0da7c798-cee5-42a5-cc28-b87c51cc2889">
+      <Execution id="ba35d274-f877-4dc9-9b9e-d6a4eac84430" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests" name="CountBetterEntriesAsync_ReturnsCorrectCount" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameStateTests.IsOccupied_EmptyPosition_ReturnsFalse" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="27c23ae7-150b-7cab-cb75-e5513948bcea">
+      <Execution id="a22ec844-6736-402a-a30f-94d425dcc0bf" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameStateTests" name="IsOccupied_EmptyPosition_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_ValidPositions_ReturnsTrue(x: 0, y: 9, expected: True)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="d42619d0-e571-bac8-ce1f-67db40f8d27b">
+      <Execution id="12e297c1-b5d7-4421-b586-8e8d9c708d3b" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_ValidPositions_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_OutOfBounds_IsInvalid(x: 5, y: 10)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="6c160307-efe2-e8ba-68d2-b7072c996d2e">
+      <Execution id="06f9c4be-3d85-4304-ae4f-5a208882e80d" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="ValidateMove_OutOfBounds_IsInvalid" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameStateTests.GameState_InitialValues_AreCorrect" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="f3c6ddc0-ad4f-3c7b-2f52-204103673ba4">
+      <Execution id="39516d4b-ebf2-4dc8-8e39-91510c8b1286" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameStateTests" name="GameState_InitialValues_AreCorrect" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: -1, y: -1)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="02a9586d-0010-016b-f2e7-d3253bc33823">
+      <Execution id="38ac0bf7-8c80-44a5-a838-7b73e8a17a8a" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_InvalidPositions_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameStateTests.Clone_ModifyingOriginal_DoesNotAffectClone" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="b709d431-7ca6-8d9d-956b-a8162af8a8a1">
+      <Execution id="5f82d2f2-517a-4a8e-9ebf-6c9fa9db2882" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameStateTests" name="Clone_ModifyingOriginal_DoesNotAffectClone" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.CreateGame_AsChildren_ReturnsCorrectInitialState" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="dd00db78-d3af-39fc-cdb4-376228067726">
+      <Execution id="ce711153-bc1e-4824-b369-e0e79ca07361" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="CreateGame_AsChildren_ReturnsCorrectInitialState" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameStateTests.GameState_Id_IsUnique" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="6f57bb8b-e066-a776-e732-770ee6a5fd8e">
+      <Execution id="70d40ccc-61a8-4216-bc67-60b6f90ab940" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameStateTests" name="GameState_Id_IsUnique" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameStateTests.Clone_PreservesAllChildren" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="7ffb6f22-85af-c9f2-b66f-18dc6a344208">
+      <Execution id="00e1e623-3152-4641-8483-7dcdbee34a07" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameStateTests" name="Clone_PreservesAllChildren" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsChildren_ReturnsSuccess" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="43b87d37-89a1-8a4b-419d-39a3c1fdf69d">
+      <Execution id="2638ee6c-4ba6-4e70-8d80-905fd168de93" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Integration.GameControllerTests" name="CreateGame_AsChildren_ReturnsSuccess" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Integration.GameControllerTests.HealthCheck_ReturnsHealthy" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="d26c0eeb-8b91-9004-f641-bbe81c30bd64">
+      <Execution id="2aea300c-f2a1-44b3-984f-fc01c2ff19da" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Integration.GameControllerTests" name="HealthCheck_ReturnsHealthy" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_OutOfBounds_IsInvalid(x: 0, y: -1)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="688db260-24a7-138e-90c0-ab4988d98622">
+      <Execution id="c4c82afb-fbb0-4521-ae99-3c37eb26c126" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="ValidateMove_OutOfBounds_IsInvalid" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_ValidPositions_ReturnsTrue(x: 9, y: 0, expected: True)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="74f0f32d-ab95-9ccb-4bb4-f63bec9921ef">
+      <Execution id="a12f2c2c-5745-483f-84e1-9da136c16663" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_ValidPositions_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: 10, y: 0)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="1e7034ac-091c-bb94-5cd5-9732664183a4">
+      <Execution id="9df4c305-6613-44e8-83d8-cc01782c9342" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_InvalidPositions_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameStateTests.IsOccupied_PositionWithChild_ReturnsTrue" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="55b31d23-6bf9-1977-ccad-ad0657f6c449">
+      <Execution id="d65e5629-b5e8-40ef-ad6e-16389ddf92a3" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameStateTests" name="IsOccupied_PositionWithChild_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsBlackField_ReturnsCorrectValue(x: 2, y: 3, expected: True)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="657a396c-f0b0-a3c2-610a-55f466a423f2">
+      <Execution id="4f01110e-7a96-4bd9-820a-7fe39f108b93" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsBlackField_ReturnsCorrectValue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_OutOfBounds_IsInvalid(x: -1, y: 0)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="7b805069-5af9-88f3-0742-d2335b27d7de">
+      <Execution id="19fb7c73-f7a4-491e-bb16-4a78ca0e0d5f" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="ValidateMove_OutOfBounds_IsInvalid" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_CompletesWithinTimeLimit" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="34c0e7de-e6f7-e558-20c4-8396e7be3b4c">
+      <Execution id="d6fffd46-bb24-4cd3-b3e7-23a0932738a7" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.AIServiceTests" name="CalculateBestMove_CompletesWithinTimeLimit" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Integration.GameControllerTests.MakeMove_ValidMove_ReturnsSuccess" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="149b6e6c-cf68-0419-fd2a-148dd0925005">
+      <Execution id="ac46b6de-848f-4354-bd25-a2e2f90af141" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Integration.GameControllerTests" name="MakeMove_ValidMove_ReturnsSuccess" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.GetTopEntriesAsync_EmptyDatabase_ReturnsEmptyList" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="3b8209fa-100e-cd2c-0867-d5da6dfa5f8b">
+      <Execution id="4912d18d-9e0d-4215-bf4b-365902ca4d56" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests" name="GetTopEntriesAsync_EmptyDatabase_ReturnsEmptyList" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: 0, y: 10)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="832ae09b-2e10-c7c3-035b-a9914a9c9b89">
+      <Execution id="cf3e331c-292e-41c3-8856-9342ec9c776d" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_InvalidPositions_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.Position_CanBeUsedAsDictionaryKey" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="537d0727-6ca3-86b1-0a22-cba9e66ac39b">
+      <Execution id="8643ec7b-bf43-4601-8eaf-7f085681af84" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="Position_CanBeUsedAsDictionaryKey" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: 10, y: 10)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="fe348993-5923-4c42-8a2b-0d3461580936">
+      <Execution id="f0fe3860-eb58-47c4-84f3-51717501a213" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_InvalidPositions_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.AddEntryAsync_ValidEntry_SavesSuccessfully" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="9fbb01e5-4b60-f0f0-7cc4-d4d584510b3f">
+      <Execution id="27acd385-8095-4dcd-bb77-c4bcbe40ff96" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests" name="AddEntryAsync_ValidEntry_SavesSuccessfully" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.CountBetterEntriesAsync_BestTime_ReturnsZero" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="4665b4d0-553d-738e-0afc-0947b1783d92">
+      <Execution id="061f7a38-078a-4bdc-8c53-b6caeae5c9e7" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests" name="CountBetterEntriesAsync_BestTime_ReturnsZero" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.Equals_SamePosition_ReturnsTrue" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="c647c180-83ea-dd2f-cd1d-50ba1195e12f">
+      <Execution id="30744bd3-7077-4316-a569-f3edb04a1238" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="Equals_SamePosition_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsBlackField_ReturnsCorrectValue(x: 1, y: 0, expected: True)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="919e6396-9568-e8b7-a273-ea43a0acc690">
+      <Execution id="0e56dc94-8d85-4866-8a42-2c5d89f8d765" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsBlackField_ReturnsCorrectValue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_AsRabbit_MovesDiagonally" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="72e13689-3d95-daa2-d9ec-6107ed9b378d">
+      <Execution id="d524cb65-149e-4e52-97b4-aece904bf738" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.AIServiceTests" name="CalculateBestMove_AsRabbit_MovesDiagonally" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsBlackField_ReturnsCorrectValue(x: 4, y: 4, expected: False)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="0128662f-8dd1-a17e-0c50-f011b404a2c2">
+      <Execution id="5c6e6f65-e81f-4620-bf67-6cce4e7eaba9" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsBlackField_ReturnsCorrectValue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_RabbitOnValidPosition" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="0c856e57-b4ca-b799-36dc-e62337723ad0">
+      <Execution id="c8267b10-d71c-4f25-89ed-63252c43d9c4" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Integration.GameControllerTests" name="CreateGame_AsRabbit_RabbitOnValidPosition" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.CheckGameEnd_RabbitBlocked_ChildrenWin" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="9b6574e6-05b5-dc9f-aa53-f415b68a02ed">
+      <Execution id="e2af023a-4b43-4e1e-b2c8-8e4d1290a3c6" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="CheckGameEnd_RabbitBlocked_ChildrenWin" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.Position_InHashSet_WorksCorrectly" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="e6019c8b-b286-6365-ea39-b80dcd249958">
+      <Execution id="944a696c-0870-4eb0-a783-53b730e2aa2b" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="Position_InHashSet_WorksCorrectly" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.AddEntryAsync_MultipleEntries_AllSaved" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="3709d791-3963-bcd7-81cc-1dff93912e80">
+      <Execution id="58902169-8953-493f-93ef-9ee78f07d1c2" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests" name="AddEntryAsync_MultipleEntries_AllSaved" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.GetHashCode_SamePosition_SameHashCode" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="71d0dad0-e8e3-1f3a-f9af-385987412896">
+      <Execution id="38229748-9e25-47c1-bcc3-804ccc39f9e6" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="GetHashCode_SamePosition_SameHashCode" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_ToOccupiedField_IsInvalid" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="5f6a8f69-9de5-c4da-f6cc-b3d1db5f1022">
+      <Execution id="6914c6f1-2a9c-4be3-8b65-06bff6df247c" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="ValidateMove_ToOccupiedField_IsInvalid" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_ValidPositions_ReturnsTrue(x: 0, y: 0, expected: True)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="2867b4f9-b96e-e727-4a2b-387f183cda21">
+      <Execution id="261123b4-4771-4f8e-83c3-2b7afb0fb49e" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_ValidPositions_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsBlackField_ReturnsCorrectValue(x: 0, y: 1, expected: True)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="b4aaaa59-a96b-e308-219d-b21988d75882">
+      <Execution id="604d8e84-d3d3-467b-a3f5-53e7dc60dcd5" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsBlackField_ReturnsCorrectValue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Integration.LeaderboardControllerTests.AddEntry_NonExistentGame_ReturnsError" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="0546b039-6a45-9df1-4938-ec243a8cbe8f">
+      <Execution id="41467376-7ed4-460d-8849-1e234983ed79" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Integration.LeaderboardControllerTests" name="AddEntry_NonExistentGame_ReturnsError" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_InvalidRole_ReturnsBadRequest" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="d3a478d4-9683-056c-e232-38d2a0f43a75">
+      <Execution id="18b465d8-4911-476a-ab4d-4840a936bbab" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Integration.GameControllerTests" name="CreateGame_InvalidRole_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.GetTopEntriesAsync_FiltersByRole" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="90b4d1cf-fa57-8a7b-39ee-6b8c723c0aad">
+      <Execution id="46eae052-df2d-497e-92ec-ee1670410a97" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests" name="GetTopEntriesAsync_FiltersByRole" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_RabbitCanMoveAllDiagonalDirections" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="fb43d733-5154-f28c-ae01-5f6c17db1f41">
+      <Execution id="839a0b5c-fb69-4cff-8307-b035c4b865fc" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="ValidateMove_RabbitCanMoveAllDiagonalDirections" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.CreateGame_AsRabbit_ChildrenOnValidPositions" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="1a917cec-3b47-2007-05a9-eb24b57d6e26">
+      <Execution id="81a011e5-924d-45cd-8e97-2c171c5c476d" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="CreateGame_AsRabbit_ChildrenOnValidPositions" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_MultipleStates_AllComplete" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="23fe39fe-33d0-ce9f-e552-06ef72016b4d">
+      <Execution id="b095ea96-cfcb-4016-a063-b551aa0cfc70" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.AIServiceTests" name="CalculateBestMove_MultipleStates_AllComplete" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_RabbitDiagonalMove_IsValid" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="298db026-171b-de36-da64-3b47456f323d">
+      <Execution id="d2911ae5-e11f-4591-9acb-e9fd517d0531" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="ValidateMove_RabbitDiagonalMove_IsValid" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_AsRabbit_ReturnsValidMove" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="ec1586df-f3ef-145f-b316-f4b1d29a49f7">
+      <Execution id="f7e78e56-9c8a-4bde-8efa-7780e6cd391b" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.AIServiceTests" name="CalculateBestMove_AsRabbit_ReturnsValidMove" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_AsChildren_ReturnsValidMove" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="7b2fc1b0-8d9f-945e-d60e-367928539b3b">
+      <Execution id="eb683073-1dac-418f-84a3-b7df7ebf7f3d" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.AIServiceTests" name="CalculateBestMove_AsChildren_ReturnsValidMove" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_ChildMoveDownward_IsValid" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="8ab94e2b-9d3c-1ee2-18df-0c212bd14bf4">
+      <Execution id="ea68e391-fae9-4cb6-a527-2fcf4d5807c5" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="ValidateMove_ChildMoveDownward_IsValid" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_OutOfBounds_IsInvalid(x: 10, y: 5)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="cef3b47e-4a77-c75b-2ea1-42b0eaf04ef3">
+      <Execution id="9e3cb62b-df27-4b67-80e7-b50d37195bbd" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="ValidateMove_OutOfBounds_IsInvalid" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: 5, y: 11)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="877ae6e5-c488-c197-9c9b-e33f5da50713">
+      <Execution id="c5c447c6-5aa7-47dd-aa8c-9f5e8960e300" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_InvalidPositions_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: 11, y: 5)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="1dbd177c-240b-720b-d56f-28968a1385f2">
+      <Execution id="42c26ae8-9bd5-4580-9b3d-ae4442cbb68b" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_InvalidPositions_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.ToString_ReturnsReadableFormat" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="7487dcd8-35a9-1b46-e6c0-617e2cb34032">
+      <Execution id="fe3217c2-b1f5-4d87-bad7-16c170d35fed" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="ToString_ReturnsReadableFormat" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Integration.LeaderboardControllerTests.GetLeaderboard_ReturnsSuccess" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="be1f3bc9-7bcd-4822-7a03-f6a8eb72564b">
+      <Execution id="0787e2b1-acff-477a-9b2f-5d0f7da2b670" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Integration.LeaderboardControllerTests" name="GetLeaderboard_ReturnsSuccess" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Integration.GameControllerTests.GetState_InvalidId_ReturnsNotFound" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="502e22f8-e6f4-8b89-f38b-ef884c3ca1c0">
+      <Execution id="91dbf7d2-bcb7-43a0-8cac-12ec3d484f18" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Integration.GameControllerTests" name="GetState_InvalidId_ReturnsNotFound" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameStateTests.Clone_ModifyingClone_DoesNotAffectOriginal" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="24c12755-43c9-ed39-edb2-84c8fd359192">
+      <Execution id="ff6be913-c60c-49ec-a252-0487de376f11" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameStateTests" name="Clone_ModifyingClone_DoesNotAffectOriginal" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: 0, y: -1)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="a0a93b60-80b0-fd2e-7415-36e8fb9b919a">
+      <Execution id="570db1d6-6164-45fe-82dc-bd4717ec1623" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_InvalidPositions_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.GetTopEntriesAsync_With25Entries_Returns20" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="6441b310-1e73-f1e3-a463-4f774a55d5e4">
+      <Execution id="9f35a282-c07b-4a1f-8122-7fff0584ef94" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests" name="GetTopEntriesAsync_With25Entries_Returns20" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsBlackField_ReturnsCorrectValue(x: 0, y: 0, expected: False)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="023a0c79-c45c-6ed0-4e50-9527b18ac8d4">
+      <Execution id="783a3035-0cfd-4aba-a5fc-96e07ab865ec" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsBlackField_ReturnsCorrectValue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.CheckGameEnd_RabbitReachesTopRow_RabbitWins" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="80cd1d4f-f97b-f12f-c73a-5e7a0625862a">
+      <Execution id="2a09b902-0d9d-45ee-b1fd-2cf4ffe056dc" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="CheckGameEnd_RabbitReachesTopRow_RabbitWins" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Integration.LeaderboardControllerTests.AddEntry_EmptyNickname_ReturnsBadRequest" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="e0b32ca5-e2e9-7c40-560a-c20097c8bac5">
+      <Execution id="ec00af7b-69a1-4927-872e-67649f51bce6" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Integration.LeaderboardControllerTests" name="AddEntry_EmptyNickname_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_FourChildrenPresent" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="b2966f41-1de9-d51c-610a-d8061ee431fe">
+      <Execution id="9c807136-4301-490f-b6ae-f9df0a82fc72" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Integration.GameControllerTests" name="CreateGame_AsRabbit_FourChildrenPresent" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests.GetTopEntriesAsync_SortedByThinkingTime" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="21db7e39-ca51-04a7-5243-019ed65e2a66">
+      <Execution id="0e96218b-e65b-42d1-950a-52724a6532a2" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.LeaderboardRepositoryTests" name="GetTopEntriesAsync_SortedByThinkingTime" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Integration.GameControllerTests.GetState_ValidId_ReturnsGameState" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="78e5c940-2494-3871-0161-1e686a2a4259">
+      <Execution id="05299a93-6511-4868-9b47-d3ec8260c34f" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Integration.GameControllerTests" name="GetState_ValidId_ReturnsGameState" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_ComplexState_CompletesQuickly" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="5e435ceb-f22a-5811-b3d5-d4e64c93adf9">
+      <Execution id="9ae134a0-a299-4bd2-a5f4-c54fda5c2cab" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.AIServiceTests" name="CalculateBestMove_ComplexState_CompletesQuickly" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.ApplyMove_ValidMove_AddsMoveToHistory" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="32b6112d-bf0f-009c-27e5-a09f3b876776">
+      <Execution id="87be25ce-2153-4b6e-97d0-a7565670c5af" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="ApplyMove_ValidMove_AddsMoveToHistory" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_RabbitNearWin_MovesTowardGoal" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="c1be48c8-7b38-6399-548d-bbea31b312d4">
+      <Execution id="f00825ec-7115-4f33-9adc-d5abf1d49381" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.AIServiceTests" name="CalculateBestMove_RabbitNearWin_MovesTowardGoal" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.ApplyMove_ValidMove_SwitchesTurn" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="b5d826ac-83aa-a36a-f150-2d5f697e58b1">
+      <Execution id="f40c6a61-046f-4698-a344-167be85639ff" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="ApplyMove_ValidMove_SwitchesTurn" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_ValidPositions_ReturnsTrue(x: 9, y: 9, expected: True)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="c1bbef04-bdd8-2e86-fa09-c255636a605a">
+      <Execution id="1ffa6265-57e0-4a9a-be75-0ef877022cc7" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_ValidPositions_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_ChildMoveUpward_IsInvalid" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="5b49273f-e519-9598-f5b2-70e27de80a32">
+      <Execution id="f0dfee6a-c65e-45ef-aa55-fc15634f4ac2" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.GameServiceTests" name="ValidateMove_ChildMoveUpward_IsInvalid" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_AsChildren_MovesDownward" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="603e240a-cc45-efc2-2099-39a73edd5801">
+      <Execution id="948d6e09-7ba9-4ea5-90cd-61f1fe46beb5" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.AIServiceTests" name="CalculateBestMove_AsChildren_MovesDownward" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.Equals_DifferentY_ReturnsFalse" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="3a54c03c-09e7-8c9c-baef-9c5396d32d4a">
+      <Execution id="99740ee9-b7b1-4641-a945-ba408b605a62" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="Equals_DifferentY_ReturnsFalse" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsBlackField_ReturnsCorrectValue(x: 2, y: 2, expected: False)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="2df3d38d-7dc5-5172-230b-1e5f4607b3b3">
+      <Execution id="e645ad48-b410-49c5-8a2e-f1b74fca4b26" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsBlackField_ReturnsCorrectValue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_ValidPositions_ReturnsTrue(x: 5, y: 5, expected: True)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="2f54b873-a356-a470-f640-0633554a2473">
+      <Execution id="2fb26315-35e8-4d1b-a1d6-2508716f02c3" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_ValidPositions_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="CatchTheRabbit.Tests.Unit.PositionTests.IsValid_InvalidPositions_ReturnsFalse(x: -1, y: 0)" storage="c:\users\snir\desktop\projekt-2-claude\04_implementierung\backend\catchtherabbit.tests\bin\debug\net9.0\catchtherabbit.tests.dll" id="41a537bf-b116-dca4-fd11-f483d1c6fab9">
+      <Execution id="2f221031-dec7-4725-97d1-48598c723143" />
+      <TestMethod codeBase="C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\bin\Debug\net9.0\CatchTheRabbit.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatchTheRabbit.Tests.Unit.PositionTests" name="IsValid_InvalidPositions_ReturnsFalse" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="27c23ae7-150b-7cab-cb75-e5513948bcea" executionId="a22ec844-6736-402a-a30f-94d425dcc0bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34c0e7de-e6f7-e558-20c4-8396e7be3b4c" executionId="d6fffd46-bb24-4cd3-b3e7-23a0932738a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4665b4d0-553d-738e-0afc-0947b1783d92" executionId="061f7a38-078a-4bdc-8c53-b6caeae5c9e7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e6019c8b-b286-6365-ea39-b80dcd249958" executionId="944a696c-0870-4eb0-a783-53b730e2aa2b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e0b32ca5-e2e9-7c40-560a-c20097c8bac5" executionId="ec00af7b-69a1-4927-872e-67649f51bce6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f54b873-a356-a470-f640-0633554a2473" executionId="2fb26315-35e8-4d1b-a1d6-2508716f02c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41a537bf-b116-dca4-fd11-f483d1c6fab9" executionId="2f221031-dec7-4725-97d1-48598c723143" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="91924283-3fe9-9c67-6cfd-6bb37bd9e89b" executionId="e5e7b10f-c700-4b71-80d4-1bfe9f1c8a69" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="603e240a-cc45-efc2-2099-39a73edd5801" executionId="948d6e09-7ba9-4ea5-90cd-61f1fe46beb5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6c160307-efe2-e8ba-68d2-b7072c996d2e" executionId="06f9c4be-3d85-4304-ae4f-5a208882e80d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="32b6112d-bf0f-009c-27e5-a09f3b876776" executionId="87be25ce-2153-4b6e-97d0-a7565670c5af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3480bd35-0779-136f-db05-d9378a5b5102" executionId="987cd4f8-ea0b-4c6a-8b8c-a4d8bff53617" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fe348993-5923-4c42-8a2b-0d3461580936" executionId="f0fe3860-eb58-47c4-84f3-51717501a213" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2966f41-1de9-d51c-610a-d8061ee431fe" executionId="9c807136-4301-490f-b6ae-f9df0a82fc72" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dd00db78-d3af-39fc-cdb4-376228067726" executionId="ce711153-bc1e-4824-b369-e0e79ca07361" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a0a93b60-80b0-fd2e-7415-36e8fb9b919a" executionId="570db1d6-6164-45fe-82dc-bd4717ec1623" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a917cec-3b47-2007-05a9-eb24b57d6e26" executionId="81a011e5-924d-45cd-8e97-2c171c5c476d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="023a0c79-c45c-6ed0-4e50-9527b18ac8d4" executionId="783a3035-0cfd-4aba-a5fc-96e07ab865ec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1dbd177c-240b-720b-d56f-28968a1385f2" executionId="42c26ae8-9bd5-4580-9b3d-ae4442cbb68b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3709d791-3963-bcd7-81cc-1dff93912e80" executionId="58902169-8953-493f-93ef-9ee78f07d1c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="688db260-24a7-138e-90c0-ab4988d98622" executionId="c4c82afb-fbb0-4521-ae99-3c37eb26c126" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3c6ddc0-ad4f-3c7b-2f52-204103673ba4" executionId="39516d4b-ebf2-4dc8-8e39-91510c8b1286" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d3a478d4-9683-056c-e232-38d2a0f43a75" executionId="18b465d8-4911-476a-ab4d-4840a936bbab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0da7c798-cee5-42a5-cc28-b87c51cc2889" executionId="ba35d274-f877-4dc9-9b9e-d6a4eac84430" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="502e22f8-e6f4-8b89-f38b-ef884c3ca1c0" executionId="91dbf7d2-bcb7-43a0-8cac-12ec3d484f18" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3b8209fa-100e-cd2c-0867-d5da6dfa5f8b" executionId="4912d18d-9e0d-4215-bf4b-365902ca4d56" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="55b31d23-6bf9-1977-ccad-ad0657f6c449" executionId="d65e5629-b5e8-40ef-ad6e-16389ddf92a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6441b310-1e73-f1e3-a463-4f774a55d5e4" executionId="9f35a282-c07b-4a1f-8122-7fff0584ef94" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e435ceb-f22a-5811-b3d5-d4e64c93adf9" executionId="9ae134a0-a299-4bd2-a5f4-c54fda5c2cab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43b87d37-89a1-8a4b-419d-39a3c1fdf69d" executionId="2638ee6c-4ba6-4e70-8d80-905fd168de93" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="90b4d1cf-fa57-8a7b-39ee-6b8c723c0aad" executionId="46eae052-df2d-497e-92ec-ee1670410a97" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b49273f-e519-9598-f5b2-70e27de80a32" executionId="f0dfee6a-c65e-45ef-aa55-fc15634f4ac2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cef3b47e-4a77-c75b-2ea1-42b0eaf04ef3" executionId="9e3cb62b-df27-4b67-80e7-b50d37195bbd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="832ae09b-2e10-c7c3-035b-a9914a9c9b89" executionId="cf3e331c-292e-41c3-8856-9342ec9c776d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c647c180-83ea-dd2f-cd1d-50ba1195e12f" executionId="30744bd3-7077-4316-a569-f3edb04a1238" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23fe39fe-33d0-ce9f-e552-06ef72016b4d" executionId="b095ea96-cfcb-4016-a063-b551aa0cfc70" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd273042-c1c2-66cb-8fad-afdec24a17a2" executionId="5fd7bf9e-e2ce-4f32-97da-d74445a7f511" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb43d733-5154-f28c-ae01-5f6c17db1f41" executionId="839a0b5c-fb69-4cff-8307-b035c4b865fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ea45976-9141-04f6-73b9-0fc6b178cd02" executionId="f8eec77d-1a24-441d-a669-f9527d26b8e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7487dcd8-35a9-1b46-e6c0-617e2cb34032" executionId="fe3217c2-b1f5-4d87-bad7-16c170d35fed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9416edd4-f79f-0950-9225-f86d425a478e" executionId="1ca46ea9-ee15-449e-bb0f-a3731d0d122d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2867b4f9-b96e-e727-4a2b-387f183cda21" executionId="261123b4-4771-4f8e-83c3-2b7afb0fb49e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49161fe1-bcfb-3386-db17-f5c83c71bb8e" executionId="17d03c44-59f5-420a-8f10-9ca85c159020" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e7034ac-091c-bb94-5cd5-9732664183a4" executionId="9df4c305-6613-44e8-83d8-cc01782c9342" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0128662f-8dd1-a17e-0c50-f011b404a2c2" executionId="5c6e6f65-e81f-4620-bf67-6cce4e7eaba9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="877ae6e5-c488-c197-9c9b-e33f5da50713" executionId="c5c447c6-5aa7-47dd-aa8c-9f5e8960e300" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72e13689-3d95-daa2-d9ec-6107ed9b378d" executionId="d524cb65-149e-4e52-97b4-aece904bf738" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1be48c8-7b38-6399-548d-bbea31b312d4" executionId="f00825ec-7115-4f33-9adc-d5abf1d49381" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9fbb01e5-4b60-f0f0-7cc4-d4d584510b3f" executionId="27acd385-8095-4dcd-bb77-c4bcbe40ff96" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2df3d38d-7dc5-5172-230b-1e5f4607b3b3" executionId="e645ad48-b410-49c5-8a2e-f1b74fca4b26" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5f6a8f69-9de5-c4da-f6cc-b3d1db5f1022" executionId="6914c6f1-2a9c-4be3-8b65-06bff6df247c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b6574e6-05b5-dc9f-aa53-f415b68a02ed" executionId="e2af023a-4b43-4e1e-b2c8-8e4d1290a3c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="02a9586d-0010-016b-f2e7-d3253bc33823" executionId="38ac0bf7-8c80-44a5-a838-7b73e8a17a8a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec1586df-f3ef-145f-b316-f4b1d29a49f7" executionId="f7e78e56-9c8a-4bde-8efa-7780e6cd391b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e81cf2d-e038-6a5a-bee7-cbe2cee1b8c9" executionId="b6a29400-1dc8-460c-b524-3f43170f4154" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b5d826ac-83aa-a36a-f150-2d5f697e58b1" executionId="f40c6a61-046f-4698-a344-167be85639ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be1f3bc9-7bcd-4822-7a03-f6a8eb72564b" executionId="0787e2b1-acff-477a-9b2f-5d0f7da2b670" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78e5c940-2494-3871-0161-1e686a2a4259" executionId="05299a93-6511-4868-9b47-d3ec8260c34f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="71d0dad0-e8e3-1f3a-f9af-385987412896" executionId="38229748-9e25-47c1-bcc3-804ccc39f9e6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="919e6396-9568-e8b7-a273-ea43a0acc690" executionId="0e56dc94-8d85-4866-8a42-2c5d89f8d765" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b709d431-7ca6-8d9d-956b-a8162af8a8a1" executionId="5f82d2f2-517a-4a8e-9ebf-6c9fa9db2882" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="21db7e39-ca51-04a7-5243-019ed65e2a66" executionId="0e96218b-e65b-42d1-950a-52724a6532a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="80cd1d4f-f97b-f12f-c73a-5e7a0625862a" executionId="2a09b902-0d9d-45ee-b1fd-2cf4ffe056dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4aaaa59-a96b-e308-219d-b21988d75882" executionId="604d8e84-d3d3-467b-a3f5-53e7dc60dcd5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f57bb8b-e066-a776-e732-770ee6a5fd8e" executionId="70d40ccc-61a8-4216-bc67-60b6f90ab940" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b2fc1b0-8d9f-945e-d60e-367928539b3b" executionId="eb683073-1dac-418f-84a3-b7df7ebf7f3d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74f0f32d-ab95-9ccb-4bb4-f63bec9921ef" executionId="a12f2c2c-5745-483f-84e1-9da136c16663" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0c856e57-b4ca-b799-36dc-e62337723ad0" executionId="c8267b10-d71c-4f25-89ed-63252c43d9c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ab94e2b-9d3c-1ee2-18df-0c212bd14bf4" executionId="ea68e391-fae9-4cb6-a527-2fcf4d5807c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="657a396c-f0b0-a3c2-610a-55f466a423f2" executionId="4f01110e-7a96-4bd9-820a-7fe39f108b93" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d26c0eeb-8b91-9004-f641-bbe81c30bd64" executionId="2aea300c-f2a1-44b3-984f-fc01c2ff19da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b805069-5af9-88f3-0742-d2335b27d7de" executionId="19fb7c73-f7a4-491e-bb16-4a78ca0e0d5f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="149b6e6c-cf68-0419-fd2a-148dd0925005" executionId="ac46b6de-848f-4354-bd25-a2e2f90af141" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d42619d0-e571-bac8-ce1f-67db40f8d27b" executionId="12e297c1-b5d7-4421-b586-8e8d9c708d3b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="24c12755-43c9-ed39-edb2-84c8fd359192" executionId="ff6be913-c60c-49ec-a252-0487de376f11" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1bbef04-bdd8-2e86-fa09-c255636a605a" executionId="1ffa6265-57e0-4a9a-be75-0ef877022cc7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="537d0727-6ca3-86b1-0a22-cba9e66ac39b" executionId="8643ec7b-bf43-4601-8eaf-7f085681af84" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a54c03c-09e7-8c9c-baef-9c5396d32d4a" executionId="99740ee9-b7b1-4641-a945-ba408b605a62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="298db026-171b-de36-da64-3b47456f323d" executionId="d2911ae5-e11f-4591-9acb-e9fd517d0531" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0546b039-6a45-9df1-4938-ec243a8cbe8f" executionId="41467376-7ed4-460d-8849-1e234983ed79" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7ffb6f22-85af-c9f2-b66f-18dc6a344208" executionId="00e1e623-3152-4641-8483-7dcdbee34a07" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Ergebnisse nicht in einer Liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Alle geladenen Ergebnisse" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="81" executed="81" passed="69" failed="12" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.10)&#xD;
+[xUnit.net 00:00:00.88]   Discovering: CatchTheRabbit.Tests&#xD;
+[xUnit.net 00:00:00.97]   Discovered:  CatchTheRabbit.Tests&#xD;
+[xUnit.net 00:00:00.98]   Starting:    CatchTheRabbit.Tests&#xD;
+[xUnit.net 00:00:01.51]       System.InvalidOperationException : No valid moves available&#xD;
+[xUnit.net 00:00:01.52]       Stack Trace:&#xD;
+[xUnit.net 00:00:01.52]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Core\Services\AIService.cs(48,0): at CatchTheRabbit.Core.Services.AIService.CalculateBestMove(GameState state, PlayerRole aiRole, Int32 timeLimitMs)&#xD;
+[xUnit.net 00:00:01.52]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Unit\AIServiceTests.cs(153,0): at CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_RabbitNearWin_MovesTowardGoal()&#xD;
+[xUnit.net 00:00:01.52]            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+[xUnit.net 00:00:01.52]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+[xUnit.net 00:00:01.52]       System.InvalidOperationException : No valid moves available&#xD;
+[xUnit.net 00:00:01.52]       Stack Trace:&#xD;
+[xUnit.net 00:00:01.52]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Core\Services\AIService.cs(48,0): at CatchTheRabbit.Core.Services.AIService.CalculateBestMove(GameState state, PlayerRole aiRole, Int32 timeLimitMs)&#xD;
+[xUnit.net 00:00:01.52]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Unit\AIServiceTests.cs(185,0): at CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_ComplexState_CompletesQuickly()&#xD;
+[xUnit.net 00:00:01.52]            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+[xUnit.net 00:00:01.52]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+[xUnit.net 00:00:02.15]       Expected result.ErrorMessage "Target position is not a black field" to contain "occupied".&#xD;
+[xUnit.net 00:00:02.15]       Stack Trace:&#xD;
+[xUnit.net 00:00:02.15]            at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:02.15]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:02.15]            at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+[xUnit.net 00:00:02.15]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:02.15]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:02.15]            at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+[xUnit.net 00:00:02.15]            at FluentAssertions.Primitives.StringAssertions`1.Contain(String expected, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:02.15]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Unit\GameServiceTests.cs(230,0): at CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_ToOccupiedField_IsInvalid()&#xD;
+[xUnit.net 00:00:02.15]            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+[xUnit.net 00:00:02.15]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+[xUnit.net 00:00:02.16]       Expected result.IsValid to be True, but found False.&#xD;
+[xUnit.net 00:00:02.16]       Stack Trace:&#xD;
+[xUnit.net 00:00:02.16]            at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:02.16]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:02.16]            at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+[xUnit.net 00:00:02.16]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:02.16]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:02.16]            at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+[xUnit.net 00:00:02.16]            at FluentAssertions.Primitives.BooleanAssertions`1.BeTrue(String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:02.16]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Unit\GameServiceTests.cs(91,0): at CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_RabbitDiagonalMove_IsValid()&#xD;
+[xUnit.net 00:00:02.16]            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+[xUnit.net 00:00:02.16]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+[xUnit.net 00:00:03.05]       Expected response.StatusCode to be HttpStatusCode.OK {value: 200}, but found HttpStatusCode.NotFound {value: 404}.&#xD;
+[xUnit.net 00:00:03.05]       Stack Trace:&#xD;
+[xUnit.net 00:00:03.05]            at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:03.05]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:03.05]            at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+[xUnit.net 00:00:03.05]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:03.05]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:03.05]            at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+[xUnit.net 00:00:03.05]            at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:03.05]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs(88,0): at CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsChildren_ReturnsSuccess()&#xD;
+[xUnit.net 00:00:03.05]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:03.06]       Expected response.StatusCode to be HttpStatusCode.BadRequest {value: 400}, but found HttpStatusCode.NotFound {value: 404}.&#xD;
+[xUnit.net 00:00:03.06]       Stack Trace:&#xD;
+[xUnit.net 00:00:03.06]            at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:03.06]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:03.06]            at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+[xUnit.net 00:00:03.06]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:03.06]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:03.06]            at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+[xUnit.net 00:00:03.06]            at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:03.06]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs(109,0): at CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_InvalidRole_ReturnsBadRequest()&#xD;
+[xUnit.net 00:00:03.06]         --- End of stack trace from previous location ---&#xD;
+info: CatchTheRabbit.Api.Controllers.LeaderboardController[0]&#xD;
+      Adding leaderboard entry for game 3a3539d6-9b93-4fe8-91bc-f2851346e60f&#xD;
+info: CatchTheRabbit.Api.Controllers.LeaderboardController[0]&#xD;
+      Entry added with ID 1, rank 1&#xD;
+[xUnit.net 00:00:03.10]       System.Text.Json.JsonException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.&#xD;
+[xUnit.net 00:00:03.10]       ---- System.Text.Json.JsonReaderException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.&#xD;
+[xUnit.net 00:00:03.10]       Stack Trace:&#xD;
+[xUnit.net 00:00:03.10]            at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack&amp; state, JsonReaderException ex)&#xD;
+[xUnit.net 00:00:03.10]            at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+[xUnit.net 00:00:03.10]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState&amp; bufferState, JsonReaderState&amp; jsonReaderState, ReadStack&amp; readStack, T&amp; value)&#xD;
+[xUnit.net 00:00:03.10]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:03.10]            at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:03.10]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs(122,0): at CatchTheRabbit.Tests.Integration.GameControllerTests.MakeMove_ValidMove_ReturnsSuccess()&#xD;
+[xUnit.net 00:00:03.10]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:03.10]         ----- Inner Stack Trace -----&#xD;
+[xUnit.net 00:00:03.10]            at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader&amp; json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)&#xD;
+[xUnit.net 00:00:03.10]            at System.Text.Json.Utf8JsonReader.Read()&#xD;
+[xUnit.net 00:00:03.10]            at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+[xUnit.net 00:00:03.11]       System.Text.Json.JsonException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.&#xD;
+[xUnit.net 00:00:03.11]       ---- System.Text.Json.JsonReaderException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.&#xD;
+[xUnit.net 00:00:03.11]       Stack Trace:&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack&amp; state, JsonReaderException ex)&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState&amp; bufferState, JsonReaderState&amp; jsonReaderState, ReadStack&amp; readStack, T&amp; value)&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:03.11]            at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:03.11]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs(68,0): at CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_FourChildrenPresent()&#xD;
+[xUnit.net 00:00:03.11]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:03.11]         ----- Inner Stack Trace -----&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader&amp; json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.Utf8JsonReader.Read()&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+[xUnit.net 00:00:03.11]       System.Text.Json.JsonException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.&#xD;
+[xUnit.net 00:00:03.11]       ---- System.Text.Json.JsonReaderException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.&#xD;
+[xUnit.net 00:00:03.11]       Stack Trace:&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack&amp; state, JsonReaderException ex)&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState&amp; bufferState, JsonReaderState&amp; jsonReaderState, ReadStack&amp; readStack, T&amp; value)&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:03.11]            at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:03.11]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs(156,0): at CatchTheRabbit.Tests.Integration.GameControllerTests.GetState_ValidId_ReturnsGameState()&#xD;
+[xUnit.net 00:00:03.11]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:03.11]         ----- Inner Stack Trace -----&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader&amp; json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.Utf8JsonReader.Read()&#xD;
+[xUnit.net 00:00:03.11]            at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+[xUnit.net 00:00:03.12]       Expected response.StatusCode to be HttpStatusCode.OK {value: 200}, but found HttpStatusCode.NotFound {value: 404}.&#xD;
+[xUnit.net 00:00:03.12]       Stack Trace:&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Primitives.EnumAssertions`2.Be(TEnum expected, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:03.12]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs(34,0): at CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_ReturnsSuccess()&#xD;
+[xUnit.net 00:00:03.12]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:03.12]       Expected response.StatusCode to be one of {HttpStatusCode.NotFound {value: 404}, HttpStatusCode.BadRequest {value: 400}}, but found HttpStatusCode.OK {value: 200}.&#xD;
+[xUnit.net 00:00:03.12]       Stack Trace:&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Primitives.EnumAssertions`2.BeOneOf(IEnumerable`1 validValues, String because, Object[] becauseArgs)&#xD;
+[xUnit.net 00:00:03.12]            at FluentAssertions.Primitives.EnumAssertions`2.BeOneOf(TEnum[] validValues)&#xD;
+[xUnit.net 00:00:03.12]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\LeaderboardControllerTests.cs(78,0): at CatchTheRabbit.Tests.Integration.LeaderboardControllerTests.AddEntry_NonExistentGame_ReturnsError()&#xD;
+[xUnit.net 00:00:03.12]         --- End of stack trace from previous location ---&#xD;
+info: CatchTheRabbit.Api.Controllers.LeaderboardController[0]&#xD;
+      Getting leaderboard&#xD;
+[xUnit.net 00:00:03.13]       System.Text.Json.JsonException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.&#xD;
+[xUnit.net 00:00:03.13]       ---- System.Text.Json.JsonReaderException : The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.&#xD;
+[xUnit.net 00:00:03.13]       Stack Trace:&#xD;
+[xUnit.net 00:00:03.13]            at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack&amp; state, JsonReaderException ex)&#xD;
+[xUnit.net 00:00:03.13]            at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+[xUnit.net 00:00:03.13]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState&amp; bufferState, JsonReaderState&amp; jsonReaderState, ReadStack&amp; readStack, T&amp; value)&#xD;
+info: CatchTheRabbit.Api.Controllers.LeaderboardController[0]&#xD;
+      Adding leaderboard entry for game 81485d11-10ae-4dbe-a24c-10d260c6961b&#xD;
+[xUnit.net 00:00:03.13]            at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:03.13]            at System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsyncCore[T](HttpContent content, JsonSerializerOptions options, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:03.13]         C:\Users\snir\Desktop\projekt-2-claude\04_Implementierung\backend\CatchTheRabbit.Tests\Integration\GameControllerTests.cs(52,0): at CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_RabbitOnValidPosition()&#xD;
+[xUnit.net 00:00:03.13]         --- End of stack trace from previous location ---&#xD;
+[xUnit.net 00:00:03.13]         ----- Inner Stack Trace -----&#xD;
+[xUnit.net 00:00:03.13]            at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader&amp; json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)&#xD;
+[xUnit.net 00:00:03.13]            at System.Text.Json.Utf8JsonReader.Read()&#xD;
+[xUnit.net 00:00:03.13]            at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, T&amp; value, JsonSerializerOptions options, ReadStack&amp; state)&#xD;
+[xUnit.net 00:00:03.14]   Finished:    CatchTheRabbit.Tests&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="LAPTOP-C19PGU08" outcome="Error" timestamp="2026-01-13T10:52:58.4845076+01:00">
+        <Text>[xUnit.net 00:00:01.51]     CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_RabbitNearWin_MovesTowardGoal [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-C19PGU08" outcome="Error" timestamp="2026-01-13T10:52:58.4850770+01:00">
+        <Text>[xUnit.net 00:00:01.52]     CatchTheRabbit.Tests.Unit.AIServiceTests.CalculateBestMove_ComplexState_CompletesQuickly [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-C19PGU08" outcome="Error" timestamp="2026-01-13T10:52:59.1001079+01:00">
+        <Text>[xUnit.net 00:00:02.15]     CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_ToOccupiedField_IsInvalid [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-C19PGU08" outcome="Error" timestamp="2026-01-13T10:52:59.1030511+01:00">
+        <Text>[xUnit.net 00:00:02.15]     CatchTheRabbit.Tests.Unit.GameServiceTests.ValidateMove_RabbitDiagonalMove_IsValid [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-C19PGU08" outcome="Error" timestamp="2026-01-13T10:52:59.9988798+01:00">
+        <Text>[xUnit.net 00:00:03.05]     CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsChildren_ReturnsSuccess [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-C19PGU08" outcome="Error" timestamp="2026-01-13T10:53:00.0063686+01:00">
+        <Text>[xUnit.net 00:00:03.06]     CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_InvalidRole_ReturnsBadRequest [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-C19PGU08" outcome="Error" timestamp="2026-01-13T10:53:00.0502262+01:00">
+        <Text>[xUnit.net 00:00:03.10]     CatchTheRabbit.Tests.Integration.GameControllerTests.MakeMove_ValidMove_ReturnsSuccess [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-C19PGU08" outcome="Error" timestamp="2026-01-13T10:53:00.0542369+01:00">
+        <Text>[xUnit.net 00:00:03.11]     CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_FourChildrenPresent [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-C19PGU08" outcome="Error" timestamp="2026-01-13T10:53:00.0591649+01:00">
+        <Text>[xUnit.net 00:00:03.11]     CatchTheRabbit.Tests.Integration.GameControllerTests.GetState_ValidId_ReturnsGameState [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-C19PGU08" outcome="Error" timestamp="2026-01-13T10:53:00.0637964+01:00">
+        <Text>[xUnit.net 00:00:03.12]     CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_ReturnsSuccess [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-C19PGU08" outcome="Error" timestamp="2026-01-13T10:53:00.0667554+01:00">
+        <Text>[xUnit.net 00:00:03.12]     CatchTheRabbit.Tests.Integration.LeaderboardControllerTests.AddEntry_NonExistentGame_ReturnsError [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-C19PGU08" outcome="Error" timestamp="2026-01-13T10:53:00.0814771+01:00">
+        <Text>[xUnit.net 00:00:03.13]     CatchTheRabbit.Tests.Integration.GameControllerTests.CreateGame_AsRabbit_RabbitOnValidPosition [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

@@ -4,6 +4,91 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 
 ---
 
+## 2026-01-13 - Testphase abgeschlossen
+
+### Testergebnisse
+- **Komponententests**: 45/45 bestanden (100%)
+- **Systemtests**: 12/12 bestanden (100%)
+- **Akzeptanztests**: Bereit zur Ausführung
+
+### Hinzugefügt
+- **Test-Reports** (`05_Test/`)
+  - `Komponententest-Report.md` - Detaillierte Unit Test Ergebnisse
+  - `Systemtest-Report.md` - API Integration Test Ergebnisse
+  - `Akzeptanztest-Report.md` - E2E Test Status und Anleitung
+
+### Korrigiert
+- Testpositionen auf schwarze Felder (X+Y ungerade) angepasst
+- API-Routen in Integration Tests korrigiert
+- Assertion-Nachrichten an tatsächliche Implementierung angepasst
+
+---
+
+## 2025-03-21 - Testphase gestartet
+
+### Hinzugefügt
+- **Mastertestplan v1.0** (`05_Test/Mastertestplan.md`)
+  - Teststrategie und Testebenen
+  - Testumfang für Komponenten-, System- und Akzeptanztests
+  - Testumgebung und Werkzeuge
+  - Risiken und Maßnahmen
+  - Metriken und Berichterstattung
+
+- **Testspezifikationen**
+  - `05_Test/Komponententests.md` - Unit Test Spezifikation
+  - `05_Test/Systemtests.md` - Integration Test Spezifikation
+  - `05_Test/Akzeptanztests.md` - E2E Test Spezifikation
+
+- **Test-Implementierung** (`CatchTheRabbit.Tests/`)
+  - GameServiceTests (9 Testfälle)
+  - AIServiceTests (6 Testfälle)
+  - PositionTests (8 Testfälle)
+  - GameStateTests (6 Testfälle)
+  - LeaderboardRepositoryTests (8 Testfälle)
+
+---
+
+## 2025-03-21 - Implementierung abgeschlossen
+
+### Hinzugefügt
+- **Backend-Implementierung** (`04_Implementierung/backend/`)
+  - `CatchTheRabbit.Core/` - Domain-Modelle und Business Logic
+    - Models: GameState, Position, Move, Enums
+    - Services: GameService, AIService, LeaderboardService
+    - Interfaces: IGameService, IAIService, ILeaderboardService
+  - `CatchTheRabbit.Infrastructure/` - Datenzugriffsschicht
+    - SqliteLeaderboardRepository mit Dapper ORM
+  - `CatchTheRabbit.Api/` - Web API Layer
+    - GameController (REST-Endpunkte)
+    - LeaderboardController (Bestenliste)
+    - GameHub (SignalR für Echtzeit)
+    - DTOs für Request/Response
+
+- **Frontend-Implementierung** (`04_Implementierung/frontend/`)
+  - Vue.js 3 mit TypeScript
+  - Pinia Stores (gameStore, leaderboardStore)
+  - Vue Router mit 3 Routen
+  - Komponenten:
+    - HeaderBar (Navigation)
+    - GameBoard, BoardCell, GamePiece (Spiellogik)
+    - GameInfo (Spielstatus)
+    - GameOverModal (Spielende)
+  - Views: HomeView, GameView, LeaderboardView
+  - Kindgerechtes Design mit Animationen
+
+- **Docker-Konfiguration**
+  - `backend/Dockerfile` - Multi-Stage Build für .NET
+  - `frontend/Dockerfile` - Multi-Stage Build mit nginx
+  - `docker-compose.yml` - Orchestrierung beider Container
+  - `frontend/nginx.conf` - Reverse Proxy für API
+
+### Technische Details
+- KI-Algorithmus: Minimax mit Alpha-Beta Pruning (Tiefe 6)
+- Echtzeit-Updates über SignalR WebSocket
+- SQLite-Datenbank für Bestenliste (Top 20)
+
+---
+
 ## 2025-03-21 - Systementwurf erstellt
 
 ### Hinzugefügt
