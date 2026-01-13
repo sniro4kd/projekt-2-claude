@@ -15,6 +15,8 @@ export const useGameStore = defineStore('game', () => {
   const timerInterval = ref<number | null>(null);
 
   // Getters
+  const gameId = computed(() => gameState.value?.gameId || null);
+
   const isPlayerTurn = computed(() => {
     if (!gameState.value) return false;
     return gameState.value.currentTurn === gameState.value.playerRole;
@@ -176,6 +178,7 @@ export const useGameStore = defineStore('game', () => {
     error,
     currentThinkingTime,
     // Getters
+    gameId,
     isPlayerTurn,
     isGameOver,
     winner,

@@ -7,7 +7,7 @@ const gameStore = useGameStore();
 const router = useRouter();
 
 const playerRole = computed(() => gameStore.gameState?.playerRole);
-const isPlayerTurn = computed(() => gameStore.gameState?.isPlayerTurn);
+const isPlayerTurn = computed(() => gameStore.isPlayerTurn);
 const moveCount = computed(() => gameStore.gameState?.moveCount || 0);
 const aiThinkingTime = computed(() => gameStore.gameState?.aiTotalThinkingTime || 0);
 const status = computed(() => gameStore.gameState?.status);

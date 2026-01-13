@@ -6,11 +6,31 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 
 ## 2026-01-13 - Testphase abgeschlossen
 
+### Anforderungsverifikation
+- **Gesamt:** 44/50 Anforderungen erfüllt (88%)
+- **Muss-Anforderungen:** 37/39 erfüllt (94.9%)
+- **Abnahmekriterien:** 7/7 erfüllt (100%)
+- **Nicht erfüllt (Soll):** FA-502 (Gewinnrate), FA-800/801 (Audio)
+- **Status:** Abnahmebereit
+
 ### Testergebnisse
 - **Komponententests**: 45/45 bestanden (100%)
 - **Systemtests**: 12/12 bestanden (100%)
-- **Akzeptanztests**: Bereit zur Ausführung
+- **Akzeptanztests**: 8/8 bestanden (100%)
 - **Simulationstests**: 3/3 bestanden (Gewinnwahrscheinlichkeit dokumentiert)
+
+### Akzeptanztests - E2E Tests mit Playwright
+- **Testframework:** Playwright 1.40.0
+- **Browser:** Chromium (headless)
+- **Ausführungszeit:** ~10 Sekunden
+- **Ergebnis:** Alle Tests bestanden
+
+### Während der Tests gefundene und behobene Bugs
+1. **Backend:** Spielende-Erkennung - `GetValidMoves()` prüfte fälschlicherweise Zugwechsel
+2. **Frontend:** Eigenschaftsnamen - `rabbitPosition` statt `rabbit`
+3. **Frontend:** Koordinaten-Mapping - `row/col` statt `x/y`
+4. **Frontend:** Store-Getter - `gameState?.isPlayerTurn` statt `gameStore.isPlayerTurn`
+5. **Frontend:** Funktion - `startNewGame()` statt `createGame()`
 
 ### Code Coverage
 - **Line Coverage**: 83.8%

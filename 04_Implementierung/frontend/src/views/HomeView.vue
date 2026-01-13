@@ -13,7 +13,7 @@ const isStarting = ref(false);
 async function startGame() {
   isStarting.value = true;
   try {
-    await gameStore.startNewGame(selectedRole.value);
+    await gameStore.createGame(selectedRole.value);
     router.push('/game');
   } catch (error) {
     console.error('Fehler beim Starten des Spiels:', error);

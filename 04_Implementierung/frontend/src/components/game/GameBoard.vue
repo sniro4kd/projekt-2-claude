@@ -9,23 +9,26 @@ const gameStore = useGameStore();
 
 const boardSize = 10;
 
-const rabbitPosition = computed(() => gameStore.gameState?.rabbitPosition);
-const childrenPositions = computed(() => gameStore.gameState?.childrenPositions || []);
+const rabbitPosition = computed(() => gameStore.gameState?.rabbit);
+const childrenPositions = computed(() => gameStore.gameState?.children || []);
 const validMoves = computed(() => gameStore.validMoves);
 const selectedPiece = computed(() => gameStore.selectedPiece);
-const isPlayerTurn = computed(() => gameStore.gameState?.isPlayerTurn);
+const isPlayerTurn = computed(() => gameStore.isPlayerTurn);
 const playerRole = computed(() => gameStore.gameState?.playerRole);
 
 function isValidMove(row: number, col: number): boolean {
-  return validMoves.value.some(m => m.row === row && m.col === col);
+  // row maps to y, col maps to x
+  return validMoves.value.some(m => m.y === row && m.x === col);
 }
 
 function isRabbitAt(row: number, col: number): boolean {
-  return rabbitPosition.value?.row === row && rabbitPosition.value?.col === col;
+  // row maps to y, col maps to x
+  return rabbitPosition.value?.y === row && rabbitPosition.value?.x === col;
 }
 
 function getChildIndexAt(row: number, col: number): number {
-  return childrenPositions.value.findIndex(p => p.row === row && p.col === col);
+  // row maps to y, col maps to x
+  return childrenPositions.value.findIndex(p => p.y === row && p.x === col);
 }
 
 function isSelected(row: number, col: number): boolean {
@@ -37,7 +40,7 @@ function isSelected(row: number, col: number): boolean {
     const childIndex = selectedPiece.value.index;
     if (childIndex !== undefined) {
       const pos = childrenPositions.value[childIndex];
-      return pos?.row === row && pos?.col === col;
+      return pos?.y === row && pos?.x === col;
     }
   }
   return false;
@@ -48,10 +51,7 @@ function handleCellClick(row: number, col: number) {
 
   // Wenn auf ein gültiges Zug-Feld geklickt wird
   if (isValidMove(row, col) && selectedPiece.value) {
-    const from = getSelectedPosition();
-    if (from) {
-      gameStore.makeMove({ row: from.row, col: from.col }, { row, col });
-    }
+    gameStore.makeMove({ x: col, y: row });
     return;
   }
 

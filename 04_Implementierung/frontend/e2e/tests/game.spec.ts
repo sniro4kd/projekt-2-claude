@@ -70,19 +70,19 @@ test.describe('CatchTheRabbit - Akzeptanztests', () => {
 
     // Warte auf Spielfeld
     await expect(page.locator('.game-board')).toBeVisible();
-    await expect(page.locator('text=Du bist dran')).toBeVisible();
+    await expect(page.locator('text=Du bist dran!')).toBeVisible();
 
     // Klicke auf den Hasen
     await page.locator('.game-piece.rabbit').click();
 
     // Warte auf gültige Züge
-    await expect(page.locator('.move-indicator').first()).toBeVisible();
+    await expect(page.locator('.board-cell.valid-move').first()).toBeVisible();
 
     // Führe einen Zug aus
-    await page.locator('.move-indicator').first().click();
+    await page.locator('.board-cell.valid-move').first().click();
 
     // Warte auf KI-Zug (Status zeigt wieder "Du bist dran")
-    await expect(page.locator('text=Du bist dran')).toBeVisible({ timeout: 5000 });
+    await expect(page.locator('text=Du bist dran!')).toBeVisible({ timeout: 5000 });
   });
 
   // AT-009: Bestenliste Anzeige
@@ -107,19 +107,19 @@ test.describe('CatchTheRabbit - Akzeptanztests', () => {
     // Führe mehrere Züge aus und prüfe Reaktionszeit
     for (let i = 0; i < 3; i++) {
       // Warte bis Spieler am Zug
-      await expect(page.locator('text=Du bist dran')).toBeVisible({ timeout: 2000 });
+      await expect(page.locator('text=Du bist dran!')).toBeVisible({ timeout: 2000 });
 
       // Klicke auf Hasen und führe Zug aus
       await page.locator('.game-piece.rabbit').click();
 
-      const moveIndicator = page.locator('.move-indicator').first();
+      const moveIndicator = page.locator('.board-cell.valid-move').first();
       if (await moveIndicator.isVisible()) {
         const startTime = Date.now();
         await moveIndicator.click();
 
         // Warte auf KI-Antwort (wieder Spieler am Zug oder Spielende)
         await expect(
-          page.locator('text=Du bist dran').or(page.locator('.modal'))
+          page.locator('text=Du bist dran!').or(page.locator('.modal'))
         ).toBeVisible({ timeout: 2000 });
 
         const elapsed = Date.now() - startTime;
@@ -144,8 +144,9 @@ test.describe('CatchTheRabbit - Akzeptanztests', () => {
     await page.click('a:has-text("Start")');
     await expect(page).toHaveURL('/');
 
-    // Start -> Spielen
-    await page.click('a:has-text("Spielen")');
+    // Start -> Spiel starten -> /game (mit aktivem Spiel)
+    await page.click('button:has-text("Kinder")');
+    await page.click('button:has-text("Spiel starten")');
     await expect(page).toHaveURL(/\/game/);
   });
 

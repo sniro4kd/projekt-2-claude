@@ -164,21 +164,49 @@ public class GameService : IGameService
 
             var to = new Position(from.X + dx[i], from.Y + dy[i]);
 
-            var testMove = new Move
-            {
-                PieceType = pieceType,
-                PieceIndex = pieceIndex,
-                From = from,
-                To = to
-            };
-
-            if (ValidateMove(state, testMove).IsValid)
+            // Check if move is valid (without turn validation)
+            if (IsValidMovePosition(state, from, to, pieceType))
             {
                 validMoves.Add(to);
             }
         }
 
         return validMoves;
+    }
+
+    /// <summary>
+    /// Checks if a move from one position to another is valid,
+    /// without checking whose turn it is (used for game end check).
+    /// </summary>
+    private bool IsValidMovePosition(GameState state, Position from, Position to, PieceType pieceType)
+    {
+        // Check if target is within board
+        if (!to.IsValid())
+            return false;
+
+        // Check if target is a black field
+        if (!to.IsBlackField())
+            return false;
+
+        // Check if target is not occupied
+        if (state.IsOccupied(to))
+            return false;
+
+        // Check diagonal movement (exactly 1 field)
+        int deltaX = Math.Abs(to.X - from.X);
+        int deltaY = Math.Abs(to.Y - from.Y);
+
+        if (deltaX != 1 || deltaY != 1)
+            return false;
+
+        // Check movement direction for children (only downward)
+        if (pieceType == PieceType.Child)
+        {
+            if (to.Y <= from.Y)
+                return false;
+        }
+
+        return true;
     }
 
     public GameStatus CheckGameEnd(GameState state)
