@@ -11,20 +11,29 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 - **Systemtests**: 12/12 bestanden (100%)
 - **Akzeptanztests**: Bereit zur Ausführung
 
+### Code Coverage
+- **Line Coverage**: 83.8%
+- **Branch Coverage**: 73.1%
+- **Method Coverage**: 89.6%
+
 ### Hinzugefügt
 - **Test-Reports** (`05_Test/`)
   - `Komponententest-Report.md` - Detaillierte Unit Test Ergebnisse
   - `Systemtest-Report.md` - API Integration Test Ergebnisse
   - `Akzeptanztest-Report.md` - E2E Test Status und Anleitung
+  - `Code-Coverage-Report.md` - Testabdeckung nach Assembly/Klasse
 
 ### Korrigiert
 - Testpositionen auf schwarze Felder (X+Y ungerade) angepasst
 - API-Routen in Integration Tests korrigiert
 - Assertion-Nachrichten an tatsächliche Implementierung angepasst
 
+### Protokoll
+- [2026-01-13](protokolle/2026-01-13-testphase.md): Testphase Abschluss
+
 ---
 
-## 2025-03-21 - Testphase gestartet
+## 2026-01-13 - Testphase gestartet
 
 ### Hinzugefügt
 - **Mastertestplan v1.0** (`05_Test/Mastertestplan.md`)
@@ -40,15 +49,17 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
   - `05_Test/Akzeptanztests.md` - E2E Test Spezifikation
 
 - **Test-Implementierung** (`CatchTheRabbit.Tests/`)
-  - GameServiceTests (9 Testfälle)
-  - AIServiceTests (6 Testfälle)
-  - PositionTests (8 Testfälle)
-  - GameStateTests (6 Testfälle)
+  - GameServiceTests (17 Testfälle)
+  - AIServiceTests (9 Testfälle)
+  - PositionTests (11 Testfälle)
+  - GameStateTests (8 Testfälle)
   - LeaderboardRepositoryTests (8 Testfälle)
+  - GameControllerTests (9 Integration Tests)
+  - LeaderboardControllerTests (3 Integration Tests)
 
 ---
 
-## 2025-03-21 - Implementierung abgeschlossen
+## 2026-01-12 - Implementierung abgeschlossen
 
 ### Hinzugefügt
 - **Backend-Implementierung** (`04_Implementierung/backend/`)
@@ -87,9 +98,12 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 - Echtzeit-Updates über SignalR WebSocket
 - SQLite-Datenbank für Bestenliste (Top 20)
 
+### Protokoll
+- [2026-01-12](protokolle/2026-01-12-implementierung.md): Implementierung abgeschlossen
+
 ---
 
-## 2025-03-21 - Systementwurf erstellt
+## 2026-01-11 - Systementwurf erstellt
 
 ### Hinzugefügt
 - **High-Level-Design v1.0** (`03_Entwurf/High-Level-Design.md`)
@@ -115,9 +129,12 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
   - SQL-Queries
   - Projektstruktur (Backend + Frontend)
 
+### Protokoll
+- [2026-01-11](protokolle/2026-01-11-systementwurf.md): Systementwurf erstellt
+
 ---
 
-## 2025-03-21 - Pflichtenheft erstellt
+## 2026-01-10 - Pflichtenheft erstellt
 
 ### Hinzugefügt
 - **Pflichtenheft v1.0** erstellt (`02_Spezifikation/Pflichtenheft.md`)
@@ -134,15 +151,18 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 ### Entscheidungen
 - [ADR-005](entscheidungen/ADR-005-ki-algorithmus.md): Minimax + Alpha-Beta als KI-Algorithmus
 
+### Protokoll
+- [2026-01-10](protokolle/2026-01-10-pflichtenheft.md): Pflichtenheft erstellt
+
 ---
 
-## 2025-03-21 - V-Modell Einführung
+## 2026-01-09 - V-Modell Einführung
 
 ### Geändert
 - **Projektstruktur** auf V-Modell Phasen umgestellt
   - `01_Anforderungen/` - Lastenheft
-  - `02_Spezifikation/` - Pflichtenheft (noch zu erstellen)
-  - `03_Entwurf/` - Architektur (noch zu erstellen)
+  - `02_Spezifikation/` - Pflichtenheft
+  - `03_Entwurf/` - Architektur
   - `04_Implementierung/` - Quellcode
   - `05_Test/` - Testdokumentation
 - **Docker-Setup** angepasst: Kein separater DB-Container für SQLite nötig
@@ -150,12 +170,15 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 ### Entscheidungen
 - [ADR-004](entscheidungen/ADR-004-vorgehensmodell.md): V-Modell als Vorgehensmodell
 
+### Protokoll
+- [2026-01-09](protokolle/2026-01-09-vmodell.md): V-Modell Einführung
+
 ---
 
-## 2025-03-21 - Projektstart
+## 2026-01-08 - Projektstart
 
 ### Hinzugefügt
-- **Lastenheft v1.0** erstellt (`Lastenheft.md`)
+- **Lastenheft v1.0** erstellt (`01_Anforderungen/Lastenheft.md`)
   - Funktionale Anforderungen (FA-100 bis FA-801)
   - Nichtfunktionale Anforderungen (NFA-100 bis NFA-502)
   - Systemarchitektur-Überblick
@@ -167,4 +190,4 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 - [ADR-003](entscheidungen/ADR-003-projektdokumentation.md): Dokumentationsstruktur festgelegt
 
 ### Protokoll
-- [2025-03-21](protokolle/2025-03-21-projektstart.md): Initiales Planungsgespräch
+- [2026-01-08](protokolle/2026-01-08-projektstart.md): Initiales Planungsgespräch
