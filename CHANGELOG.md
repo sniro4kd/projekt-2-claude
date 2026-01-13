@@ -10,11 +10,18 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 - **Komponententests**: 45/45 bestanden (100%)
 - **Systemtests**: 12/12 bestanden (100%)
 - **Akzeptanztests**: Bereit zur Ausführung
+- **Simulationstests**: 3/3 bestanden (Gewinnwahrscheinlichkeit dokumentiert)
 
 ### Code Coverage
 - **Line Coverage**: 83.8%
 - **Branch Coverage**: 73.1%
 - **Method Coverage**: 89.6%
+
+### Gewinnwahrscheinlichkeit (FA-502)
+- **Hase gewinnt**: 0% (KI vs KI)
+- **Kinder gewinnen**: 100% (KI vs KI)
+- **Status**: FA-502 NICHT ERFÜLLT - Spiel favorisiert strukturell die Kinder
+- **Analyse**: `05_Test/Gewinnwahrscheinlichkeit-Analyse.md`
 
 ### Hinzugefügt
 - **Test-Reports** (`05_Test/`)
@@ -22,6 +29,10 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
   - `Systemtest-Report.md` - API Integration Test Ergebnisse
   - `Akzeptanztest-Report.md` - E2E Test Status und Anleitung
   - `Code-Coverage-Report.md` - Testabdeckung nach Assembly/Klasse
+  - `Gewinnwahrscheinlichkeit-Analyse.md` - FA-502 Validierung
+
+- **Simulationstests** (`CatchTheRabbit.Tests/Simulation/`)
+  - `WinRateSimulationTests.cs` - KI vs KI Simulation (500 Spiele)
 
 ### Korrigiert
 - Testpositionen auf schwarze Felder (X+Y ungerade) angepasst
