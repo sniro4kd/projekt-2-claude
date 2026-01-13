@@ -22,6 +22,8 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 - **Kinder gewinnen**: 100% (KI vs KI)
 - **Status**: FA-502 NICHT ERFÜLLT - Spiel favorisiert strukturell die Kinder
 - **Analyse**: `05_Test/Gewinnwahrscheinlichkeit-Analyse.md`
+- **Balancing-Optionen**: `05_Test/Balancing-Optionen-Analyse.md`
+- **Empfehlung**: Anforderungsanpassung (Option C)
 
 ### Hinzugefügt
 - **Test-Reports** (`05_Test/`)
