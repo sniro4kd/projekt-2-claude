@@ -5,23 +5,14 @@ import { RouterLink } from 'vue-router';
 
 const leaderboardStore = useLeaderboardStore();
 
-const rabbitEntries = computed(() => leaderboardStore.leaderboard?.rabbitLeaderboard || []);
-const childrenEntries = computed(() => leaderboardStore.leaderboard?.childrenLeaderboard || []);
+const rabbitEntries = computed(() => leaderboardStore.leaderboard?.rabbit || []);
+const childrenEntries = computed(() => leaderboardStore.leaderboard?.children || []);
 
 function formatTime(ms: number): string {
   if (ms < 1000) {
     return `${ms} ms`;
   }
   return `${(ms / 1000).toFixed(2)} s`;
-}
-
-function formatDate(dateString: string): string {
-  const date = new Date(dateString);
-  return date.toLocaleDateString('de-DE', {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric'
-  });
 }
 
 onMounted(() => {
@@ -57,20 +48,18 @@ onMounted(() => {
               <tr>
                 <th class="rank">#</th>
                 <th class="name">Name</th>
-                <th class="time">KI-Zeit</th>
-                <th class="date">Datum</th>
+                <th class="time">Zeit</th>
               </tr>
             </thead>
             <tbody>
-              <tr v-for="(entry, index) in rabbitEntries" :key="entry.id">
+              <tr v-for="(entry, index) in rabbitEntries" :key="index">
                 <td class="rank">
                   <span class="rank-badge" :class="{ gold: index === 0, silver: index === 1, bronze: index === 2 }">
-                    {{ index + 1 }}
+                    {{ entry.rank }}
                   </span>
                 </td>
                 <td class="name">{{ entry.nickname }}</td>
-                <td class="time">{{ formatTime(entry.aiThinkingTimeMs) }}</td>
-                <td class="date">{{ formatDate(entry.createdAt) }}</td>
+                <td class="time">{{ formatTime(entry.thinkingTimeMs) }}</td>
               </tr>
             </tbody>
           </table>
@@ -89,20 +78,18 @@ onMounted(() => {
               <tr>
                 <th class="rank">#</th>
                 <th class="name">Name</th>
-                <th class="time">KI-Zeit</th>
-                <th class="date">Datum</th>
+                <th class="time">Zeit</th>
               </tr>
             </thead>
             <tbody>
-              <tr v-for="(entry, index) in childrenEntries" :key="entry.id">
+              <tr v-for="(entry, index) in childrenEntries" :key="index">
                 <td class="rank">
                   <span class="rank-badge" :class="{ gold: index === 0, silver: index === 1, bronze: index === 2 }">
-                    {{ index + 1 }}
+                    {{ entry.rank }}
                   </span>
                 </td>
                 <td class="name">{{ entry.nickname }}</td>
-                <td class="time">{{ formatTime(entry.aiThinkingTimeMs) }}</td>
-                <td class="date">{{ formatDate(entry.createdAt) }}</td>
+                <td class="time">{{ formatTime(entry.thinkingTimeMs) }}</td>
               </tr>
             </tbody>
           </table>

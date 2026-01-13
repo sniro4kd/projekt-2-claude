@@ -28,13 +28,13 @@ const title = computed(() => {
 });
 
 const message = computed(() => {
-  if (props.gameStatus === 'rabbitWins') {
+  if (props.gameStatus === 'rabbitwins') {
     if (props.playerRole === 'rabbit') {
       return 'Du hast als Hase gewonnen! Der Hase ist entkommen!';
     }
     return 'Der Hase ist entkommen! Die KI hat gewonnen.';
   }
-  if (props.gameStatus === 'childrenWin') {
+  if (props.gameStatus === 'childrenwin') {
     if (props.playerRole === 'children') {
       return 'Du hast als Kinder gewonnen! Der Hase wurde gefangen!';
     }

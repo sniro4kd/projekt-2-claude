@@ -16,15 +16,15 @@ const submittedRank = ref<number | null>(null);
 
 const hasGame = computed(() => gameStore.gameState !== null);
 const isGameOver = computed(() =>
-  gameStore.gameState?.status === 'rabbitWins' ||
-  gameStore.gameState?.status === 'childrenWin'
+  gameStore.gameState?.status === 'rabbitwins' ||
+  gameStore.gameState?.status === 'childrenwin'
 );
 const playerWon = computed(() => {
   if (!gameStore.gameState) return false;
   const status = gameStore.gameState.status;
   const playerRole = gameStore.gameState.playerRole;
-  return (status === 'rabbitWins' && playerRole === 'rabbit') ||
-         (status === 'childrenWin' && playerRole === 'children');
+  return (status === 'rabbitwins' && playerRole === 'rabbit') ||
+         (status === 'childrenwin' && playerRole === 'children');
 });
 
 watch(isGameOver, (gameOver) => {
@@ -58,7 +58,7 @@ onMounted(() => {
 });
 
 onUnmounted(() => {
-  gameStore.disconnect();
+  // Clean up when leaving the game view
 });
 </script>
 
@@ -73,7 +73,7 @@ onUnmounted(() => {
       :player-won="playerWon"
       :game-status="gameStore.gameState?.status || 'playing'"
       :player-role="gameStore.gameState?.playerRole || 'children'"
-      :ai-thinking-time="gameStore.gameState?.aiTotalThinkingTime || 0"
+      :ai-thinking-time="gameStore.gameState?.playerThinkingTimeMs || 0"
       :submitted-rank="submittedRank"
       @submit-score="handleSubmitScore"
       @new-game="handleNewGame"

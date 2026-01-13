@@ -1,21 +1,20 @@
 # Build stage
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
-# Copy csproj files and restore
+# Copy csproj files and restore (excluding Tests)
 COPY CatchTheRabbit.Core/*.csproj CatchTheRabbit.Core/
 COPY CatchTheRabbit.Infrastructure/*.csproj CatchTheRabbit.Infrastructure/
 COPY CatchTheRabbit.Api/*.csproj CatchTheRabbit.Api/
-COPY CatchTheRabbit.sln .
 
-RUN dotnet restore
+RUN dotnet restore CatchTheRabbit.Api/CatchTheRabbit.Api.csproj
 
 # Copy everything else and build
 COPY . .
 RUN dotnet publish CatchTheRabbit.Api/CatchTheRabbit.Api.csproj -c Release -o /app/publish
 
 # Runtime stage
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
 
 # Create data directory for SQLite

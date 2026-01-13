@@ -1,3 +1,6 @@
+export type PlayerRole = 'rabbit' | 'children';
+export type GameStatus = 'playing' | 'rabbitwins' | 'childrenwin';
+
 export interface Position {
   x: number;
   y: number;
@@ -12,11 +15,11 @@ export interface Move {
 
 export interface GameState {
   gameId: string;
-  playerRole: 'rabbit' | 'children';
+  playerRole: PlayerRole;
   currentTurn: 'rabbit' | 'children';
   rabbit: Position;
   children: Position[];
-  status: 'playing' | 'rabbitwins' | 'childrenwin';
+  status: GameStatus;
   playerThinkingTimeMs: number;
 }
 

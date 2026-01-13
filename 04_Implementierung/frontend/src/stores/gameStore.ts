@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
-import type { GameState, Position, Move } from '@/types/game';
+import type { GameState, Position } from '@/types/game';
 import { gameService } from '@/services/gameService';
 
 export const useGameStore = defineStore('game', () => {

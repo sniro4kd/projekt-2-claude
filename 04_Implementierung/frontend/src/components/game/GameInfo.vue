@@ -8,14 +8,13 @@ const router = useRouter();
 
 const playerRole = computed(() => gameStore.gameState?.playerRole);
 const isPlayerTurn = computed(() => gameStore.isPlayerTurn);
-const moveCount = computed(() => gameStore.gameState?.moveCount || 0);
-const aiThinkingTime = computed(() => gameStore.gameState?.aiTotalThinkingTime || 0);
+const thinkingTime = computed(() => gameStore.gameState?.playerThinkingTimeMs || 0);
 const status = computed(() => gameStore.gameState?.status);
 const error = computed(() => gameStore.error);
 
 const statusText = computed(() => {
-  if (status.value === 'rabbitWins') return 'Der Hase hat gewonnen!';
-  if (status.value === 'childrenWin') return 'Die Kinder haben gewonnen!';
+  if (status.value === 'rabbitwins') return 'Der Hase hat gewonnen!';
+  if (status.value === 'childrenwin') return 'Die Kinder haben gewonnen!';
   if (isPlayerTurn.value) return 'Du bist dran!';
   return 'KI denkt nach...';
 });
@@ -27,12 +26,6 @@ const roleText = computed(() => {
 function formatTime(ms: number): string {
   if (ms < 1000) return `${ms} ms`;
   return `${(ms / 1000).toFixed(2)} s`;
-}
-
-function handleGiveUp() {
-  if (confirm('Möchtest du wirklich aufgeben?')) {
-    gameStore.giveUp();
-  }
 }
 
 function goHome() {
@@ -50,12 +43,8 @@ function goHome() {
         </span>
       </div>
       <div class="info-item">
-        <span class="label">Züge</span>
-        <span class="value">{{ moveCount }}</span>
-      </div>
-      <div class="info-item">
-        <span class="label">KI-Denkzeit</span>
-        <span class="value time">{{ formatTime(aiThinkingTime) }}</span>
+        <span class="label">Deine Denkzeit</span>
+        <span class="value time">{{ formatTime(thinkingTime) }}</span>
       </div>
     </div>
 
@@ -74,7 +63,6 @@ function goHome() {
 
     <div class="actions" v-if="status === 'playing'">
       <button class="btn-secondary" @click="goHome">Abbrechen</button>
-      <button class="btn-danger" @click="handleGiveUp">Aufgeben</button>
     </div>
   </div>
 </template>

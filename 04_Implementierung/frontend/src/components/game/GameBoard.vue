@@ -3,7 +3,6 @@ import { computed } from 'vue';
 import { useGameStore } from '@/stores/gameStore';
 import BoardCell from './BoardCell.vue';
 import GamePiece from './GamePiece.vue';
-import type { Position } from '@/types/game';
 
 const gameStore = useGameStore();
 
@@ -70,20 +69,6 @@ function handleCellClick(row: number, col: number) {
 
   // Sonst: Auswahl aufheben
   gameStore.clearSelection();
-}
-
-function getSelectedPosition(): Position | null {
-  if (!selectedPiece.value) return null;
-
-  if (selectedPiece.value.type === 'rabbit') {
-    return rabbitPosition.value || null;
-  } else {
-    const childIndex = selectedPiece.value.index;
-    if (childIndex !== undefined) {
-      return childrenPositions.value[childIndex] || null;
-    }
-  }
-  return null;
 }
 </script>
 
