@@ -4,6 +4,22 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 
 ---
 
+## 2025-03-21 - V-Modell Einführung
+
+### Geändert
+- **Projektstruktur** auf V-Modell Phasen umgestellt
+  - `01_Anforderungen/` - Lastenheft
+  - `02_Spezifikation/` - Pflichtenheft (noch zu erstellen)
+  - `03_Entwurf/` - Architektur (noch zu erstellen)
+  - `04_Implementierung/` - Quellcode
+  - `05_Test/` - Testdokumentation
+- **Docker-Setup** angepasst: Kein separater DB-Container für SQLite nötig
+
+### Entscheidungen
+- [ADR-004](entscheidungen/ADR-004-vorgehensmodell.md): V-Modell als Vorgehensmodell
+
+---
+
 ## 2025-03-21 - Projektstart
 
 ### Hinzugefügt

@@ -15,19 +15,22 @@ Der gesamte Entwicklungsprozess soll nachvollziehbar dokumentiert und in Git ver
 
 ## Entscheidung
 
-Eine **kombinierte Dokumentationsstruktur** wird verwendet:
+Eine **kombinierte Dokumentationsstruktur** wird verwendet (angepasst für V-Modell):
 
 ```
-planung/
-├── Lastenheft.md              # Anforderungsdokument
-├── CHANGELOG.md               # Übersicht aller Änderungen
+projekt-2-claude/
+├── 01_Anforderungen/          # Lastenheft
+├── 02_Spezifikation/          # Pflichtenheft
+├── 03_Entwurf/                # Architektur, Datenmodell
+├── 04_Implementierung/        # Quellcode
+├── 05_Test/                   # Testdokumentation
 ├── entscheidungen/            # Architecture Decision Records (ADRs)
 │   ├── ADR-001-xxx.md
-│   ├── ADR-002-xxx.md
 │   └── ...
-└── protokolle/                # Gesprächsprotokolle pro Session
-    ├── 2025-03-21-xxx.md
-    └── ...
+├── protokolle/                # Gesprächsprotokolle pro Session
+│   ├── 2025-03-21-xxx.md
+│   └── ...
+└── CHANGELOG.md               # Übersicht aller Änderungen
 ```
 
 ## Begründung

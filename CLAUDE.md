@@ -6,6 +6,41 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Browserbasiertes Strategiespiel für ERP_Champion GmbH. Ein Spieler (Mensch) spielt gegen eine KI - entweder als Hase oder als die vier Kinder auf einem 10x10 Spielfeld.
 
+## Vorgehensmodell: V-Modell
+
+```
+    Anforderungsanalyse ─────────────────────────── Abnahmetest
+           │                                            │
+           ▼                                            ▲
+    Systemspezifikation ─────────────────────── Systemtest
+           │                                            │
+           ▼                                            ▲
+    Systementwurf ───────────────────────── Integrationstest
+           │                                            │
+           ▼                                            ▲
+    Komponentenentwurf ────────────────── Komponententest
+           │                                            │
+           ▼                                            ▲
+           └──────────► Implementierung ◄───────────────┘
+```
+
+## Projektstruktur (V-Modell Phasen)
+
+```
+projekt-2-claude/
+├── 01_Anforderungen/       # Lastenheft
+├── 02_Spezifikation/       # Pflichtenheft, Use Cases
+├── 03_Entwurf/             # Architektur, API-Spec, Datenmodell
+├── 04_Implementierung/     # Quellcode
+│   ├── frontend/           # Vue.js
+│   └── backend/            # ASP.NET Core
+├── 05_Test/                # Testkonzept, Testfälle, Testberichte
+├── entscheidungen/         # ADRs (Architecture Decision Records)
+├── protokolle/             # Gesprächsprotokolle
+├── proposal/               # Ursprüngliches Project Proposal
+└── CHANGELOG.md            # Projektfortschritt
+```
+
 ## Technologie-Stack (vorgegeben, nicht ändern)
 
 | Komponente | Technologie |
@@ -27,27 +62,14 @@ Controller → Business Logic → Data Access → Persistenz (SQLite)
 
 ## Docker-Setup
 
-- Separate Container für Frontend, Backend und Datenbank
+- Separate Container für Frontend und Backend
+- SQLite als Datei im Backend-Container (kein separater DB-Container nötig)
 - Orchestrierung via docker-compose
-
-## Projektstruktur
-
-```
-projekt-2-claude/
-├── proposal/           # Ursprüngliches Project Proposal (PDF)
-├── planung/            # Planungsdokumente
-│   ├── Lastenheft.md
-│   ├── CHANGELOG.md
-│   ├── entscheidungen/ # ADRs (Architecture Decision Records)
-│   └── protokolle/     # Gesprächsprotokolle
-├── frontend/           # Vue.js Frontend (noch anzulegen)
-└── backend/            # ASP.NET Backend (noch anzulegen)
-```
 
 ## Dokumentationsregeln
 
-- **ADRs**: `planung/entscheidungen/ADR-XXX-kurzbeschreibung.md`
-- **Protokolle**: `planung/protokolle/YYYY-MM-DD-thema.md`
+- **ADRs**: `entscheidungen/ADR-XXX-kurzbeschreibung.md`
+- **Protokolle**: `protokolle/YYYY-MM-DD-thema.md`
 - **CHANGELOG**: Nach jeder Session aktualisieren
 - **Commits**: Nach jedem abgeschlossenen Schritt committen und pushen
 

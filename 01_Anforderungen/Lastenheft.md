@@ -206,7 +206,7 @@ CatchTheRabbit ist ein browserbasiertes Strategiespiel, das zur Kundenbindung an
 |----|-------------|-----------|
 | NFA-400 | Die Anwendung läuft in Docker-Containern | Muss |
 | NFA-401 | Docker-compose wird für die Orchestrierung verwendet | Muss |
-| NFA-402 | Separate Container für Frontend, Backend und Datenbank | Muss |
+| NFA-402 | Separate Container für Frontend und Backend (SQLite als Datei im Backend-Container) | Muss |
 | NFA-403 | Kunden können die Anwendung selbst hosten | Soll |
 
 ### 4.5 Usability
@@ -224,27 +224,30 @@ CatchTheRabbit ist ein browserbasiertes Strategiespiel, das zur Kundenbindung an
 ### 5.1 Komponentendiagramm
 
 ```
-┌────────────────────────────────────────────────────────────────────┐
-│                         Docker Compose                              │
-│                                                                     │
-│  ┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐  │
-│  │   Frontend       │  │    Backend       │  │   Datenbank      │  │
-│  │   Container      │  │    Container     │  │   Container      │  │
-│  │                  │  │                  │  │                  │  │
-│  │  ┌────────────┐  │  │  ┌────────────┐  │  │  ┌────────────┐  │  │
-│  │  │  Vue.js    │  │  │  │ ASP.NET    │  │  │  │  SQLite    │  │  │
-│  │  │  WebApp    │◄─┼──┼─►│   API      │◄─┼──┼─►│            │  │  │
-│  │  │            │  │  │  │            │  │  │  │            │  │  │
-│  │  └────────────┘  │  │  └────────────┘  │  │  └────────────┘  │  │
-│  │                  │  │                  │  │                  │  │
-│  │  - Spielfeld UI  │  │  - Controller    │  │  - Bestenlisten  │  │
-│  │  - Bedienung     │  │  - Spiellogik    │  │                  │  │
-│  │  - Animationen   │  │  - KI-Engine     │  │                  │  │
-│  │  - Sound         │  │  - Data Access   │  │                  │  │
-│  │                  │  │                  │  │                  │  │
-│  └──────────────────┘  └──────────────────┘  └──────────────────┘  │
-│                                                                     │
-└────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────┐
+│                       Docker Compose                           │
+│                                                                │
+│  ┌─────────────────────┐      ┌─────────────────────────────┐ │
+│  │  Frontend Container │      │     Backend Container        │ │
+│  │                     │      │                              │ │
+│  │  ┌───────────────┐  │      │  ┌────────────────────────┐ │ │
+│  │  │   Vue.js      │  │      │  │     ASP.NET API        │ │ │
+│  │  │   WebApp      │◄─┼──────┼─►│                        │ │ │
+│  │  └───────────────┘  │      │  └────────────────────────┘ │ │
+│  │                     │      │             │                │ │
+│  │  - Spielfeld UI     │      │             ▼                │ │
+│  │  - Bedienung        │      │  ┌────────────────────────┐ │ │
+│  │  - Animationen      │      │  │   SQLite (Datei)       │ │ │
+│  │  - Sound            │      │  │   - Bestenlisten       │ │ │
+│  │                     │      │  └────────────────────────┘ │ │
+│  │                     │      │                              │ │
+│  │                     │      │  - Controller                │ │
+│  │                     │      │  - Spiellogik                │ │
+│  │                     │      │  - KI-Engine                 │ │
+│  │                     │      │  - Data Access               │ │
+│  └─────────────────────┘      └─────────────────────────────┘ │
+│                                                                │
+└───────────────────────────────────────────────────────────────┘
 ```
 
 ### 5.2 Technologie-Stack
