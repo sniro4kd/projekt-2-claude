@@ -28,9 +28,6 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 - API-Routen in Integration Tests korrigiert
 - Assertion-Nachrichten an tatsächliche Implementierung angepasst
 
-### Protokoll
-- [2026-01-13](protokolle/2026-01-13-testphase.md): Testphase Abschluss
-
 ---
 
 ## 2026-01-13 - Testphase gestartet
@@ -59,7 +56,7 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 
 ---
 
-## 2026-01-12 - Implementierung abgeschlossen
+## 2026-01-13 - Implementierung abgeschlossen
 
 ### Hinzugefügt
 - **Backend-Implementierung** (`04_Implementierung/backend/`)
@@ -98,12 +95,9 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 - Echtzeit-Updates über SignalR WebSocket
 - SQLite-Datenbank für Bestenliste (Top 20)
 
-### Protokoll
-- [2026-01-12](protokolle/2026-01-12-implementierung.md): Implementierung abgeschlossen
-
 ---
 
-## 2026-01-11 - Systementwurf erstellt
+## 2026-01-13 - Systementwurf erstellt
 
 ### Hinzugefügt
 - **High-Level-Design v1.0** (`03_Entwurf/High-Level-Design.md`)
@@ -129,12 +123,9 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
   - SQL-Queries
   - Projektstruktur (Backend + Frontend)
 
-### Protokoll
-- [2026-01-11](protokolle/2026-01-11-systementwurf.md): Systementwurf erstellt
-
 ---
 
-## 2026-01-10 - Pflichtenheft erstellt
+## 2026-01-13 - Pflichtenheft erstellt
 
 ### Hinzugefügt
 - **Pflichtenheft v1.0** erstellt (`02_Spezifikation/Pflichtenheft.md`)
@@ -151,12 +142,9 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 ### Entscheidungen
 - [ADR-005](entscheidungen/ADR-005-ki-algorithmus.md): Minimax + Alpha-Beta als KI-Algorithmus
 
-### Protokoll
-- [2026-01-10](protokolle/2026-01-10-pflichtenheft.md): Pflichtenheft erstellt
-
 ---
 
-## 2026-01-09 - V-Modell Einführung
+## 2026-01-13 - V-Modell Einführung
 
 ### Geändert
 - **Projektstruktur** auf V-Modell Phasen umgestellt
@@ -170,12 +158,9 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 ### Entscheidungen
 - [ADR-004](entscheidungen/ADR-004-vorgehensmodell.md): V-Modell als Vorgehensmodell
 
-### Protokoll
-- [2026-01-09](protokolle/2026-01-09-vmodell.md): V-Modell Einführung
-
 ---
 
-## 2026-01-08 - Projektstart
+## 2026-01-13 - Projektstart
 
 ### Hinzugefügt
 - **Lastenheft v1.0** erstellt (`01_Anforderungen/Lastenheft.md`)
@@ -190,4 +175,4 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 - [ADR-003](entscheidungen/ADR-003-projektdokumentation.md): Dokumentationsstruktur festgelegt
 
 ### Protokoll
-- [2026-01-08](protokolle/2026-01-08-projektstart.md): Initiales Planungsgespräch
+- [2026-01-13](protokolle/2026-01-13-projekt.md): Gesamtes Projekt durchgeführt
