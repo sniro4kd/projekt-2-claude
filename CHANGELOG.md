@@ -173,7 +173,7 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
   - Testabdeckung und Testfälle
 
 ### Entscheidungen
-- [ADR-005](entscheidungen/ADR-005-ki-algorithmus.md): Minimax + Alpha-Beta als KI-Algorithmus
+- [ADR-005](00_Projektmanagement/entscheidungen/ADR-005-ki-algorithmus.md): Minimax + Alpha-Beta als KI-Algorithmus
 
 ---
 
@@ -189,7 +189,7 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 - **Docker-Setup** angepasst: Kein separater DB-Container für SQLite nötig
 
 ### Entscheidungen
-- [ADR-004](entscheidungen/ADR-004-vorgehensmodell.md): V-Modell als Vorgehensmodell
+- [ADR-004](00_Projektmanagement/entscheidungen/ADR-004-vorgehensmodell.md): V-Modell als Vorgehensmodell
 
 ---
 
@@ -203,9 +203,9 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
   - Abnahmekriterien
 
 ### Entscheidungen
-- [ADR-001](entscheidungen/ADR-001-technologie-stack.md): Technologie-Stack bestätigt
-- [ADR-002](entscheidungen/ADR-002-datenbank.md): SQLite als Datenbank gewählt
-- [ADR-003](entscheidungen/ADR-003-projektdokumentation.md): Dokumentationsstruktur festgelegt
+- [ADR-001](00_Projektmanagement/entscheidungen/ADR-001-technologie-stack.md): Technologie-Stack bestätigt
+- [ADR-002](00_Projektmanagement/entscheidungen/ADR-002-datenbank.md): SQLite als Datenbank gewählt
+- [ADR-003](00_Projektmanagement/entscheidungen/ADR-003-projektdokumentation.md): Dokumentationsstruktur festgelegt
 
 ### Protokoll
-- [2026-01-13](protokolle/2026-01-13-projekt.md): Gesamtes Projekt durchgeführt
+- [2026-01-13](00_Projektmanagement/Projektprotokoll.md): Gesamtes Projekt durchgeführt

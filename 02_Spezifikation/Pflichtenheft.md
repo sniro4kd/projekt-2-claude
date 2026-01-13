@@ -26,9 +26,9 @@ Das Dokument spezifiziert die technische Realisierung aller funktionalen und nic
 | Dokument | Version | Pfad |
 |----------|---------|------|
 | Lastenheft | 1.0 | `01_Anforderungen/Lastenheft.md` |
-| ADR-001 Technologie-Stack | - | `entscheidungen/ADR-001-technologie-stack.md` |
-| ADR-002 Datenbank | - | `entscheidungen/ADR-002-datenbank.md` |
-| ADR-004 Vorgehensmodell | - | `entscheidungen/ADR-004-vorgehensmodell.md` |
+| ADR-001 Technologie-Stack | - | `00_Projektmanagement/entscheidungen/ADR-001-technologie-stack.md` |
+| ADR-002 Datenbank | - | `00_Projektmanagement/entscheidungen/ADR-002-datenbank.md` |
+| ADR-004 Vorgehensmodell | - | `00_Projektmanagement/entscheidungen/ADR-004-vorgehensmodell.md` |
 
 ### 1.4 Glossar
 

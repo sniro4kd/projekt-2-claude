@@ -28,6 +28,10 @@ Browserbasiertes Strategiespiel für ERP_Champion GmbH. Ein Spieler (Mensch) spi
 
 ```
 projekt-2-claude/
+├── 00_Projektmanagement/   # ADRs, Proposal, Protokolle
+│   ├── entscheidungen/     # Architecture Decision Records
+│   ├── Projektprotokoll.md
+│   └── Proposal_*.pdf
 ├── 01_Anforderungen/       # Lastenheft
 ├── 02_Spezifikation/       # Pflichtenheft, Use Cases
 ├── 03_Entwurf/             # Architektur, API-Spec, Datenmodell
@@ -35,9 +39,6 @@ projekt-2-claude/
 │   ├── frontend/           # Vue.js
 │   └── backend/            # ASP.NET Core
 ├── 05_Test/                # Testkonzept, Testfälle, Testberichte
-├── entscheidungen/         # ADRs (Architecture Decision Records)
-├── protokolle/             # Gesprächsprotokolle
-├── proposal/               # Ursprüngliches Project Proposal
 └── CHANGELOG.md            # Projektfortschritt
 ```
 
@@ -68,8 +69,8 @@ Controller → Business Logic → Data Access → Persistenz (SQLite)
 
 ## Dokumentationsregeln
 
-- **ADRs**: `entscheidungen/ADR-XXX-kurzbeschreibung.md`
-- **Protokolle**: `protokolle/YYYY-MM-DD-thema.md`
+- **ADRs**: `00_Projektmanagement/entscheidungen/ADR-XXX-kurzbeschreibung.md`
+- **Protokolle**: `00_Projektmanagement/Projektprotokoll.md`
 - **CHANGELOG**: Nach jeder Session aktualisieren
 - **Commits**: Nach jedem abgeschlossenen Schritt committen und pushen
 

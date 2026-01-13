@@ -29,7 +29,7 @@ Dieses Dokument beschreibt die Systemarchitektur von CatchTheRabbit auf hoher Ab
 | Dokument | Pfad |
 |----------|------|
 | Pflichtenheft | `02_Spezifikation/Pflichtenheft.md` |
-| ADR-001 Technologie-Stack | `entscheidungen/ADR-001-technologie-stack.md` |
+| ADR-001 Technologie-Stack | `00_Projektmanagement/entscheidungen/ADR-001-technologie-stack.md` |
 
 ---
 

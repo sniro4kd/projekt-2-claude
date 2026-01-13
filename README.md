@@ -105,6 +105,10 @@ dotnet test
 
 ```
 projekt-2-claude/
+├── 00_Projektmanagement/  # ADRs, Proposal, Protokolle
+│   ├── entscheidungen/    # Architecture Decision Records
+│   ├── Projektprotokoll.md
+│   └── Proposal_CatchTheRabbit_V.1.0._250321.pdf
 ├── 01_Anforderungen/      # Lastenheft
 ├── 02_Spezifikation/      # Pflichtenheft
 ├── 03_Entwurf/            # High-Level & Low-Level Design
@@ -113,8 +117,6 @@ projekt-2-claude/
 │   ├── frontend/          # Vue.js Frontend
 │   └── docker-compose.yml # Container-Orchestrierung
 ├── 05_Test/               # Testdokumentation
-├── entscheidungen/        # Architecture Decision Records
-├── protokolle/            # Meeting-Protokolle
 ├── CHANGELOG.md           # Änderungshistorie
 └── CLAUDE.md              # KI-Assistenz-Dokumentation
 ```

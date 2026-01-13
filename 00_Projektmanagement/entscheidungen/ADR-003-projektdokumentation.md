@@ -19,17 +19,15 @@ Eine **kombinierte Dokumentationsstruktur** wird verwendet (angepasst für V-Mod
 
 ```
 projekt-2-claude/
+├── 00_Projektmanagement/      # ADRs, Protokolle, Proposal
+│   ├── entscheidungen/        # Architecture Decision Records (ADRs)
+│   ├── Projektprotokoll.md
+│   └── Proposal_*.pdf
 ├── 01_Anforderungen/          # Lastenheft
 ├── 02_Spezifikation/          # Pflichtenheft
 ├── 03_Entwurf/                # Architektur, Datenmodell
 ├── 04_Implementierung/        # Quellcode
 ├── 05_Test/                   # Testdokumentation
-├── entscheidungen/            # Architecture Decision Records (ADRs)
-│   ├── ADR-001-xxx.md
-│   └── ...
-├── protokolle/                # Gesprächsprotokolle pro Session
-│   ├── 2025-03-21-xxx.md
-│   └── ...
 └── CHANGELOG.md               # Übersicht aller Änderungen
 ```
 
@@ -54,7 +52,7 @@ projekt-2-claude/
 ## Format-Vorgaben
 
 ### ADR-Dateinamen
-`ADR-XXX-kurzbeschreibung.md` (z.B. `ADR-001-technologie-stack.md`)
+`00_Projektmanagement/entscheidungen/ADR-XXX-kurzbeschreibung.md`
 
-### Protokoll-Dateinamen
-`YYYY-MM-DD-thema.md` (z.B. `2025-03-21-projektstart.md`)
+### Protokoll
+Konsolidiert in `00_Projektmanagement/Projektprotokoll.md`
