@@ -4,6 +4,34 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 
 ---
 
+## 2025-03-21 - Systementwurf erstellt
+
+### Hinzugefügt
+- **High-Level-Design v1.0** (`03_Entwurf/High-Level-Design.md`)
+  - Architektur-Prinzipien und -Stil
+  - Systemkontext-Diagramm
+  - Container-Architektur (Docker Compose)
+  - Frontend- und Backend-Komponenten-Übersicht
+  - Datenfluss und Kommunikationsmuster
+  - Querschnittsthemen (Logging, Fehlerbehandlung, Security)
+  - Technologie-Stack Details
+  - Deployment-Strategie
+
+- **Low-Level-Design v1.0** (`03_Entwurf/Low-Level-Design.md`)
+  - Domain-Modell (Klassendiagramme)
+  - Service-Klassen mit Methodensignaturen
+  - Repository-Pattern Implementation
+  - Controller und DTOs
+  - TypeScript-Interfaces (Frontend)
+  - Pinia Store Design
+  - Vue-Komponenten-Hierarchie
+  - Algorithmus-Details (Zugvalidierung, KI-Bewertung, Minimax)
+  - Sequenzdiagramme (Spielstart, Spielzug, Bestenliste)
+  - SQL-Queries
+  - Projektstruktur (Backend + Frontend)
+
+---
+
 ## 2025-03-21 - Pflichtenheft erstellt
 
 ### Hinzugefügt

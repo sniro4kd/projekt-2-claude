@@ -107,13 +107,14 @@ projekt-2-claude/
 - [x] Review des Lastenhefts
 - [x] KI-Algorithmus-Auswahl → Minimax + Alpha-Beta (ADR-005)
 - [x] Pflichtenheft erstellen (02_Spezifikation)
-- [ ] Design-Mockups erstellen
-- [ ] Architektur-Entwurf (03_Entwurf)
+- [x] Architektur-Entwurf (03_Entwurf) - High-Level + Low-Level Design
+- [ ] Design-Mockups erstellen (Grafiken, Assets)
+- [ ] Implementierung beginnen
 
 ---
 
 ## 5. Nächste Schritte
 
 1. ~~Pflichtenheft erstellen (Phase: Systemspezifikation)~~ ✓
-2. Architektur-Entwurf (Phase: Systementwurf)
-3. Implementierung beginnen
+2. ~~Architektur-Entwurf (Phase: Systementwurf)~~ ✓
+3. Implementierung beginnen (Phase: Implementierung)
