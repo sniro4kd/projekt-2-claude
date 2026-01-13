@@ -4,6 +4,25 @@ Dieses Dokument gibt einen Überblick über den Fortschritt der Projektplanung.
 
 ---
 
+## 2025-03-21 - Pflichtenheft erstellt
+
+### Hinzugefügt
+- **Pflichtenheft v1.0** erstellt (`02_Spezifikation/Pflichtenheft.md`)
+  - Systemarchitektur (Frontend, Backend, Deployment)
+  - Spiellogik-Spezifikation (Spielfeld, Zugvalidierung, Siegbedingungen)
+  - KI-Spezifikation (Minimax mit Alpha-Beta-Pruning)
+  - Use Cases (UC-01 bis UC-05)
+  - Datenmodell und SQLite-Schema
+  - REST API und SignalR Hub Spezifikation
+  - UI-Spezifikation mit Wireframes
+  - Fehlerbehandlung und Logging
+  - Testabdeckung und Testfälle
+
+### Entscheidungen
+- [ADR-005](entscheidungen/ADR-005-ki-algorithmus.md): Minimax + Alpha-Beta als KI-Algorithmus
+
+---
+
 ## 2025-03-21 - V-Modell Einführung
 
 ### Geändert

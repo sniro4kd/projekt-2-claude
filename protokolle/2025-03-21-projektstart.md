@@ -105,15 +105,15 @@ projekt-2-claude/
 ### Offene Punkte für nächste Sessions
 
 - [x] Review des Lastenhefts
-- [ ] KI-Algorithmus-Auswahl (Minimax, Alpha-Beta, MCTS)
+- [x] KI-Algorithmus-Auswahl → Minimax + Alpha-Beta (ADR-005)
+- [x] Pflichtenheft erstellen (02_Spezifikation)
 - [ ] Design-Mockups erstellen
-- [ ] Pflichtenheft erstellen (02_Spezifikation)
 - [ ] Architektur-Entwurf (03_Entwurf)
 
 ---
 
 ## 5. Nächste Schritte
 
-1. Pflichtenheft erstellen (Phase: Systemspezifikation)
+1. ~~Pflichtenheft erstellen (Phase: Systemspezifikation)~~ ✓
 2. Architektur-Entwurf (Phase: Systementwurf)
 3. Implementierung beginnen
